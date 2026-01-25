@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/Gateway/">
+    <Project Path="PetMonitoring.ApiGateway/PetMonitoring.ApiGateway.csproj" />
+  </Folder>
+</Solution>
