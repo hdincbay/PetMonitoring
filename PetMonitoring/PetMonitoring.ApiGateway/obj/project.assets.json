@@ -489,11 +489,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj",
       "projectName": "PetMonitoring.ApiGateway",
-      "projectPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj",
+      "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj",
       "packagesPath": "C:\\Users\\hdinc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1266,11 +1266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+      "projectUniqueName": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
       "projectName": "PetMonitoring.Health.API",
-      "projectPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+      "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
       "packagesPath": "C:\\Users\\hdinc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\obj\\",
+      "outputPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1291,11 +1291,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj": {
-              "projectPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj"
+            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj": {
+              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj"
             },
-            "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\📁 PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\hdinc\\OneDrive\\GitHub\\PetMonitoring\\PetMonitoring\\📁 PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj"
+            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\📁 PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\📁 PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj"
             }
           }
         }

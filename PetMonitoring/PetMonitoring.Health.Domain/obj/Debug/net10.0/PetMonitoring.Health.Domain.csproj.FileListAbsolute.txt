@@ -1,0 +1,12 @@
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\bin\Debug\net10.0\PetMonitoring.Health.Domain.deps.json
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\bin\Debug\net10.0\PetMonitoring.Health.Domain.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\bin\Debug\net10.0\PetMonitoring.Health.Domain.pdb
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.AssemblyInfoInputs.cache
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.AssemblyInfo.cs
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.sourcelink.json
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\refint\PetMonitoring.Health.Domain.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\PetMonitoring.Health.Domain.pdb
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Domain\obj\Debug\net10.0\ref\PetMonitoring.Health.Domain.dll

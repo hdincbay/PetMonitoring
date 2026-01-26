@@ -1,0 +1,16 @@
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\bin\Debug\net10.0\PetMonitoring.Health.Application.deps.json
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\bin\Debug\net10.0\PetMonitoring.Health.Application.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\bin\Debug\net10.0\PetMonitoring.Health.Application.pdb
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\bin\Debug\net10.0\PetMonitoring.Health.Domain.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\bin\Debug\net10.0\PetMonitoring.Health.Domain.pdb
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.csproj.AssemblyReference.cache
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.AssemblyInfoInputs.cache
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.AssemblyInfo.cs
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.sourcelink.json
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonit.CB2E31B8.Up2Date
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\refint\PetMonitoring.Health.Application.dll
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\PetMonitoring.Health.Application.pdb
+C:\Users\hdinc\OneDrive\GitHub\PetMonitoring\PetMonitoring\PetMonitoring.Health.Application\obj\Debug\net10.0\ref\PetMonitoring.Health.Application.dll
