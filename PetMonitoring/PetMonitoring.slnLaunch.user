@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

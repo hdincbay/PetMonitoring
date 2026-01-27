@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Infrastructure.Persistence;
 using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,15 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IHeartRateRepository, HeartRateRepository>();
+builder.Services.AddDbContext<HealthDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("HealthDb"),
+        sql =>
+        {
+            sql.MigrationsAssembly("PetMonitoring.Health.Infrastructure");
+            sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
+        }));
+
 
 var app = builder.Build();
 

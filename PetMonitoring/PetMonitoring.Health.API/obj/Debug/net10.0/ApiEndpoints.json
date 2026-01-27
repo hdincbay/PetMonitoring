@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "PetMonitoring.Health.API.Controllers.HeartRateController",
+    "Method": "Add",
+    "RelativePath": "api/HeartRate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.Health.Domain.Entities.HeartRateRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.Health.API.Controllers.HeartRateController",
+    "Method": "GetByPet",
+    "RelativePath": "api/HeartRate/{petId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
