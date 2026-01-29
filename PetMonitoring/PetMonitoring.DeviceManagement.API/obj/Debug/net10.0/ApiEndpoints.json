@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
+    "Method": "Add",
+    "RelativePath": "api/Device",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.DeviceManagement.Domain.Entities.DeviceRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
+    "Method": "GetByPet",
+    "RelativePath": "api/Device/{petId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

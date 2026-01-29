@@ -9,6 +9,10 @@
       {
         "Path": "PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj",
+        "Action": "Start"
       }
     ]
   }

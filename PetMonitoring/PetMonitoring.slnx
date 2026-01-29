@@ -3,6 +3,12 @@
     <Project Path="PetMonitoring.ApiGateway/PetMonitoring.ApiGateway.csproj" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/DeviceManagement/">
+    <Project Path="PetMonitoring.DeviceManagement.API/PetMonitoring.DeviceManagement.API.csproj" Id="6afecc14-3ff6-4571-bb29-848a4999377f" />
+    <Project Path="PetMonitoring.DeviceManagement.Application/PetMonitoring.DeviceManagement.Application.csproj" Id="19165952-79a7-4c76-9ea1-8783f83f83cd" />
+    <Project Path="PetMonitoring.DeviceManagement.Domain/PetMonitoring.DeviceManagement.Domain.csproj" Id="560e1ca8-ca3d-405c-979d-192172500805" />
+    <Project Path="PetMonitoring.DeviceManagement.Infrastructure/PetMonitoring.DeviceManagement.Infrastructure.csproj" Id="5b2f6b73-7b71-47de-9c04-fbadf5e65416" />
+  </Folder>
   <Folder Name="/Services/Health/">
     <Project Path="PetMonitoring.Health.API/PetMonitoring.Health.API.csproj" Id="0db6f972-0fa1-42b1-b361-45d0db4a702d" />
     <Project Path="PetMonitoring.Health.Application/PetMonitoring.Health.Application.csproj" Id="271db2c1-c049-43e7-87cc-e0731e0427cd" />
