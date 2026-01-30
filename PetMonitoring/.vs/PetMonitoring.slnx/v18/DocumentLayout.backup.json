@@ -3,20 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B2F6B73-7B71-47DE-9C04-FBADF5E65416}|PetMonitoring.DeviceManagement.Infrastructure\\PetMonitoring.DeviceManagement.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.infrastructure\\persistence\\migrations\\20260129225346_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2F6B73-7B71-47DE-9C04-FBADF5E65416}|PetMonitoring.DeviceManagement.Infrastructure\\PetMonitoring.DeviceManagement.Infrastructure.csproj|solutionrelative:petmonitoring.devicemanagement.infrastructure\\persistence\\migrations\\20260129225346_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|solutionrelative:petmonitoring.devicemanagement.api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\petmonitoring.health.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\petmonitoring.health.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\petmonitoring.health.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\petmonitoring.health.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.api\\petmonitoring.devicemanagement.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|solutionrelative:petmonitoring.devicemanagement.api\\petmonitoring.devicemanagement.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\petmonitoring.apigateway.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\petmonitoring.apigateway.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.application\\commands\\createheartratecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|solutionrelative:petmonitoring.health.application\\commands\\createheartratecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.application\\validators\\createheartratecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|solutionrelative:petmonitoring.health.application\\validators\\createheartratecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19165952-79A7-4C76-9EA1-8783F83F83CD}|PetMonitoring.DeviceManagement.Application\\PetMonitoring.DeviceManagement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.application\\commands\\createdevicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19165952-79A7-4C76-9EA1-8783F83F83CD}|PetMonitoring.DeviceManagement.Application\\PetMonitoring.DeviceManagement.Application.csproj|solutionrelative:petmonitoring.devicemanagement.application\\commands\\createdevicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|solutionrelative:petmonitoring.devicemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.application\\services\\heartrateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|solutionrelative:petmonitoring.health.application\\services\\heartrateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488910E7-765C-433C-AE69-A398D688D6E0}|PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.domain\\entities\\heartraterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488910E7-765C-433C-AE69-A398D688D6E0}|PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj|solutionrelative:petmonitoring.health.domain\\entities\\heartraterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2F6B73-7B71-47DE-9C04-FBADF5E65416}|PetMonitoring.DeviceManagement.Infrastructure\\PetMonitoring.DeviceManagement.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.infrastructure\\persistence\\migrations\\20260129225346_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2F6B73-7B71-47DE-9C04-FBADF5E65416}|PetMonitoring.DeviceManagement.Infrastructure\\PetMonitoring.DeviceManagement.Infrastructure.csproj|solutionrelative:petmonitoring.devicemanagement.infrastructure\\persistence\\migrations\\20260129225346_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129224732_InitialCreate_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,6 +107,218 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "PetMonitoring.ApiGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\appsettings.json",
+              "RelativeToolTip": "PetMonitoring.ApiGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-30T21:40:22.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PetMonitoring.Health.API",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+              "RelativeToolTip": "PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-30T21:49:34.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\appsettings.json",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\appsettings.json",
+              "RelativeToolTip": "PetMonitoring.Health.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-30T21:50:10.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:37:36.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Program.cs",
+              "RelativeToolTip": "PetMonitoring.ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:51:06.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PetMonitoring.Health.API.http",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.http",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\PetMonitoring.Health.API.http",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\PetMonitoring.Health.API.http",
+              "RelativeToolTip": "PetMonitoring.Health.API\\PetMonitoring.Health.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-30T21:49:38.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PetMonitoring.DeviceManagement.API.http",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.http",
+              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.http",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.http",
+              "RelativeToolTip": "PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-30T21:58:22.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PetMonitoring.Health.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-30T21:50:02.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PetMonitoring.ApiGateway.http",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.http",
+              "RelativeDocumentMoniker": "PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.http",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.http",
+              "RelativeToolTip": "PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-30T21:54:12.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateDeviceCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Application\\Commands\\CreateDeviceCommand.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Application\\Commands\\CreateDeviceCommand.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Application\\Commands\\CreateDeviceCommand.cs",
+              "RelativeToolTip": "PetMonitoring.DeviceManagement.Application\\Commands\\CreateDeviceCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:37:42.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Program.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Program.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Program.cs",
+              "RelativeToolTip": "PetMonitoring.Health.API\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:50:45.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateHeartRateCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Validators\\CreateHeartRateCommandValidator.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Validators\\CreateHeartRateCommandValidator.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Validators\\CreateHeartRateCommandValidator.cs",
+              "RelativeToolTip": "PetMonitoring.Health.Application\\Validators\\CreateHeartRateCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:26:58.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateHeartRateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\CreateHeartRateCommand.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Commands\\CreateHeartRateCommand.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\CreateHeartRateCommand.cs",
+              "RelativeToolTip": "PetMonitoring.Health.Application\\Commands\\CreateHeartRateCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:27:07.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.API\\Program.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Program.cs",
+              "RelativeToolTip": "PetMonitoring.DeviceManagement.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:37:33.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HeartRateService.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Services\\HeartRateService.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Services\\HeartRateService.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Services\\HeartRateService.cs",
+              "RelativeToolTip": "PetMonitoring.Health.Application\\Services\\HeartRateService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:27:04.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HeartRateRecord.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
+              "RelativeToolTip": "PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T21:26:43.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "20260129225346_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Persistence\\Migrations\\20260129225346_InitialCreate.cs",
               "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Infrastructure\\Persistence\\Migrations\\20260129225346_InitialCreate.cs",
@@ -63,59 +331,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "20260129225135_InitialCreate_2.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs",
               "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs",
               "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs",
               "RelativeToolTip": "PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129225135_InitialCreate_2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T22:51:35.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T22:51:35.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Program.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Program.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Program.cs",
-              "RelativeToolTip": "PetMonitoring.Health.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T22:50:45.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "20260129224732_InitialCreate_2.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129224732_InitialCreate_2.cs",
               "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129224732_InitialCreate_2.cs",
               "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129224732_InitialCreate_2.cs",
               "RelativeToolTip": "PetMonitoring.DeviceManagement.Infrastructure\\Migrations\\20260129224732_InitialCreate_2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T22:47:32.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T22:47:32.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "DeviceRepository.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Repositories\\DeviceRepository.cs",
               "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Infrastructure\\Repositories\\DeviceRepository.cs",
               "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Repositories\\DeviceRepository.cs",
               "RelativeToolTip": "PetMonitoring.DeviceManagement.Infrastructure\\Repositories\\DeviceRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAhwBcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIA3wBcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T22:38:15.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "DeviceManagementDbContext.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Infrastructure\\Persistence\\DeviceManagementDbContext.cs",
               "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.Infrastructure\\Persistence\\DeviceManagementDbContext.cs",
@@ -124,19 +375,6 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T22:38:09.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Program.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.API\\Program.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Program.cs",
-              "RelativeToolTip": "PetMonitoring.DeviceManagement.API\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAowCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T22:37:33.063Z",
               "EditorCaption": ""
             }
           ]

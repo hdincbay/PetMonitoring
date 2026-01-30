@@ -15,7 +15,6 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
         {
             _repository = repository;
         }
-
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] DeviceRecord record)
         {
