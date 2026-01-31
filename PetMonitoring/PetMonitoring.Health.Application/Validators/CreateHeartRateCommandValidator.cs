@@ -17,7 +17,7 @@ public class CreateHeartRateCommandValidator
         RuleFor(x => x.Bpm)
             .InclusiveBetween(30, 300);
 
-        RuleFor(x => x.MeasuredAt)
+        RuleFor(x => x.CreatedDate)
             .LessThanOrEqualTo(DateTime.UtcNow);
     }
 }

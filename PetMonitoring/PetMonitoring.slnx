@@ -15,4 +15,10 @@
     <Project Path="PetMonitoring.Health.Domain/PetMonitoring.Health.Domain.csproj" Id="488910e7-765c-433c-ae69-a398d688d6e0" />
     <Project Path="PetMonitoring.Health.Infrastructure/PetMonitoring.Health.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/Services/Movement/">
+    <Project Path="PetMonitoring.Movement.API/PetMonitoring.Movement.API.csproj" Id="ad2a31c3-68ae-4007-b620-b17e14994a43" />
+    <Project Path="PetMonitoring.Movement.Application/PetMonitoring.Movement.Application.csproj" Id="fb494857-b71c-483a-a724-08e1322f66e6" />
+    <Project Path="PetMonitoring.Movement.Domain/PetMonitoring.Movement.Domain.csproj" Id="da940f15-cd7d-4968-b4a3-70d5355746f9" />
+    <Project Path="PetMonitoring.Movement.Infrastructure/PetMonitoring.Movement.Infrastructure.csproj" Id="80cd246a-05e1-4fd0-afbf-27303e5b8452" />
+  </Folder>
 </Solution>

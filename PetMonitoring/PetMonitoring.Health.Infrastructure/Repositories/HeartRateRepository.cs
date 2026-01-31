@@ -23,7 +23,7 @@ public class HeartRateRepository : IHeartRateRepository
     {
         return await _context.HeartRateRecords
             .Where(x => x.PetId == petId)
-            .OrderByDescending(x => x.MeasuredAt)
+            .OrderByDescending(x => x.CreatedDate)
             .ToListAsync();
     }
 }

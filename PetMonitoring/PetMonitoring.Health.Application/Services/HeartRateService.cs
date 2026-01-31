@@ -19,7 +19,7 @@ public class HeartRateService
             command.PetId,
             command.DeviceId,
             command.Bpm,
-            command.MeasuredAt
+            command.CreatedDate
         );
 
         await _repository.AddAsync(record);

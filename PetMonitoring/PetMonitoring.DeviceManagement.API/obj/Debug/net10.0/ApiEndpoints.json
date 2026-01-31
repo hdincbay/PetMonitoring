@@ -30,15 +30,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
-    "Method": "Ping",
-    "RelativePath": "api/Device/ping",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

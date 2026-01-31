@@ -15,7 +15,6 @@ namespace PetMonitoring.Health.API.Controllers
         {
             _repository = repository;
         }
-
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] HeartRateRecord record)
         {
