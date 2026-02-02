@@ -31,18 +31,18 @@ namespace __PetMonitoring.Health.Infrastructure.Persistence.Migrations
                     b.Property<int>("Bpm")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<Guid>("DeviceId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("MeasuredAt")
-                        .HasColumnType("datetime2");
 
                     b.Property<Guid>("PetId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PetId", "MeasuredAt");
+                    b.HasIndex("PetId", "CreatedDate");
 
                     b.ToTable("HeartRateRecords");
                 });

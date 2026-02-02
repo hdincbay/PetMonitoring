@@ -13,6 +13,18 @@
     }
   ],
   "paths": {
+    "/api/HeartRate/Test": {
+      "get": {
+        "tags": [
+          "HeartRate"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/HeartRate": {
       "post": {
         "tags": [
@@ -94,7 +106,7 @@
             ],
             "format": "int32"
           },
-          "measuredAt": {
+          "createdDate": {
             "type": "string",
             "format": "date-time"
           }

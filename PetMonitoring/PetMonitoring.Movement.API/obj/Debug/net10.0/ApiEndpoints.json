@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
+    "Method": "Add",
+    "RelativePath": "api/Movement",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.Movement.Domain.Entities.MovementRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
+    "Method": "GetByPet",
+    "RelativePath": "api/Movement/{petId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
+    "Method": "Test2",
+    "RelativePath": "api/Movement/Test2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
