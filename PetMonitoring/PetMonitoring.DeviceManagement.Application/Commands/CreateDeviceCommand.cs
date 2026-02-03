@@ -3,5 +3,6 @@
 public sealed record CreateDeviceCommand
 (
     Guid PetId,
-    DateTime CreatedDate
+    DateTime CreatedDate,
+    int BatteryPercentage
 );

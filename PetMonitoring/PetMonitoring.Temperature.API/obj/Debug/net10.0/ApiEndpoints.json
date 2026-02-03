@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "PetMonitoring.Temperature.API.Controllers.TemperatureController",
+    "Method": "Add",
+    "RelativePath": "api/Temperature",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.Temperature.Domain.Entities.TemperatureRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.Temperature.API.Controllers.TemperatureController",
+    "Method": "GetByPet",
+    "RelativePath": "api/Temperature/{petId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "petId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

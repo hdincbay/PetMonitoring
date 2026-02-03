@@ -17,6 +17,10 @@
       {
         "Path": "PetMonitoring.Movement.API\\PetMonitoring.Movement.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "PetMonitoring.Temperature.API\\PetMonitoring.Temperature.API.csproj",
+        "Action": "Start"
       }
     ]
   }

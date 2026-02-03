@@ -16,7 +16,8 @@ public class DeviceService
     public async Task HandleAsync(CreateDeviceCommand command)
     {
         var record = new DeviceRecord(
-            command.PetId
+            command.PetId,
+            command.BatteryPercentage
         );
 
         await _repository.AddAsync(record);
