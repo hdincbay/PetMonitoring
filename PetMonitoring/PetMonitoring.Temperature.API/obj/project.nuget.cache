@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YPDF92FwZN4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.API\\PetMonitoring.Temperature.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hdinc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
+    "C:\\Users\\hdinc\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -30,15 +30,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
-    "Method": "Test2",
-    "RelativePath": "api/Movement/Test2",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

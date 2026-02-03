@@ -21,4 +21,10 @@
     <Project Path="PetMonitoring.Movement.Domain/PetMonitoring.Movement.Domain.csproj" Id="da940f15-cd7d-4968-b4a3-70d5355746f9" />
     <Project Path="PetMonitoring.Movement.Infrastructure/PetMonitoring.Movement.Infrastructure.csproj" Id="80cd246a-05e1-4fd0-afbf-27303e5b8452" />
   </Folder>
+  <Folder Name="/Services/Temperature/">
+    <Project Path="PetMonitoring.Temperature.API/PetMonitoring.Temperature.API.csproj" Id="62f0af1d-0161-48a3-a1a4-94a1b96dc04c" />
+    <Project Path="PetMonitoring.Temperature.Application/PetMonitoring.Temperature.Application.csproj" Id="f7c067a9-643e-470a-8b07-4b63400b10ec" />
+    <Project Path="PetMonitoring.Temperature.Domain/PetMonitoring.Temperature.Domain.csproj" Id="deeed883-acb4-4a55-8f45-03d6a7bac106" />
+    <Project Path="PetMonitoring.Temperature.Infrastructure/PetMonitoring.Temperature.Infrastructure.csproj" Id="44be11d0-e415-49f5-aedf-e8e78b7539ee" />
+  </Folder>
 </Solution>

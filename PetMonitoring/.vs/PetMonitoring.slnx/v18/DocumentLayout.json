@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE76559-ED7B-4D44-B40C-DFCC5C326980}|PetMonitoring.Movement.API\\PetMonitoring.Movement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE76559-ED7B-4D44-B40C-DFCC5C326980}|PetMonitoring.Movement.API\\PetMonitoring.Movement.API.csproj|solutionrelative:petmonitoring.movement.api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.application\\commands\\createtemperaturecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|solutionrelative:petmonitoring.temperature.application\\commands\\createtemperaturecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\controllers\\heartratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\controllers\\heartratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEEED883-ACB4-4A55-8F45-03D6A7BAC106}|PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.domain\\entities\\heartraterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEEED883-ACB4-4A55-8F45-03D6A7BAC106}|PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj|solutionrelative:petmonitoring.temperature.domain\\entities\\heartraterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.application\\validators\\createtemperaturecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|solutionrelative:petmonitoring.temperature.application\\validators\\createtemperaturecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\services\\movementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\services\\movementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.application\\services\\temperatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|solutionrelative:petmonitoring.temperature.application\\services\\temperatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\interfaces\\imovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\interfaces\\imovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.application\\interfaces\\itemperaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C067A9-643E-470A-8B07-4B63400B10EC}|PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj|solutionrelative:petmonitoring.temperature.application\\interfaces\\itemperaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4AED621-B346-04F5-18DD-E904C1D4015A}|PetMonitoring.ApiGateway\\PetMonitoring.ApiGateway.csproj|solutionrelative:petmonitoring.apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +46,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Program.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.ApiGateway\\Program.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Program.cs",
-              "RelativeToolTip": "PetMonitoring.ApiGateway\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TemperatureService.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Services\\TemperatureService.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Temperature.Application\\Services\\TemperatureService.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Services\\TemperatureService.cs",
+              "RelativeToolTip": "PetMonitoring.Temperature.Application\\Services\\TemperatureService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:02:11.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:30:34.529Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IMovementRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
-              "RelativeToolTip": "PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ITemperatureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Interfaces\\ITemperatureRepository.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Temperature.Application\\Interfaces\\ITemperatureRepository.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Interfaces\\ITemperatureRepository.cs",
+              "RelativeToolTip": "PetMonitoring.Temperature.Application\\Interfaces\\ITemperatureRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:40:31.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MovementService.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Services\\MovementService.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Services\\MovementService.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Services\\MovementService.cs",
-              "RelativeToolTip": "PetMonitoring.Movement.Application\\Services\\MovementService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:40:27.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:30:20.522Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MovementController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "RelativeToolTip": "PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "CreateTemperatureCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Commands\\CreateTemperatureCommand.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Temperature.Application\\Commands\\CreateTemperatureCommand.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Commands\\CreateTemperatureCommand.cs",
+              "RelativeToolTip": "PetMonitoring.Temperature.Application\\Commands\\CreateTemperatureCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:40:13.394Z",
+              "WhenOpened": "2026-02-03T09:28:21.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HeartRateController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "RelativeToolTip": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateTemperatureCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Validators\\CreateTemperatureCommandValidator.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Temperature.Application\\Validators\\CreateTemperatureCommandValidator.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\Validators\\CreateTemperatureCommandValidator.cs",
+              "RelativeToolTip": "PetMonitoring.Temperature.Application\\Validators\\CreateTemperatureCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:39:58.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:27:21.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeartRateRecord.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\Entities\\HeartRateRecord.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Temperature.Domain\\Entities\\HeartRateRecord.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\Entities\\HeartRateRecord.cs",
+              "RelativeToolTip": "PetMonitoring.Temperature.Domain\\Entities\\HeartRateRecord.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:20:43.276Z"
             },
             {
               "$type": "Document",
@@ -114,7 +115,19 @@
               "RelativeToolTip": "PetMonitoring.ApiGateway\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-01T15:39:45.486Z"
+              "WhenOpened": "2026-02-02T09:52:25.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PetMonitoring.ApiGateway\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.ApiGateway\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PetMonitoring.ApiGateway\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-02T09:52:22.075Z"
             }
           ]
         }

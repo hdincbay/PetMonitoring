@@ -13,18 +13,6 @@
     }
   ],
   "paths": {
-    "/api/Movement/Test2": {
-      "get": {
-        "tags": [
-          "Movement"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Movement": {
       "post": {
         "tags": [
