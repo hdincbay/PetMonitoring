@@ -13,7 +13,7 @@ public class HeartRateService : IHeartRateService
         _repository = repository;
     }
 
-    public async Task HandleAsync(CreateHeartRateCommand command)
+    public async Task AddAsync(CreateHeartRateCommand command)
     {
         var record = new HeartRateRecord(
             command.PetId,
@@ -23,5 +23,10 @@ public class HeartRateService : IHeartRateService
         );
 
         await _repository.AddAsync(record);
+    }
+
+    public Task<IEnumerable<HeartRateRecord>> GetByPetIdAsync(Guid petId)
+    {
+        return _repository.GetByPetIdAsync(petId);
     }
 }

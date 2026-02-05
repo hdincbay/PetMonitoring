@@ -14,7 +14,7 @@ public class DeviceService : IDeviceService
         _repository = repository;
     }
 
-    public async Task HandleAsync(CreateDeviceCommand command)
+    public async Task AddAsync(CreateDeviceCommand command)
     {
         var record = new DeviceRecord(
             command.PetId,
@@ -22,5 +22,10 @@ public class DeviceService : IDeviceService
         );
 
         await _repository.AddAsync(record);
+    }
+
+    public Task<IEnumerable<DeviceRecord>> GetByPetIdAsync(Guid petId)
+    {
+        return _repository.GetByPetIdAsync(petId);
     }
 }

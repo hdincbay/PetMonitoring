@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.DeviceManagement.Application.Commands;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Domain.Entities;
+using PetMonitoring.Health.Application.Interfaces;
 
 namespace PetMonitoring.DeviceManagement.API.Controllers
 {
@@ -9,24 +11,24 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
     [ApiController]
     public class DeviceController : ControllerBase
     {
-        private readonly IDeviceRepository _repository;
+        private readonly IDeviceService _service;
 
-        public DeviceController(IDeviceRepository repository)
+        public DeviceController(IDeviceService service)
         {
-            _repository = repository;
+            _service = service;
         }
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] DeviceRecord record)
+        public async Task<IActionResult> Add([FromBody] CreateDeviceCommand record)
         {
-            await _repository.AddAsync(record);
+            await _service.AddAsync(record);
             return Ok();
         }
 
         [HttpGet("{petId}")]
         public async Task<IActionResult> GetByPet(Guid petId)
         {
-            var data = await _repository.GetByPetIdAsync(petId);
-            return Ok(data);
+            var data = await _service.GetByPetIdAsync(petId);
+            return Ok();
         }
     }
 }

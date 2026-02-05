@@ -6,5 +6,6 @@ namespace PetMonitoring.Health.Application.Interfaces;
 
 public interface ITemperatureService
 {
-    public Task HandleAsync(CreateTemperatureCommand command);
+    public Task AddAsync(CreateTemperatureCommand command);
+    public Task<IEnumerable<TemperatureRecord>> GetByPetIdAsync(Guid petId);
 }

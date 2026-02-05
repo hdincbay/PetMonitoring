@@ -6,5 +6,6 @@ namespace PetMonitoring.Health.Application.Interfaces;
 
 public interface IHeartRateService
 {
-    public Task HandleAsync(CreateHeartRateCommand command);
+    public Task AddAsync(CreateHeartRateCommand command);
+    public Task<IEnumerable<HeartRateRecord>> GetByPetIdAsync(Guid petId);
 }

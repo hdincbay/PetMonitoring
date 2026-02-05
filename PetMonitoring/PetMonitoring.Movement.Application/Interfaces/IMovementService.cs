@@ -7,5 +7,6 @@ namespace PetMonitoring.Health.Application.Interfaces;
 
 public interface IMovementService
 {
-    public Task HandleAsync(CreateMovementCommand command);
+    public Task AddAsync(CreateMovementCommand command);
+    public Task<IEnumerable<MovementRecord>> GetByPetIdAsync(Guid petId);
 }

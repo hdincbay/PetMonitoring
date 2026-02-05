@@ -14,7 +14,7 @@ public class TemperatureService : ITemperatureService
         _repository = repository;
     }
 
-    public async Task HandleAsync(CreateTemperatureCommand command)
+    public async Task AddAsync(CreateTemperatureCommand command)
     {
         var record = new TemperatureRecord(
             command.PetId,
@@ -24,5 +24,10 @@ public class TemperatureService : ITemperatureService
         );
 
         await _repository.AddAsync(record);
+    }
+
+    public Task<IEnumerable<TemperatureRecord>> GetByPetIdAsync(Guid petId)
+    {
+        return _repository.GetByPetIdAsync(petId);
     }
 }

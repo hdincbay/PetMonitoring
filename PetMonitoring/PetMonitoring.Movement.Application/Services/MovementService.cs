@@ -14,8 +14,7 @@ public class MovementService : IMovementService
     {
         _repository = repository;
     }
-
-    public async Task HandleAsync(CreateMovementCommand command)
+    public async Task AddAsync(CreateMovementCommand command)
     {
         var record = new MovementRecord(
             command.PetId,
@@ -28,5 +27,10 @@ public class MovementService : IMovementService
         );
 
         await _repository.AddAsync(record);
+    }
+
+    public async Task<IEnumerable<MovementRecord>> GetByPetIdAsync(Guid petId)
+    {
+        return await _repository.GetByPetIdAsync(petId);
     }
 }
