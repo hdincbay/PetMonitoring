@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Health.Application.Interfaces;
 using PetMonitoring.Temperature.Application.Interfaces;
 using PetMonitoring.Temperature.Domain.Entities;
 
@@ -9,24 +10,25 @@ namespace PetMonitoring.Temperature.API.Controllers
     [ApiController]
     public class TemperatureController : ControllerBase
     {
-        private readonly ITemperatureRepository _repository;
+        private readonly ITemperatureService _service;
 
-        public TemperatureController(ITemperatureRepository repository)
+        public TemperatureController(ITemperatureService service)
         {
-            _repository = repository;
+            _service = service;
         }
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] TemperatureRecord record)
         {
-            await _repository.AddAsync(record);
+
+            //await _service.HandleAsync(record);
             return Ok();
         }
 
         [HttpGet("{petId}")]
         public async Task<IActionResult> GetByPet(Guid petId)
         {
-            var data = await _repository.GetByPetIdAsync(petId);
-            return Ok(data);
+            //var data = await _repository.GetByPetIdAsync(petId);
+            return Ok();
         }
     }
 }

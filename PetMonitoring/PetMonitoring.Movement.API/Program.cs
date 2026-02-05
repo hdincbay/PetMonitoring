@@ -1,5 +1,7 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Application.Services;
 using PetMonitoring.Health.Application.Validators;
 using PetMonitoring.Health.Infrastructure.Persistence;
 using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
@@ -16,6 +18,7 @@ builder.Services.AddValidatorsFromAssembly(
     typeof(CreateMovementCommandValidator).Assembly
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddScoped<IMovementService, MovementService>();
 builder.Services.AddScoped<IMovementRepository, MovementRepository>();
 builder.Services.AddDbContext<MovementDbContext>(options =>
     options.UseSqlServer(

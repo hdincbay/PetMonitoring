@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yT8rb3hh0qg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Application\\PetMonitoring.DeviceManagement.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hdinc\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

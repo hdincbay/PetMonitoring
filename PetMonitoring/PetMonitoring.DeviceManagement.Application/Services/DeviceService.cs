@@ -1,10 +1,11 @@
 ﻿using PetMonitoring.DeviceManagement.Application.Commands;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Domain.Entities;
+using PetMonitoring.Health.Application.Interfaces;
 
 namespace PetMonitoring.Health.Application.Services;
 
-public class DeviceService
+public class DeviceService : IDeviceService
 {
     private readonly IDeviceRepository _repository;
 

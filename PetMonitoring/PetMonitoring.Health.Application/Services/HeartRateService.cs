@@ -4,7 +4,7 @@ using PetMonitoring.Health.Domain.Entities;
 
 namespace PetMonitoring.Health.Application.Services;
 
-public class HeartRateService
+public class HeartRateService : IHeartRateService
 {
     private readonly IHeartRateRepository _repository;
 

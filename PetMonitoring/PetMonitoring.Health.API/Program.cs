@@ -1,6 +1,7 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Application.Services;
 using PetMonitoring.Health.Application.Validators;
 using PetMonitoring.Health.Infrastructure.Persistence;
 using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
@@ -15,6 +16,7 @@ builder.Services.AddValidatorsFromAssembly(
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IHeartRateService, HeartRateService>();
 builder.Services.AddScoped<IHeartRateRepository, HeartRateRepository>();
 builder.Services.AddDbContext<HealthDbContext>(options =>
     options.UseSqlServer(

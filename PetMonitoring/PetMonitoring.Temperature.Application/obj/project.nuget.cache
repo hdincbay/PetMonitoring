@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aSCTeBHVG+4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hdinc\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

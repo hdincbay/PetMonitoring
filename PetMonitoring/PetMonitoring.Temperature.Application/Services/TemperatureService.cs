@@ -1,10 +1,11 @@
-﻿using PetMonitoring.Temperature.Application.Commands;
+﻿using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Temperature.Application.Commands;
 using PetMonitoring.Temperature.Application.Interfaces;
 using PetMonitoring.Temperature.Domain.Entities;
 
 namespace PetMonitoring.Health.Application.Services;
 
-public class TemperatureService
+public class TemperatureService : ITemperatureService
 {
     private readonly ITemperatureRepository _repository;
 

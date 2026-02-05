@@ -1,5 +1,7 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Application.Services;
 using PetMonitoring.Health.Infrastructure.Persistence;
 using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
 using PetMonitoring.Temperature.Application.Interfaces;
@@ -15,6 +17,7 @@ builder.Services.AddValidatorsFromAssembly(
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<ITemperatureService, TemperatureService>();
 builder.Services.AddScoped<ITemperatureRepository, TemperatureRepository>();
 builder.Services.AddDbContext<TemperatureDbContext>(options =>
     options.UseSqlServer(

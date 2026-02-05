@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence.Repositories;
+using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Application.Services;
 using PetMonitoring.Health.Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,7 @@ builder.Services.AddValidatorsFromAssembly(
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IDeviceService, DeviceService>();
 builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
 builder.Services.AddDbContext<DeviceManagementDbContext>(options =>
     options.UseSqlServer(
