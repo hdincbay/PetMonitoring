@@ -18,7 +18,8 @@ namespace PetMonitoring.Health.Domain.Entities
             {
                 PetId = petId,
                 DeviceId = deviceId,
-                Bpm = bpm
+                Bpm = bpm,
+                CreatedDate = DateTime.Now
             };
         }
     }
