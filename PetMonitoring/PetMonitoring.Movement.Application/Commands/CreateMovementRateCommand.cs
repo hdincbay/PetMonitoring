@@ -6,7 +6,6 @@ public sealed record CreateMovementCommand
 (
     Guid PetId,
     Guid DeviceId,
-    DateTime CreatedDate,
     int StepCount,
     double DistanceInMeters,
     ActivityLevel ActivityLevel,

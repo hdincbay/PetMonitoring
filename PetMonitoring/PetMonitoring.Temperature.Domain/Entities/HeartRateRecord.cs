@@ -15,12 +15,12 @@ namespace PetMonitoring.Temperature.Domain.Entities
         {
             
         }
-        public TemperatureRecord(Guid petId, Guid deviceId, DateTime createdDate, decimal celsiusValue)
+        public TemperatureRecord(Guid petId, Guid deviceId, decimal celsiusValue)
         {
             CelsiusValue = celsiusValue;
             PetId = petId;
             DeviceId = deviceId;
-            CreatedDate = createdDate;
+            CreatedDate = DateTime.Now;
         }
     }
 }

@@ -19,7 +19,6 @@ public class TemperatureService : ITemperatureService
         var record = new TemperatureRecord(
             command.PetId,
             command.DeviceId,
-            command.CreatedDate,
             command.CelsiusValue
         );
 

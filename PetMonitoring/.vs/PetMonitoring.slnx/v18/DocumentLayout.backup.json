@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.devicemanagement.api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AFECC14-3FF6-4571-BB29-848A4999377F}|PetMonitoring.DeviceManagement.API\\PetMonitoring.DeviceManagement.API.csproj|solutionrelative:petmonitoring.devicemanagement.api\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.api\\controllers\\heartratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB6F972-0FA1-42B1-B361-45D0DB4A702D}|PetMonitoring.Health.API\\PetMonitoring.Health.API.csproj|solutionrelative:petmonitoring.health.api\\controllers\\heartratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE76559-ED7B-4D44-B40C-DFCC5C326980}|PetMonitoring.Movement.API\\PetMonitoring.Movement.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE76559-ED7B-4D44-B40C-DFCC5C326980}|PetMonitoring.Movement.API\\PetMonitoring.Movement.API.csproj|solutionrelative:petmonitoring.movement.api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F0AF1D-0161-48A3-A1A4-94A1B96DC04C}|PetMonitoring.Temperature.API\\PetMonitoring.Temperature.API.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.temperature.api\\controllers\\temperaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F0AF1D-0161-48A3-A1A4-94A1B96DC04C}|PetMonitoring.Temperature.API\\PetMonitoring.Temperature.API.csproj|solutionrelative:petmonitoring.temperature.api\\controllers\\temperaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,60 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
-              "RelativeToolTip": "PetMonitoring.DeviceManagement.API\\Controllers\\DeviceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T20:24:09.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HeartRateController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "RelativeToolTip": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T20:22:46.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MovementController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "RelativeToolTip": "PetMonitoring.Movement.API\\Controllers\\MovementController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T20:22:43.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TemperatureController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.API\\Controllers\\TemperatureController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Temperature.API\\Controllers\\TemperatureController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.API\\Controllers\\TemperatureController.cs",
-              "RelativeToolTip": "PetMonitoring.Temperature.API\\Controllers\\TemperatureController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T20:22:38.288Z"
             }
           ]
         }

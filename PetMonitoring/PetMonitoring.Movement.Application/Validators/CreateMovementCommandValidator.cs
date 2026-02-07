@@ -13,8 +13,5 @@ public class CreateMovementCommandValidator
 
         RuleFor(x => x.DeviceId)
             .NotEmpty();
-
-        RuleFor(x => x.CreatedDate)
-            .LessThanOrEqualTo(DateTime.UtcNow);
     }
 }

@@ -12,9 +12,6 @@ public class CreateDeviceCommandValidator
         RuleFor(x => x.PetId)
             .NotEmpty();
 
-        RuleFor(x => x.CreatedDate)
-            .LessThanOrEqualTo(DateTime.UtcNow);
-
         RuleFor(x => x.BatteryPercentage)
             .InclusiveBetween(0, 100)
             .WithMessage("Battery percentage must be between 0 and 100.");

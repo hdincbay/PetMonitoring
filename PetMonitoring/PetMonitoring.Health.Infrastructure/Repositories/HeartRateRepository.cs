@@ -13,7 +13,7 @@ public class HeartRateRepository : IHeartRateRepository
         _context = context;
     }
 
-    public async Task AddAsync(HeartRateRecord record)
+    public async Task AddAsync(HeartRateRecord record, CancellationToken cancellationToken)
     {
         await _context.HeartRateRecords.AddAsync(record);
         await _context.SaveChangesAsync();

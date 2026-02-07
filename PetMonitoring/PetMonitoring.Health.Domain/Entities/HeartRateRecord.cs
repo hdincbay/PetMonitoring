@@ -11,18 +11,15 @@ namespace PetMonitoring.Health.Domain.Entities
         public Guid DeviceId { get; private set; }
         public int Bpm { get; private set; }
         public DateTime CreatedDate { get; set; }
-        public HeartRateRecord()
+        private HeartRateRecord(){}
+        public static HeartRateRecord Create(Guid petId, Guid deviceId, int bpm)
         {
-            
-        }
-        public HeartRateRecord(Guid petId, Guid deviceId, int bpm, DateTime createdDate)
-        {
-            if (bpm < 30 || bpm > 300)
-                throw new ArgumentException("Invalid BPM value!");
-            PetId = petId;
-            DeviceId = deviceId;
-            Bpm = bpm;
-            CreatedDate = createdDate;
+            return new HeartRateRecord
+            {
+                PetId = petId,
+                DeviceId = deviceId,
+                Bpm = bpm
+            };
         }
     }
 }

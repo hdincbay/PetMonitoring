@@ -1,8 +1,7 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.Health.Application.Commands.AddHeartRate;
 using PetMonitoring.Health.Application.Interfaces;
-using PetMonitoring.Health.Application.Services;
-using PetMonitoring.Health.Application.Validators;
 using PetMonitoring.Health.Infrastructure.Persistence;
 using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
 
@@ -12,11 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(
-    typeof(CreateHeartRateCommandValidator).Assembly
+    typeof(AddHeartRateCommandValidator).Assembly
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IHeartRateService, HeartRateService>();
 builder.Services.AddScoped<IHeartRateRepository, HeartRateRepository>();
 builder.Services.AddDbContext<HealthDbContext>(options =>
     options.UseSqlServer(
@@ -26,7 +24,10 @@ builder.Services.AddDbContext<HealthDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.Health.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
-
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(AddHeartRateCommandHandler).Assembly);
+});
 
 var app = builder.Build();
 
