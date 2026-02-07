@@ -1,6 +1,5 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using PetMonitoring.Health.Application.Interfaces;
 using PetMonitoring.Health.Application.Services;
 using PetMonitoring.Health.Application.Validators;
 using PetMonitoring.Health.Infrastructure.Persistence;

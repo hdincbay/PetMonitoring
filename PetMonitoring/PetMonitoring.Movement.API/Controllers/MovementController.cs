@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Movement.Application.Commands;
 using PetMonitoring.Movement.Application.Interfaces;
-using PetMonitoring.Movement.Domain.Entities;
 
 namespace PetMonitoring.Movement.API.Controllers
 {
@@ -8,23 +8,23 @@ namespace PetMonitoring.Movement.API.Controllers
     [Route("api/[controller]")]
     public class MovementController : ControllerBase
     {
-        private readonly IMovementRepository _repository;
+        private readonly IMovementService _service;
 
-        public MovementController(IMovementRepository repository)
+        public MovementController(IMovementService service)
         {
-            _repository = repository;
+            _service = service;
         }
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] MovementRecord record)
+        public async Task<IActionResult> Add([FromBody] CreateMovementCommand record)
         {
-            await _repository.AddAsync(record);
+            await _service.AddAsync(record);
             return Ok();
         }
 
         [HttpGet("{petId}")]
-        public async Task<IActionResult> GetByPet(Guid petId)
+        public async Task<IActionResult> GetByPet([FromRoute] Guid petId)
         {
-            var data = await _repository.GetByPetIdAsync(petId);
+            var data = await _service.GetByPetIdAsync(petId);
             return Ok(data);
         }
     }

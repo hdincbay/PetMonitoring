@@ -1,0 +1,12 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\bin\Release\net10.0\PetMonitoring.Movement.Domain.deps.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\bin\Release\net10.0\PetMonitoring.Movement.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\bin\Release\net10.0\PetMonitoring.Movement.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.sourcelink.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\refint\PetMonitoring.Movement.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\PetMonitoring.Movement.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.Domain\obj\Release\net10.0\ref\PetMonitoring.Movement.Domain.dll

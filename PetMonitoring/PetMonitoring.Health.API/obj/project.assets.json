@@ -3265,7 +3265,6 @@
       "Microsoft.EntityFrameworkCore >= 10.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.2",
-      "PetMonitoring.Health.Application >= 1.0.0",
       "PetMonitoring.Health.Infrastructure >= 1.0.0"
     ]
   },
@@ -3301,9 +3300,6 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj": {
-              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj"
-            },
             "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj"
             }

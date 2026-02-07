@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Health.Application.Commands;
 using PetMonitoring.Health.Application.Interfaces;
-using PetMonitoring.Health.Domain.Entities;
 
 namespace PetMonitoring.Health.API.Controllers
 {
@@ -9,23 +9,23 @@ namespace PetMonitoring.Health.API.Controllers
     [ApiController]
     public class HeartRateController : ControllerBase
     {
-        private readonly IHeartRateRepository _repository;
+        private readonly IHeartRateService _service;
 
-        public HeartRateController(IHeartRateRepository repository)
+        public HeartRateController(IHeartRateService service)
         {
-            _repository = repository;
+            _service = service;
         }
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] HeartRateRecord record)
+        public async Task<IActionResult> Add([FromBody] CreateHeartRateCommand record)
         {
-            await _repository.AddAsync(record);
+            await _service.AddAsync(record);
             return Ok();
         }
 
         [HttpGet("{petId}")]
-        public async Task<IActionResult> GetByPet(Guid petId)
+        public async Task<IActionResult> GetByPet([FromRoute] Guid petId)
         {
-            var data = await _repository.GetByPetIdAsync(petId);
+            var data = await _service.GetByPetIdAsync(petId);
             return Ok(data);
         }
     }

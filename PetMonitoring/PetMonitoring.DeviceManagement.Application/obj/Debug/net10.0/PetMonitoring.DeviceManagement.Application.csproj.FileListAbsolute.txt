@@ -1,0 +1,16 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\bin\Debug\net10.0\PetMonitoring.DeviceManagement.Application.deps.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\bin\Debug\net10.0\PetMonitoring.DeviceManagement.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\bin\Debug\net10.0\PetMonitoring.DeviceManagement.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\bin\Debug\net10.0\PetMonitoring.DeviceManagement.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\bin\Debug\net10.0\PetMonitoring.DeviceManagement.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.csproj.AssemblyReference.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.sourcelink.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonit.3AF83693.Up2Date
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\refint\PetMonitoring.DeviceManagement.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\PetMonitoring.DeviceManagement.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.DeviceManagement.Application\obj\Debug\net10.0\ref\PetMonitoring.DeviceManagement.Application.dll
