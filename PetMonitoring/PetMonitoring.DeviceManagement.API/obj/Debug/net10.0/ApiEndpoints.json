@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.DeviceManagement.Domain.Entities.DeviceRecord",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand",
         "IsRequired": true
       }
     ],

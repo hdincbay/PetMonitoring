@@ -223,8 +223,8 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Application.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Domain.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Infrastructure.dll
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Infrastructure.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Infrastructure.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\bin\Release\net10.0\PetMonitoring.Health.Domain.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\obj\Release\net10.0\PetMonitoring.Health.API.csproj.AssemblyReference.cache
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Health.API\obj\Release\net10.0\rpswa.dswa.cache.json

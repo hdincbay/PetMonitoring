@@ -5,5 +5,9 @@ namespace PetMonitoring.Health.Application.Interfaces;
 public interface IHeartRateRepository
 {
     Task AddAsync(HeartRateRecord record, CancellationToken cancellationToken);
-    Task<IEnumerable<HeartRateRecord>> GetByPetIdAsync(Guid petId);
+    Task<HeartRateRecord?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task<IEnumerable<HeartRateRecord>> GetByPetIdAsync(
+        Guid petId,
+        CancellationToken cancellationToken);
+    Task SaveAsync();
 }

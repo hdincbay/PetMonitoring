@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.Temperature.Domain.Entities.TemperatureRecord",
+        "Type": "PetMonitoring.Temperature.Application.Commands.CreateTemperatureCommand",
         "IsRequired": true
       }
     ],

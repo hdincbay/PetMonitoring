@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.Movement.Domain.Entities.MovementRecord",
+        "Type": "PetMonitoring.Movement.Application.Commands.CreateMovementCommand",
         "IsRequired": true
       }
     ],

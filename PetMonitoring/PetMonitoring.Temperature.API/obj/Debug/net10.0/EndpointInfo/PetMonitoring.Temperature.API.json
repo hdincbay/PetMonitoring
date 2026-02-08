@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TemperatureRecord"
+                "$ref": "#/components/schemas/CreateTemperatureCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TemperatureRecord"
+                "$ref": "#/components/schemas/CreateTemperatureCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TemperatureRecord"
+                "$ref": "#/components/schemas/CreateTemperatureCommand"
               }
             }
           },
@@ -71,13 +71,14 @@
   },
   "components": {
     "schemas": {
-      "TemperatureRecord": {
+      "CreateTemperatureCommand": {
+        "required": [
+          "petId",
+          "deviceId",
+          "celsiusValue"
+        ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "petId": {
             "type": "string",
             "format": "uuid"
@@ -85,10 +86,6 @@
           "deviceId": {
             "type": "string",
             "format": "uuid"
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
           },
           "celsiusValue": {
             "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",

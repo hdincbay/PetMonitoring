@@ -13,7 +13,7 @@
     }
   ],
   "paths": {
-    "/api/HeartRate": {
+    "/api/HeartRate/Add": {
       "post": {
         "tags": [
           "HeartRate"
@@ -22,17 +22,49 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/HeartRateRecord"
+                "$ref": "#/components/schemas/AddHeartRateCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/HeartRateRecord"
+                "$ref": "#/components/schemas/AddHeartRateCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/HeartRateRecord"
+                "$ref": "#/components/schemas/AddHeartRateCommand"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HeartRate/Update": {
+      "put": {
+        "tags": [
+          "HeartRate"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeartRateCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeartRateCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeartRateCommand"
               }
             }
           },
@@ -71,7 +103,39 @@
   },
   "components": {
     "schemas": {
-      "HeartRateRecord": {
+      "AddHeartRateCommand": {
+        "required": [
+          "petId",
+          "deviceId",
+          "bpm"
+        ],
+        "type": "object",
+        "properties": {
+          "petId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "deviceId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "bpm": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
+      "UpdateHeartRateCommand": {
+        "required": [
+          "id",
+          "petId",
+          "deviceId",
+          "bpm"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -93,10 +157,6 @@
               "string"
             ],
             "format": "int32"
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       }

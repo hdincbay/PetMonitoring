@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
 using PetMonitoring.Health.Application.Interfaces;
 using PetMonitoring.Health.Infrastructure.Persistence;
-using PetMonitoring.Health.Infrastructure.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

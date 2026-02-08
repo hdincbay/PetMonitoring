@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MovementRecord"
+                "$ref": "#/components/schemas/CreateMovementCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MovementRecord"
+                "$ref": "#/components/schemas/CreateMovementCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MovementRecord"
+                "$ref": "#/components/schemas/CreateMovementCommand"
               }
             }
           },
@@ -74,7 +74,7 @@
       "ActivityLevel": {
         "type": "integer"
       },
-      "MovementRecord": {
+      "CreateMovementCommand": {
         "required": [
           "petId",
           "deviceId",
@@ -86,10 +86,6 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "petId": {
             "type": "string",
             "format": "uuid"
@@ -97,10 +93,6 @@
           "deviceId": {
             "type": "string",
             "format": "uuid"
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
           },
           "stepCount": {
             "pattern": "^-?(?:0|[1-9]\\d*)$",

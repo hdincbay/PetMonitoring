@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeviceRecord"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeviceRecord"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DeviceRecord"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             }
           },
@@ -71,20 +71,16 @@
   },
   "components": {
     "schemas": {
-      "DeviceRecord": {
+      "CreateDeviceCommand": {
+        "required": [
+          "petId",
+          "batteryPercentage"
+        ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "petId": {
             "type": "string",
             "format": "uuid"
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
           },
           "batteryPercentage": {
             "pattern": "^-?(?:0|[1-9]\\d*)$",

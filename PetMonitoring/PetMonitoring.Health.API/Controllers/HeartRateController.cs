@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
+using PetMonitoring.Health.Application.Commands.UpdateHeartRate;
 using PetMonitoring.Health.Application.Interfaces;
 
 namespace PetMonitoring.Health.API.Controllers
@@ -16,8 +17,14 @@ namespace PetMonitoring.Health.API.Controllers
         {
             _mediator = mediator;
         }
-        [HttpPost]
+        [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] AddHeartRateCommand record)
+        {
+            await _mediator.Send(record);
+            return Ok();
+        }
+        [HttpPut("Update")]
+        public async Task<IActionResult> Update([FromBody] UpdateHeartRateCommand record)
         {
             await _mediator.Send(record);
             return Ok();
