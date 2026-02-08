@@ -1,4 +1,4 @@
-@PetMonitoring.ApiGateway_HostAddress = http://localhost:5275
+@PetMonitoring.ApiGateway_HostAddress = http://127.0.0.1:5275
 
 GET {{PetMonitoring.ApiGateway_HostAddress}}/weatherforecast/
 Accept: application/json

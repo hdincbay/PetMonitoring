@@ -1,4 +1,4 @@
-@PetMonitoring.Health.API_HostAddress = http://localhost:5113
+@PetMonitoring.Health.API_HostAddress = http://127.0.0.1:5113
 
 GET {{PetMonitoring.Health.API_HostAddress}}/weatherforecast/
 Accept: application/json
