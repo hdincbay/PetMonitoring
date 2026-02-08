@@ -11,6 +11,8 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.A
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\FluentValidation.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\Humanizer.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\MediatR.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\MediatR.Contracts.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\Microsoft.Bcl.Cryptography.dll
@@ -138,8 +140,8 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.A
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Application.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Domain.dll
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Infrastructure.dll
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Infrastructure.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Infrastructure.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\bin\Release\net10.0\PetMonitoring.Movement.Domain.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.csproj.AssemblyReference.cache
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\rpswa.dswa.cache.json

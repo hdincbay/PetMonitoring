@@ -16,25 +16,19 @@ namespace PetMonitoring.Movement.Domain.Entities
         public int InactiveMinutes { get; private set; }
 
         protected MovementRecord() { }
-
-        public MovementRecord(
-            Guid petId,
-            Guid deviceId,
-            int stepCount,
-            double distanceInMeters,
-            ActivityLevel activityLevel,
-            int activeMinutes,
-            int inactiveMinutes)
+        public static MovementRecord Create(Guid petId, Guid deviceId, int stepCount, double distanceInMeters, ActivityLevel activityLevel, int activeMinutes, int inActiveMinutes)
         {
-            Id = Guid.NewGuid();
-            PetId = petId;
-            DeviceId = deviceId;
-            CreatedDate = DateTime.UtcNow;
-            StepCount = stepCount;
-            DistanceInMeters = distanceInMeters;
-            ActivityLevel = activityLevel;
-            ActiveMinutes = activeMinutes;
-            InactiveMinutes = inactiveMinutes;
+            return new MovementRecord
+            {
+                PetId = petId,
+                DeviceId = deviceId,
+                CreatedDate = DateTime.Now,
+                StepCount = stepCount,
+                DistanceInMeters = distanceInMeters,
+                ActivityLevel = activityLevel,
+                ActiveMinutes = activeMinutes,
+                InactiveMinutes = inActiveMinutes
+            };
         }
     }
 }

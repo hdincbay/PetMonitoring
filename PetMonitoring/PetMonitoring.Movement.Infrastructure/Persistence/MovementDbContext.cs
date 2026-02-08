@@ -3,7 +3,7 @@ using PetMonitoring.Movement.Domain.Entities;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace PetMonitoring.Health.Infrastructure.Persistence;
+namespace PetMonitoring.Movement.Infrastructure.Persistence;
 
 public class MovementDbContext : DbContext
 {
@@ -12,7 +12,7 @@ public class MovementDbContext : DbContext
     {
     }
 
-    public DbSet<MovementRecord> HeartRateRecords => Set<MovementRecord>();
+    public DbSet<MovementRecord> MovementRecords => Set<MovementRecord>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

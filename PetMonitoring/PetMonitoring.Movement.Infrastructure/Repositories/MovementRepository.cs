@@ -2,7 +2,7 @@
 using PetMonitoring.Movement.Application.Interfaces;
 using PetMonitoring.Movement.Domain.Entities;
 
-namespace PetMonitoring.Health.Infrastructure.Persistence.Repositories;
+namespace PetMonitoring.Movement.Infrastructure.Persistence.Repositories;
 
 public class MovementRepository : IMovementRepository
 {
@@ -15,15 +15,20 @@ public class MovementRepository : IMovementRepository
 
     public async Task AddAsync(MovementRecord record)
     {
-        await _context.HeartRateRecords.AddAsync(record);
+        await _context.MovementRecords.AddAsync(record);
         await _context.SaveChangesAsync();
     }
 
-    public async Task<IEnumerable<MovementRecord>> GetByPetIdAsync(Guid petId)
+    public async Task<IEnumerable<MovementRecord>> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
-        return await _context.HeartRateRecords
-            .Where(x => x.PetId == petId)
+        return await _context.MovementRecords
+            .AsNoTracking()
+            .Where(x => x.DeviceId == deviceId)
             .OrderByDescending(x => x.CreatedDate)
-            .ToListAsync();
+            .ToListAsync(ct);
+    }
+    public async Task SaveAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

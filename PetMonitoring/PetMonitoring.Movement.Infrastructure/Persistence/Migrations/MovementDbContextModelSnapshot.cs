@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PetMonitoring.Health.Infrastructure.Persistence;
+using PetMonitoring.Movement.Infrastructure.Persistence;
 
 #nullable disable
 
@@ -56,7 +56,7 @@ namespace PetMonitoring.Movement.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("PetId", "CreatedDate");
 
-                    b.ToTable("HeartRateRecords");
+                    b.ToTable("MovementRecords");
                 });
 #pragma warning restore 612, 618
         }

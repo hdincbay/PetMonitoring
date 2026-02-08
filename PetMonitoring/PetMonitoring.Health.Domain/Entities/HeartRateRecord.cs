@@ -22,9 +22,5 @@ namespace PetMonitoring.Health.Domain.Entities
                 CreatedDate = DateTime.Now
             };
         }
-        public void UpdateBpm(int bpm)
-        {
-            Bpm = bpm;
-        }
     }
 }

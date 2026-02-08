@@ -1,9 +1,7 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
-using PetMonitoring.Health.Application.Commands.UpdateHeartRate;
-using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.Health.Application.Queries;
 
 namespace PetMonitoring.Health.API.Controllers
 {
@@ -12,7 +10,6 @@ namespace PetMonitoring.Health.API.Controllers
     public class HeartRateController : ControllerBase
     {
         private readonly IMediator _mediator;
-
         public HeartRateController(IMediator mediator)
         {
             _mediator = mediator;
@@ -23,17 +20,11 @@ namespace PetMonitoring.Health.API.Controllers
             await _mediator.Send(record);
             return Ok();
         }
-        [HttpPut("Update")]
-        public async Task<IActionResult> Update([FromBody] UpdateHeartRateCommand record)
+        [HttpGet("GetByDevice")]
+        public async Task<IActionResult> GetByDevice([FromBody] GetHeartRateQuery record)
         {
-            await _mediator.Send(record);
-            return Ok();
-        }
-
-        [HttpGet("{petId}")]
-        public async Task<IActionResult> GetByPet([FromRoute] Guid petId)
-        {
-            return Ok();
+            var recordList = await _mediator.Send(record);
+            return Ok(recordList);
         }
     }
 }
