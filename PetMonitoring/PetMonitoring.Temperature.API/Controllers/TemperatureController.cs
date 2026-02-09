@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.Health.Application.Interfaces;
-using PetMonitoring.Temperature.Application.Commands;
+using PetMonitoring.Temperature.Application.Commands.AddTemperature;
 using PetMonitoring.Temperature.Application.Interfaces;
+using PetMonitoring.Temperature.Application.Queries;
 using PetMonitoring.Temperature.Domain.Entities;
 
 namespace PetMonitoring.Temperature.API.Controllers
@@ -11,23 +12,24 @@ namespace PetMonitoring.Temperature.API.Controllers
     [ApiController]
     public class TemperatureController : ControllerBase
     {
-        private readonly ITemperatureService _service;
+        private readonly IMediator _mdeiator;
 
-        public TemperatureController(ITemperatureService service)
+        public TemperatureController(IMediator mediator)
         {
-            _service = service;
+            _mdeiator = mediator;
         }
-        [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CreateTemperatureCommand record)
+        [HttpPost("Add")]
+        public async Task<IActionResult> Add([FromBody] AddTemperatureCommand record)
         {
-            await _service.AddAsync(record);
+            await _mdeiator.Send(record);
             return Ok();
         }
 
-        [HttpGet("{petId}")]
-        public async Task<IActionResult> GetByPet([FromRoute] Guid petId)
+        [HttpGet("GetByDevice")]
+        public async Task<IActionResult> GetByDevice([FromRoute] GetTemperatureQuery record)
         {
-            return Ok();
+            var recordList = await _mdeiator.Send(record);
+            return Ok(recordList);
         }
     }
 }

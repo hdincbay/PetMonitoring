@@ -3,7 +3,7 @@ using PetMonitoring.Temperature.Domain.Entities;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace PetMonitoring.Health.Infrastructure.Persistence;
+namespace PetMonitoring.Temperature.Infrastructure.Persistence;
 
 public class TemperatureDbContext : DbContext
 {

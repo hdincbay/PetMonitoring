@@ -1,0 +1,19 @@
+﻿using FluentValidation;
+
+namespace PetMonitoring.Temperature.Application.Commands.AddTemperature;
+
+public class AddTemperatureCommandValidator
+    : AbstractValidator<AddTemperatureCommand>
+{
+    public AddTemperatureCommandValidator()
+    {
+        RuleFor(x => x.PetId)
+            .NotEmpty();
+
+        RuleFor(x => x.DeviceId)
+            .NotEmpty();
+
+        RuleFor(x => x.CelsiusValue)
+            .NotEmpty();
+    }
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.DeviceManagement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e96b9bcd0d2ed96c3d803fe8893329c8b27bb1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3efb731edbe0c56e1a45ccebd23a0bb95fb1edda")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.DeviceManagement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.DeviceManagement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

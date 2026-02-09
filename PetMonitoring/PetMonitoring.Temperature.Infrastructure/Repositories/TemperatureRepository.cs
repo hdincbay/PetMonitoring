@@ -2,7 +2,7 @@
 using PetMonitoring.Temperature.Application.Interfaces;
 using PetMonitoring.Temperature.Domain.Entities;
 
-namespace PetMonitoring.Health.Infrastructure.Persistence.Repositories;
+namespace PetMonitoring.Temperature.Infrastructure.Persistence.Repositories;
 
 public class TemperatureRepository : ITemperatureRepository
 {
@@ -19,11 +19,17 @@ public class TemperatureRepository : ITemperatureRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<IEnumerable<TemperatureRecord>> GetByPetIdAsync(Guid petId)
+    public async Task<IEnumerable<TemperatureRecord>> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
         return await _context.TemperatureRecords
-            .Where(x => x.PetId == petId)
+            .AsNoTracking()
+            .Where(x => x.DeviceId == deviceId)
             .OrderByDescending(x => x.CreatedDate)
-            .ToListAsync();
+            .ToListAsync(ct);
+    }
+
+    public Task SaveAsync()
+    {
+        return _context.SaveChangesAsync();
     }
 }
