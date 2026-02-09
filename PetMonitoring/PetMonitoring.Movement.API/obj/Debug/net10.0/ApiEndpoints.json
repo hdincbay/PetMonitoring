@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.Movement.Application.Commands.CreateMovementCommand",
+        "Type": "PetMonitoring.Movement.Application.Commands.AddMovement.AddMovementCommand",
         "IsRequired": true
       }
     ],
@@ -17,16 +17,16 @@
   },
   {
     "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
-    "Method": "GetByPet",
-    "RelativePath": "api/Movement/{petId}",
+    "Method": "GetByDevice",
+    "RelativePath": "api/Movement/GetByDevice",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "petId",
+        "Name": "DeviceId",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

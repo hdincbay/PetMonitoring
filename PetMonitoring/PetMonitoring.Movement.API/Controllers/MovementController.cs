@@ -25,7 +25,7 @@ namespace PetMonitoring.Movement.API.Controllers
             return Ok();
         }
         [HttpGet("GetByDevice")]
-        public async Task<IActionResult> GetByDevice([FromBody] GetMovementQuery record)
+        public async Task<IActionResult> GetByDevice([FromQuery] GetMovementQuery record)
         {
             var recordList = await _mediator.Send(record);
             return Ok(recordList);

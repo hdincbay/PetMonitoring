@@ -2,14 +2,14 @@
   {
     "ContainingType": "PetMonitoring.Temperature.API.Controllers.TemperatureController",
     "Method": "Add",
-    "RelativePath": "api/Temperature",
+    "RelativePath": "api/Temperature/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.Temperature.Application.Commands.CreateTemperatureCommand",
+        "Type": "PetMonitoring.Temperature.Application.Commands.AddTemperature.AddTemperatureCommand",
         "IsRequired": true
       }
     ],
@@ -17,16 +17,16 @@
   },
   {
     "ContainingType": "PetMonitoring.Temperature.API.Controllers.TemperatureController",
-    "Method": "GetByPet",
-    "RelativePath": "api/Temperature/{petId}",
+    "Method": "GetByDevice",
+    "RelativePath": "api/Temperature/GetByDevice",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "petId",
+        "Name": "DeviceId",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

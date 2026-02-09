@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateMovementCommand"
+                "$ref": "#/components/schemas/AddMovementCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateMovementCommand"
+                "$ref": "#/components/schemas/AddMovementCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateMovementCommand"
+                "$ref": "#/components/schemas/AddMovementCommand"
               }
             }
           },
@@ -45,16 +45,15 @@
         }
       }
     },
-    "/api/Movement/{petId}": {
+    "/api/Movement/GetByDevice": {
       "get": {
         "tags": [
           "Movement"
         ],
         "parameters": [
           {
-            "name": "petId",
-            "in": "path",
-            "required": true,
+            "name": "DeviceId",
+            "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -74,7 +73,7 @@
       "ActivityLevel": {
         "type": "integer"
       },
-      "CreateMovementCommand": {
+      "AddMovementCommand": {
         "required": [
           "petId",
           "deviceId",

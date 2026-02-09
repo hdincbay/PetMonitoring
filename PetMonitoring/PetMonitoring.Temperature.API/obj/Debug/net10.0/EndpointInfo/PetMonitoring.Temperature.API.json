@@ -13,7 +13,7 @@
     }
   ],
   "paths": {
-    "/api/Temperature": {
+    "/api/Temperature/Add": {
       "post": {
         "tags": [
           "Temperature"
@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTemperatureCommand"
+                "$ref": "#/components/schemas/AddTemperatureCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTemperatureCommand"
+                "$ref": "#/components/schemas/AddTemperatureCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTemperatureCommand"
+                "$ref": "#/components/schemas/AddTemperatureCommand"
               }
             }
           },
@@ -45,16 +45,15 @@
         }
       }
     },
-    "/api/Temperature/{petId}": {
+    "/api/Temperature/GetByDevice": {
       "get": {
         "tags": [
           "Temperature"
         ],
         "parameters": [
           {
-            "name": "petId",
-            "in": "path",
-            "required": true,
+            "name": "DeviceId",
+            "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -71,7 +70,7 @@
   },
   "components": {
     "schemas": {
-      "CreateTemperatureCommand": {
+      "AddTemperatureCommand": {
         "required": [
           "petId",
           "deviceId",

@@ -45,48 +45,15 @@
         }
       }
     },
-    "/api/HeartRate/Update": {
-      "put": {
-        "tags": [
-          "HeartRate"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateHeartRateCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateHeartRateCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateHeartRateCommand"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/HeartRate/{petId}": {
+    "/api/HeartRate/GetByDevice": {
       "get": {
         "tags": [
           "HeartRate"
         ],
         "parameters": [
           {
-            "name": "petId",
-            "in": "path",
-            "required": true,
+            "name": "DeviceId",
+            "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -111,37 +78,6 @@
         ],
         "type": "object",
         "properties": {
-          "petId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "deviceId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "bpm": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          }
-        }
-      },
-      "UpdateHeartRateCommand": {
-        "required": [
-          "id",
-          "petId",
-          "deviceId",
-          "bpm"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "petId": {
             "type": "string",
             "format": "uuid"

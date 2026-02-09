@@ -12,23 +12,23 @@ namespace PetMonitoring.Temperature.API.Controllers
     [ApiController]
     public class TemperatureController : ControllerBase
     {
-        private readonly IMediator _mdeiator;
+        private readonly IMediator _mediator;
 
         public TemperatureController(IMediator mediator)
         {
-            _mdeiator = mediator;
+            _mediator = mediator;
         }
         [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] AddTemperatureCommand record)
         {
-            await _mdeiator.Send(record);
+            await _mediator.Send(record);
             return Ok();
         }
 
         [HttpGet("GetByDevice")]
-        public async Task<IActionResult> GetByDevice([FromRoute] GetTemperatureQuery record)
+        public async Task<IActionResult> GetByDevice([FromQuery] GetTemperatureQuery record)
         {
-            var recordList = await _mdeiator.Send(record);
+            var recordList = await _mediator.Send(record);
             return Ok(recordList);
         }
     }
