@@ -13,17 +13,21 @@ public class DeviceRepository : IDeviceRepository
         _context = context;
     }
 
-    public async Task AddAsync(DeviceRecord record)
+    public async Task AddAsync(DeviceRecord record, CancellationToken ct)
     {
         await _context.DeviceRecords.AddAsync(record);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
     }
-
-    public async Task<IEnumerable<DeviceRecord>> GetByPetIdAsync(Guid petId)
+    public async Task UpdateAsync(DeviceRecord record, CancellationToken ct)
+    {
+        _context.DeviceRecords.Update(record);
+        await _context.SaveChangesAsync(ct);
+    }
+    public async Task<DeviceRecord?> GetByDeviceIdAsync(Guid petId, CancellationToken ct)
     {
         return await _context.DeviceRecords
             .Where(x => x.PetId == petId)
             .OrderByDescending(x => x.CreatedDate)
-            .ToListAsync();
+            .FirstOrDefaultAsync(ct);
     }
 }

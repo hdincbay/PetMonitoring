@@ -13,22 +13,18 @@ public class MovementRepository : IMovementRepository
         _context = context;
     }
 
-    public async Task AddAsync(MovementRecord record)
+    public async Task AddAsync(MovementRecord record, CancellationToken ct)
     {
         await _context.MovementRecords.AddAsync(record);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
     }
 
-    public async Task<IEnumerable<MovementRecord>> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
+    public async Task<MovementRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
         return await _context.MovementRecords
             .AsNoTracking()
             .Where(x => x.DeviceId == deviceId)
             .OrderByDescending(x => x.CreatedDate)
-            .ToListAsync(ct);
-    }
-    public async Task SaveAsync()
-    {
-        await _context.SaveChangesAsync();
+            .FirstOrDefaultAsync(ct);
     }
 }

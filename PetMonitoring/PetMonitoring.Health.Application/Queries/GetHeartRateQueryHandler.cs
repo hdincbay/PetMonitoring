@@ -7,7 +7,7 @@ using System.Text;
 
 namespace PetMonitoring.Health.Application.Queries
 {
-    public class GetHeartRateQueryHandler : IRequestHandler<GetHeartRateQuery, IEnumerable<HeartRateRecord>>
+    public class GetHeartRateQueryHandler : IRequestHandler<GetHeartRateQuery, HeartRateRecord>
     {
         private readonly IHeartRateRepository _repository;
 
@@ -16,10 +16,10 @@ namespace PetMonitoring.Health.Application.Queries
             _repository = repository;
         }
 
-        public async Task<IEnumerable<HeartRateRecord>> Handle(GetHeartRateQuery request, CancellationToken cancellationToken)
+        public async Task<HeartRateRecord> Handle(GetHeartRateQuery request, CancellationToken cancellationToken)
         {
-            var records = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
-            return records;
+            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
+            return record!;
         }
     }
 }

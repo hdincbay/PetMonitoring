@@ -4,6 +4,7 @@ namespace PetMonitoring.DeviceManagement.Application.Interfaces;
 
 public interface IDeviceRepository
 {
-    Task AddAsync(DeviceRecord record);
-    Task<IEnumerable<DeviceRecord>> GetByPetIdAsync(Guid petId);
+    Task AddAsync(DeviceRecord record, CancellationToken ct);
+    Task UpdateAsync(DeviceRecord record, CancellationToken ct);
+    Task<DeviceRecord?> GetByDeviceIdAsync(Guid petId, CancellationToken ct);
 }

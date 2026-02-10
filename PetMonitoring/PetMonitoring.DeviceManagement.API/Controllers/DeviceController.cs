@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.DeviceManagement.Application.Commands;
-using PetMonitoring.DeviceManagement.Application.Interfaces;
-using PetMonitoring.DeviceManagement.Domain.Entities;
-using PetMonitoring.Health.Application.Interfaces;
+using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
+using PetMonitoring.DeviceManagement.Application.Queries;
 
 namespace PetMonitoring.DeviceManagement.API.Controllers
 {
@@ -11,24 +10,24 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
     [ApiController]
     public class DeviceController : ControllerBase
     {
-        private readonly IDeviceService _service;
+        private readonly IMediator _mediator;
 
-        public DeviceController(IDeviceService service)
+        public DeviceController(IMediator mediator)
         {
-            _service = service;
+            _mediator = mediator;
         }
-        [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CreateDeviceCommand record)
+        [HttpPost("Add")]
+        public async Task<IActionResult> Add([FromBody] AddDeviceCommand record)
         {
-            await _service.AddAsync(record);
+            await _mediator.Send(record);
             return Ok();
         }
 
-        [HttpGet("{petId}")]
-        public async Task<IActionResult> GetByPet(Guid petId)
+        [HttpGet("GetByDevice")]
+        public async Task<IActionResult> GetByDevice([FromQuery] GetDeviceQuery record)
         {
-            var data = await _service.GetByPetIdAsync(petId);
-            return Ok();
+            var data = await _mediator.Send(record);
+            return Ok(data);
         }
     }
 }

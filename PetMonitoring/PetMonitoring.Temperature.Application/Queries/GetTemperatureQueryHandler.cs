@@ -7,7 +7,7 @@ using System.Text;
 
 namespace PetMonitoring.Temperature.Application.Queries
 {
-    public class GetTemperatureQueryHandler : IRequestHandler<GetTemperatureQuery, IEnumerable<TemperatureRecord>>
+    public class GetTemperatureQueryHandler : IRequestHandler<GetTemperatureQuery, TemperatureRecord>
     {
         private readonly ITemperatureRepository _repository;
 
@@ -16,10 +16,10 @@ namespace PetMonitoring.Temperature.Application.Queries
             _repository = repository;
         }
 
-        public async Task<IEnumerable<TemperatureRecord>> Handle(GetTemperatureQuery request, CancellationToken cancellationToken)
+        public async Task<TemperatureRecord> Handle(GetTemperatureQuery request, CancellationToken cancellationToken)
         {
-            var records = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
-            return records;
+            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
+            return record;
         }
     }
 }

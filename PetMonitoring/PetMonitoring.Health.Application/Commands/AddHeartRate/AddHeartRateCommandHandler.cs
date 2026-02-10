@@ -20,7 +20,6 @@ namespace PetMonitoring.Health.Application.Commands.AddHeartRate
         {
             var heartRateRecord = HeartRateRecord.Create(request.PetId, request.DeviceId, request.Bpm);
             await _repository.AddAsync(heartRateRecord, cancellationToken);
-            await _repository.SaveAsync();
             return Unit.Value;
         }
     }

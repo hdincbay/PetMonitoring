@@ -7,6 +7,7 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
     public class DeviceRecord
     {
         public Guid Id { get; private set; }
+        public string? Name { get; private set; }
         public Guid PetId { get; private set; }
         public DateTime CreatedDate { get; private set; }
         public int BatteryPercentage { get; private set; }
@@ -14,11 +15,20 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
         {
 
         }
-        public DeviceRecord(Guid petId, int batteryPercentage)
+        public static DeviceRecord Create(string name)
         {
-            CreatedDate = DateTime.Now;
+            return new DeviceRecord
+            {
+                CreatedDate = DateTime.Now,
+                Name = name
+            };
+        }
+        public void UpdateBatteryPercentage(int batteryPercentage)
+        {
+            if (batteryPercentage < 0 || batteryPercentage > 100)
+                throw new ArgumentOutOfRangeException(nameof(batteryPercentage));
+
             BatteryPercentage = batteryPercentage;
-            PetId = petId;
         }
     }
 }

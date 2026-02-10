@@ -1,11 +1,9 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence.Repositories;
-using PetMonitoring.Health.Application.Interfaces;
-using PetMonitoring.Health.Application.Services;
-using PetMonitoring.Health.Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(
-    typeof(CreateDeviceCommandValidator).Assembly
+    typeof(UpdateDeviceCommandValidator).Assembly
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IDeviceService, DeviceService>();
 builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
 builder.Services.AddDbContext<DeviceManagementDbContext>(options =>
     options.UseSqlServer(
@@ -27,7 +24,10 @@ builder.Services.AddDbContext<DeviceManagementDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.DeviceManagement.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
-
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(AddDeviceCommandHandler).Assembly);
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

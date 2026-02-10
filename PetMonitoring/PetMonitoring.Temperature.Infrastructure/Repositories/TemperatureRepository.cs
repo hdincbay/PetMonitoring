@@ -13,19 +13,19 @@ public class TemperatureRepository : ITemperatureRepository
         _context = context;
     }
 
-    public async Task AddAsync(TemperatureRecord record)
+    public async Task AddAsync(TemperatureRecord record, CancellationToken ct)
     {
         await _context.TemperatureRecords.AddAsync(record);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
     }
 
-    public async Task<IEnumerable<TemperatureRecord>> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
+    public async Task<TemperatureRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
         return await _context.TemperatureRecords
             .AsNoTracking()
             .Where(x => x.DeviceId == deviceId)
             .OrderByDescending(x => x.CreatedDate)
-            .ToListAsync(ct);
+            .FirstOrDefaultAsync(ct);
     }
 
     public Task SaveAsync()

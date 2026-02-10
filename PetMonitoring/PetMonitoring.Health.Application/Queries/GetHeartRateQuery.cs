@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PetMonitoring.Health.Application.Queries
 {
-    public sealed record GetHeartRateQuery(Guid DeviceId) : IRequest<IEnumerable<HeartRateRecord>>
+    public sealed record GetHeartRateQuery(Guid DeviceId) : IRequest<HeartRateRecord>
     {
 
     }

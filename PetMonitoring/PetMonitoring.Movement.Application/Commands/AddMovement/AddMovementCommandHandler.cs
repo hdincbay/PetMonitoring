@@ -17,8 +17,7 @@ public sealed class AddMovementCommandHandler : IRequestHandler<AddMovementComma
     public async Task<Unit> Handle(AddMovementCommand request, CancellationToken cancellationToken)
     {
         var movementRecord = MovementRecord.Create(request.PetId, request.DeviceId, request.StepCount, request.DistanceInMeters, request.ActivityLevel, request.ActiveMinutes, request.InactiveMinutes);
-        await _repository.AddAsync(movementRecord);
-        await _repository.SaveAsync();
+        await _repository.AddAsync(movementRecord, cancellationToken);
         return Unit.Value;
     }
 }

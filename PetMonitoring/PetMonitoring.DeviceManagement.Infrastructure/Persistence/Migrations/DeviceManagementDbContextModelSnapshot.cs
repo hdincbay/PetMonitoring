@@ -34,6 +34,9 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("PetId")
                         .HasColumnType("uniqueidentifier");
 

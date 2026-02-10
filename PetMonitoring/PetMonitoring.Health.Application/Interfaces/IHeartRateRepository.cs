@@ -6,8 +6,5 @@ public interface IHeartRateRepository
 {
     Task AddAsync(HeartRateRecord record, CancellationToken cancellationToken);
     Task<HeartRateRecord?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
-    Task<IEnumerable<HeartRateRecord>> GetByDeviceIdAsync(
-        Guid deviceId,
-        CancellationToken cancellationToken);
-    Task SaveAsync();
+    Task<HeartRateRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken cancellationToken);
 }
