@@ -1,14 +1,19 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.DeviceManagement.API.Middlewares;
 using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence.Repositories;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
 
+builder.Host.UseSerilog();
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(
     typeof(UpdateDeviceCommandValidator).Assembly
@@ -29,8 +34,8 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(AddDeviceCommandHandler).Assembly);
 });
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
+app.UseMiddleware<RequestLoggingMiddleware>();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
