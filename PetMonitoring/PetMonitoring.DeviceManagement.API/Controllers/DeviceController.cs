@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
+using PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Queries;
 
 namespace PetMonitoring.DeviceManagement.API.Controllers
@@ -16,13 +17,18 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
         {
             _mediator = mediator;
         }
-        [HttpPost("Add")]
+        [HttpPost("Create")]
         public async Task<IActionResult> Add([FromBody] AddDeviceCommand record)
         {
             await _mediator.Send(record);
             return Ok();
         }
-
+        [HttpPut("BatteryUpdate")]
+        public async Task<IActionResult> BatteryUpdate([FromBody] UpdateDeviceCommand record)
+        { 
+            await _mediator.Send(record);
+            return Ok();
+        }
         [HttpGet("GetByDevice")]
         public async Task<IActionResult> GetByDevice([FromQuery] GetDeviceQuery record)
         {

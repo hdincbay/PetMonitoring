@@ -19,7 +19,7 @@ namespace PetMonitoring.Temperature.Application.Queries
         public async Task<TemperatureRecord> Handle(GetTemperatureQuery request, CancellationToken cancellationToken)
         {
             var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
-            return record;
+            return record!;
         }
     }
 }
