@@ -1,0 +1,3 @@
+2026-02-13 23:22:27.100 +03:00 [INF] Request started. POST /api/heartrate/add
+2026-02-13 23:22:27.158 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-02-13 23:22:28.242 +03:00 [INF] Request finished. POST /api/heartrate/add - 200 in 1144 ms

@@ -13,7 +13,7 @@
     }
   ],
   "paths": {
-    "/api/Device": {
+    "/api/Device/Create": {
       "post": {
         "tags": [
           "Device"
@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDeviceCommand"
+                "$ref": "#/components/schemas/AddDeviceCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDeviceCommand"
+                "$ref": "#/components/schemas/AddDeviceCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDeviceCommand"
+                "$ref": "#/components/schemas/AddDeviceCommand"
               }
             }
           },
@@ -45,16 +45,47 @@
         }
       }
     },
-    "/api/Device/{petId}": {
+    "/api/Device/BatteryUpdate": {
+      "put": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDeviceCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDeviceCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDeviceCommand"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Device/GetByDevice": {
       "get": {
         "tags": [
           "Device"
         ],
         "parameters": [
           {
-            "name": "petId",
-            "in": "path",
-            "required": true,
+            "name": "DeviceId",
+            "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -71,14 +102,25 @@
   },
   "components": {
     "schemas": {
-      "CreateDeviceCommand": {
+      "AddDeviceCommand": {
         "required": [
-          "petId",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "UpdateDeviceCommand": {
+        "required": [
+          "deviceId",
           "batteryPercentage"
         ],
         "type": "object",
         "properties": {
-          "petId": {
+          "deviceId": {
             "type": "string",
             "format": "uuid"
           },

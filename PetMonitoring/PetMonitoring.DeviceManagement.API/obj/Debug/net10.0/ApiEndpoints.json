@@ -1,15 +1,15 @@
 [
   {
     "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
-    "Method": "Add",
-    "RelativePath": "api/Device",
-    "HttpMethod": "POST",
+    "Method": "BatteryUpdate",
+    "RelativePath": "api/Device/BatteryUpdate",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand.UpdateDeviceCommand",
         "IsRequired": true
       }
     ],
@@ -17,16 +17,32 @@
   },
   {
     "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
-    "Method": "GetByPet",
-    "RelativePath": "api/Device/{petId}",
+    "Method": "Create",
+    "RelativePath": "api/Device/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand.AddDeviceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
+    "Method": "GetByDevice",
+    "RelativePath": "api/Device/GetByDevice",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "petId",
+        "Name": "DeviceId",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -18,7 +18,7 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
             _mediator = mediator;
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Add([FromBody] AddDeviceCommand record)
+        public async Task<IActionResult> Create([FromBody] AddDeviceCommand record)
         {
             await _mediator.Send(record);
             return Ok();
