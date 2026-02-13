@@ -1,0 +1,32 @@
+2026-02-14 00:00:40.374 +03:00 [INF] Request started \n. POST /api/movement/add
+2026-02-14 00:00:40.398 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 27 ms
+2026-02-14 00:00:51.451 +03:00 [INF] Request started \n. POST /api/movement/add
+2026-02-14 00:00:51.453 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 2 ms
+2026-02-14 00:00:52.313 +03:00 [INF] Request started \n. POST /api/movement/add
+2026-02-14 00:00:52.314 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 1 ms
+2026-02-14 00:03:14.680 +03:00 [INF] Request started \n. POST /api/movement/add
+Body: Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+2026-02-14 00:03:14.708 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 30 ms
+2026-02-14 00:03:34.029 +03:00 [INF] Request started \n. POST /api/movement/add
+Body: Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+2026-02-14 00:05:39.251 +03:00 [INF] Request started \n. POST /api/movement/add
+Body: Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream
+2026-02-14 00:06:27.398 +03:00 [INF] Request started \n. POST /api/movement/add
+Body: Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream
+2026-02-14 00:11:16.331 +03:00 [INF] Request started \n. POST /api/movement/add
+Request Info
+Query: 
+Headers: {"PetId":"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd","DeviceId":"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d","StepCount":3,"DistanceInMeters":3.1,"ActivityLevel":0,"ActiveMinutes":5,"InactiveMinutes":7}
+Body: {"PetId":"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd","DeviceId":"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d","StepCount":3,"DistanceInMeters":3.1,"ActivityLevel":0,"ActiveMinutes":5,"InactiveMinutes":7}
+2026-02-14 00:11:16.355 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 27 ms
+2026-02-14 00:11:52.915 +03:00 [INF] Request started \n. POST /api/movement/add
+Request Info
+Query: 
+Headers: {"Accept":"*/*","Host":"127.0.0.1:5109","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-87758ca7f40512ecd5fda439ac2c1dd4-42a54a7077992d8a-00","Content-Length":"191","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"}
+Body: {"PetId":"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd","DeviceId":"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d","StepCount":3,"DistanceInMeters":3.1,"ActivityLevel":0,"ActiveMinutes":5,"InactiveMinutes":7}
+2026-02-14 00:11:52.949 +03:00 [INF] Request finished. POST /api/movement/add - 404 in 37 ms
+2026-02-14 00:18:41.901 +03:00 [INF] Request started \n {"Method":"POST","Path":{"Value":"/api/movement/add","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Accept":"*/*","Host":"127.0.0.1:7144","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-e4cd6e3707dddea246149177c99149e1-99ab2acb105485ac-00","Content-Length":"191","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"PetId\":\"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd\",\"DeviceId\":\"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\",\"StepCount\":3,\"DistanceInMeters\":3.1,\"ActivityLevel\":0,\"ActiveMinutes\":5,\"InactiveMinutes\":7}"}
+2026-02-14 00:18:41.941 +03:00 [INF] Request finished POST /api/movement/add - 404 in 49 ms
+2026-02-14 00:19:54.770 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/movement/add","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Accept":"*/*","Host":"127.0.0.1:7144","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-dccd92d7c6b9d456a630d45b0993236a-a37d9f40db04939d-00","Content-Length":"191","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"PetId\":\"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd\",\"DeviceId\":\"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\",\"StepCount\":3,\"DistanceInMeters\":3.1,\"ActivityLevel\":0,\"ActiveMinutes\":5,\"InactiveMinutes\":7}"}
+2026-02-14 00:19:54.807 +03:00 [INF] Request finished POST /api/movement/add - 404 in 47 ms

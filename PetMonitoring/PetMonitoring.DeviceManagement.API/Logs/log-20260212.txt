@@ -1,2 +1,2 @@
-2026-02-12 23:53:11.635 +03:00 [INF] Request started. POST /api/device/create
+2026-02-12 23:53:11.635 +03:00 [INF] Request started \n. POST /api/device/create
 2026-02-12 23:53:11.664 +03:00 [INF] Request finished. POST /api/device/create - 307 in 32 ms
