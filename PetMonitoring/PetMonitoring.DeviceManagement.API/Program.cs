@@ -32,7 +32,7 @@ builder.Services.AddDbContext<DeviceManagementDbContext>(options =>
         }));
 
 builder.Services.AddMediatR(
-    typeof(AddDeviceCommandHandler).Assembly
+    typeof(CreateDeviceCommandHandler).Assembly
 );
 
 var app = builder.Build();
