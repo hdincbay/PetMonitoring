@@ -1,4 +1,5 @@
 using FluentValidation;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Health.API.Middlewares;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
@@ -28,10 +29,11 @@ builder.Services.AddDbContext<HealthDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.Health.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(typeof(AddHeartRateCommandHandler).Assembly);
-});
+
+builder.Services.AddMediatR(
+    typeof(AddHeartRateCommandHandler).Assembly
+);
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

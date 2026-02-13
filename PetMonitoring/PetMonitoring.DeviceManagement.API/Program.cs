@@ -1,4 +1,5 @@
 using FluentValidation;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PetMonitoring.DeviceManagement.API.Middlewares;
 using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
@@ -29,10 +30,11 @@ builder.Services.AddDbContext<DeviceManagementDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.DeviceManagement.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(typeof(AddDeviceCommandHandler).Assembly);
-});
+
+builder.Services.AddMediatR(
+    typeof(AddDeviceCommandHandler).Assembly
+);
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseMiddleware<RequestLoggingMiddleware>();

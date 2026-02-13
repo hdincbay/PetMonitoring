@@ -4,6 +4,7 @@ using PetMonitoring.Temperature.Infrastructure.Persistence;
 using PetMonitoring.Temperature.Infrastructure.Persistence.Repositories;
 using PetMonitoring.Temperature.Application.Commands.AddTemperature;
 using PetMonitoring.Temperature.Application.Interfaces;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,10 +25,9 @@ builder.Services.AddDbContext<TemperatureDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.Temperature.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(typeof(AddTemperatureCommand).Assembly);
-});
+builder.Services.AddMediatR(
+    typeof(AddTemperatureCommandHandler).Assembly
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
