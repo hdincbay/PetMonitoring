@@ -1,8 +1,0 @@
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.csproj.AssemblyReference.cache
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\rpswa.dswa.cache.json
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.AssemblyInfoInputs.cache
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.AssemblyInfo.cs
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.csproj.CoreCompileInputs.cache
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Movement.API\obj\Release\net10.0\PetMonitoring.Movement.API.sourcelink.json

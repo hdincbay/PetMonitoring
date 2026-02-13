@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.Temperature.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef909fb6cfb5d30bc219c783c2e61f7d57e45c07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d8032b210d6eb1702cd45e9d10f6c0b9b8041c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.Temperature.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.Temperature.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
