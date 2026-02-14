@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddDeviceCommand"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddDeviceCommand"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AddDeviceCommand"
+                "$ref": "#/components/schemas/CreateDeviceCommand"
               }
             }
           },
@@ -102,7 +102,7 @@
   },
   "components": {
     "schemas": {
-      "AddDeviceCommand": {
+      "CreateDeviceCommand": {
         "required": [
           "name"
         ],

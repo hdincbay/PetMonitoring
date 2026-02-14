@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand.AddDeviceCommand",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand.CreateDeviceCommand",
         "IsRequired": true
       }
     ],
