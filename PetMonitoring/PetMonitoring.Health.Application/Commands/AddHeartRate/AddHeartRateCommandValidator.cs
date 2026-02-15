@@ -7,8 +7,6 @@ public class AddHeartRateCommandValidator
 {
     public AddHeartRateCommandValidator()
     {
-        RuleFor(x => x.PetId)
-            .NotEmpty();
 
         RuleFor(x => x.DeviceId)
             .NotEmpty();

@@ -20,7 +20,8 @@ public class HealthDbContext : DbContext
         {
             entity.HasKey(x => x.Id);
 
-            entity.HasIndex(x => new { x.PetId, x.CreatedDate });
+            entity.Property(x => x.DeviceId)
+                  .IsRequired();
 
             entity.Property(x => x.Bpm)
                   .IsRequired();

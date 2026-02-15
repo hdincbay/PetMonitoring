@@ -37,12 +37,7 @@ namespace __PetMonitoring.Health.Infrastructure.Persistence.Migrations
                     b.Property<Guid>("DeviceId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PetId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PetId", "CreatedDate");
 
                     b.ToTable("HeartRateRecords");
                 });
