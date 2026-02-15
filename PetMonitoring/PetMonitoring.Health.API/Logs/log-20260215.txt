@@ -1,0 +1,8 @@
+2026-02-15 17:29:32.158 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/heartrate/add","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Accept":"*/*","Host":"127.0.0.1:7140","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-901708417766bc5de3cd2e809fd8cbb6-58986114bd059903-00","Content-Length":"106","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"PetId\":\"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd\",\"DeviceId\":\"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\",\"Bpm\":1}"}
+2026-02-15 17:29:33.216 +03:00 [INF] Request finished 
+ POST /api/heartrate/add - 200 in 1068 ms {"Body":""}
+2026-02-15 17:32:35.707 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/heartrate/add","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Accept":"*/*","Host":"127.0.0.1:5113","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-b567d387031b53aee7780f58a9e3ba90-5ddaf3deecccc346-00","Content-Length":"106","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"PetId\":\"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd\",\"DeviceId\":\"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\",\"Bpm\":1}"}
+2026-02-15 17:32:36.600 +03:00 [INF] Request finished 
+ POST /api/heartrate/add - 200 in 902 ms {"Body":""}

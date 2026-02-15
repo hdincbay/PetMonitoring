@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.ApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44c8b0465fedab2d9de2c23d36b1828ccab81a53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6799efa0823ed6590e71585c779047b425a2eb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.ApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.ApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
