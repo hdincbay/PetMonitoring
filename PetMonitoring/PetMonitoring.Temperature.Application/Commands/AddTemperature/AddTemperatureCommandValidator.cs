@@ -7,9 +7,6 @@ public class AddTemperatureCommandValidator
 {
     public AddTemperatureCommandValidator()
     {
-        RuleFor(x => x.PetId)
-            .NotEmpty();
-
         RuleFor(x => x.DeviceId)
             .NotEmpty();
 

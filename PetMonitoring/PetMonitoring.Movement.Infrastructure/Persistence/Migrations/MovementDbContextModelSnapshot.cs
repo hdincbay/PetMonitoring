@@ -46,15 +46,10 @@ namespace PetMonitoring.Movement.Infrastructure.Persistence.Migrations
                     b.Property<int>("InactiveMinutes")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("PetId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("StepCount")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PetId", "CreatedDate");
 
                     b.ToTable("MovementRecords");
                 });

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using PetMonitoring.Temperature.Infrastructure.Persistence;
 
 #nullable disable
 
@@ -36,12 +37,7 @@ namespace PetMonitoring.Temperature.Infrastructure.Persistence.Migrations
                     b.Property<Guid>("DeviceId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PetId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PetId", "CreatedDate");
 
                     b.ToTable("TemperatureRecords");
                 });

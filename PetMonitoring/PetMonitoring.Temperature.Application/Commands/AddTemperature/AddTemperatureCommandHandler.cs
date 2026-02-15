@@ -15,7 +15,7 @@ namespace PetMonitoring.Temperature.Application.Commands.AddTemperature
 
         public async Task<Unit> Handle(AddTemperatureCommand request, CancellationToken cancellationToken)
         {
-            var record = TemperatureRecord.Create(request.PetId, request.DeviceId, request.CelsiusValue);
+            var record = TemperatureRecord.Create(request.DeviceId, request.CelsiusValue);
             await _repository.AddAsync(record, cancellationToken);
             return Unit.Value;
         }

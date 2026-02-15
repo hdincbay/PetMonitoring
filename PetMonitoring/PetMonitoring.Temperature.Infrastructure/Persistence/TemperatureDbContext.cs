@@ -20,7 +20,8 @@ public class TemperatureDbContext : DbContext
         {
             entity.HasKey(x => x.Id);
 
-            entity.HasIndex(x => new { x.PetId, x.CreatedDate });
+            entity.Property(x => x.DeviceId)
+                  .IsRequired();
 
             entity.Property(x => x.CelsiusValue)
                   .IsRequired();
