@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
+using PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Queries;
 

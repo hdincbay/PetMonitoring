@@ -20,8 +20,4 @@
     <ProjectReference Include="..\PetMonitoring.DeviceManagement.Domain\PetMonitoring.DeviceManagement.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Persistence\Migrations\" />
-  </ItemGroup>
-
 </Project>

@@ -2,7 +2,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PetMonitoring.DeviceManagement.API.Middlewares;
-using PetMonitoring.DeviceManagement.Application.Commands.AddDeviceCommand;
+using PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 using PetMonitoring.DeviceManagement.Infrastructure.Persistence.Repositories;

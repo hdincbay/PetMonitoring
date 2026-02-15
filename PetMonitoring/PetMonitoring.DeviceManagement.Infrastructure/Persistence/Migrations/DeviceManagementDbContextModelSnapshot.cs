@@ -37,12 +37,7 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("PetId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PetId", "CreatedDate");
 
                     b.ToTable("DeviceRecords");
                 });

@@ -23,10 +23,10 @@ public class DeviceRepository : IDeviceRepository
         _context.DeviceRecords.Update(record);
         await _context.SaveChangesAsync(ct);
     }
-    public async Task<DeviceRecord?> GetByDeviceIdAsync(Guid petId, CancellationToken ct)
+    public async Task<DeviceRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
         return await _context.DeviceRecords
-            .Where(x => x.PetId == petId)
+            .Where(x => x.Id == deviceId)
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);
     }

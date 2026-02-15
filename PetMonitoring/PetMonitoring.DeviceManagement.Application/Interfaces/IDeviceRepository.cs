@@ -6,5 +6,5 @@ public interface IDeviceRepository
 {
     Task AddAsync(DeviceRecord record, CancellationToken ct);
     Task UpdateAsync(DeviceRecord record, CancellationToken ct);
-    Task<DeviceRecord?> GetByDeviceIdAsync(Guid petId, CancellationToken ct);
+    Task<DeviceRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct);
 }
