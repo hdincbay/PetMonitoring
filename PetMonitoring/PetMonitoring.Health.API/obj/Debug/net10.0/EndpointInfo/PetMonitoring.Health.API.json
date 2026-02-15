@@ -72,16 +72,11 @@
     "schemas": {
       "AddHeartRateCommand": {
         "required": [
-          "petId",
           "deviceId",
           "bpm"
         ],
         "type": "object",
         "properties": {
-          "petId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "deviceId": {
             "type": "string",
             "format": "uuid"

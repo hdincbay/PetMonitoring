@@ -75,7 +75,6 @@
       },
       "AddMovementCommand": {
         "required": [
-          "petId",
           "deviceId",
           "stepCount",
           "distanceInMeters",
@@ -85,10 +84,6 @@
         ],
         "type": "object",
         "properties": {
-          "petId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "deviceId": {
             "type": "string",
             "format": "uuid"

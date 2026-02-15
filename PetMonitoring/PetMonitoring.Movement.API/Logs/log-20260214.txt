@@ -1,3 +1,0 @@
-2026-02-14 00:26:48.108 +03:00 [INF] Request started 
- {"Method":"POST","Path":{"Value":"/api/movement/add","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Accept":"*/*","Host":"127.0.0.1:7144","User-Agent":"curl/8.16.0","Content-Type":"application/json","traceparent":"00-9c5feff1cda122107d068060828a53d9-97b628251255be5f-00","Content-Length":"191","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"PetId\":\"f50c4b14-7dbf-4d7c-a768-8d67e8e7b5cd\",\"DeviceId\":\"1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\",\"StepCount\":3,\"DistanceInMeters\":3.1,\"ActivityLevel\":0,\"ActiveMinutes\":5,\"InactiveMinutes\":7}"}
-2026-02-14 00:26:48.154 +03:00 [INF] Request finished POST /api/movement/add - 404 in 58 ms

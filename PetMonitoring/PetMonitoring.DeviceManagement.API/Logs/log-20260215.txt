@@ -1,4 +1,0 @@
-2026-02-15 17:43:04.643 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-ALTER TABLE [DeviceRecords] ADD [BatteryPercentage] int NOT NULL DEFAULT 0;
-2026-02-15 17:44:10.505 +03:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-ALTER TABLE [DeviceRecords] ADD [BatteryPercentage] int NOT NULL DEFAULT 0;
