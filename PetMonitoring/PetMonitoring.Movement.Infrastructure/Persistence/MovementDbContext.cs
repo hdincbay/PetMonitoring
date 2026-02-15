@@ -20,8 +20,6 @@ public class MovementDbContext : DbContext
         {
             entity.HasKey(x => x.Id);
 
-            entity.HasIndex(x => new { x.PetId, x.CreatedDate });
-
             entity.Property(x => x.CreatedDate)
                   .IsRequired();
         });

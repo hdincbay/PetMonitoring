@@ -5,7 +5,6 @@ namespace PetMonitoring.Movement.Application.Commands.AddMovement;
 
 public sealed record AddMovementCommand
 (
-    Guid PetId,
     Guid DeviceId,
     int StepCount,
     double DistanceInMeters,

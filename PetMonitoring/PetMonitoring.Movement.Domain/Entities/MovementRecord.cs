@@ -4,7 +4,6 @@ namespace PetMonitoring.Movement.Domain.Entities
     public class MovementRecord
     {
         public Guid Id { get; private set; }
-        public Guid PetId { get; private set; }
         public Guid DeviceId { get; private set; }
 
         public DateTime CreatedDate { get; private set; }
@@ -16,11 +15,10 @@ namespace PetMonitoring.Movement.Domain.Entities
         public int InactiveMinutes { get; private set; }
 
         protected MovementRecord() { }
-        public static MovementRecord Create(Guid petId, Guid deviceId, int stepCount, double distanceInMeters, ActivityLevel activityLevel, int activeMinutes, int inActiveMinutes)
+        public static MovementRecord Create(Guid deviceId, int stepCount, double distanceInMeters, ActivityLevel activityLevel, int activeMinutes, int inActiveMinutes)
         {
             return new MovementRecord
             {
-                PetId = petId,
                 DeviceId = deviceId,
                 CreatedDate = DateTime.Now,
                 StepCount = stepCount,

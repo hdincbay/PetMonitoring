@@ -8,9 +8,6 @@ public class AddMovementCommandValidator
 {
     public AddMovementCommandValidator()
     {
-        RuleFor(x => x.PetId)
-            .NotEmpty();
-
         RuleFor(x => x.DeviceId)
             .NotEmpty();
     }

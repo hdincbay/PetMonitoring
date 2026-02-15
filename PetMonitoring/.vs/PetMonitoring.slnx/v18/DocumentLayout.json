@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80CD246A-05E1-4FD0-AFBF-27303E5B8452}|PetMonitoring.Movement.Infrastructure\\PetMonitoring.Movement.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.infrastructure\\persistence\\movementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CD246A-05E1-4FD0-AFBF-27303E5B8452}|PetMonitoring.Movement.Infrastructure\\PetMonitoring.Movement.Infrastructure.csproj|solutionrelative:petmonitoring.movement.infrastructure\\persistence\\movementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\interfaces\\imovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\interfaces\\imovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA940F15-CD7D-4968-B4A3-70D5355746F9}|PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.domain\\entities\\movementrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA940F15-CD7D-4968-B4A3-70D5355746F9}|PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj|solutionrelative:petmonitoring.movement.domain\\entities\\movementrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\queries\\getmovementvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\queries\\getmovementvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\queries\\getmovementhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\queries\\getmovementhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\queries\\getmovementquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\queries\\getmovementquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\commands\\addmovement\\addmovementcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\commands\\addmovement\\addmovementcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\commands\\addmovement\\addmovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\commands\\addmovement\\addmovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.application\\commands\\addmovement\\addmovementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB494857-B71C-483A-A724-08E1322F66E6}|PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj|solutionrelative:petmonitoring.movement.application\\commands\\addmovement\\addmovementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA940F15-CD7D-4968-B4A3-70D5355746F9}|PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.movement.domain\\petmonitoring.movement.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA940F15-CD7D-4968-B4A3-70D5355746F9}|PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj|solutionrelative:petmonitoring.movement.domain\\petmonitoring.movement.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F40BBC-317A-EEAC-2092-72153EFC4FD1}|PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.infrastructure\\persistence\\migrations\\20260215145052_mig_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F40BBC-317A-EEAC-2092-72153EFC4FD1}|PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj|solutionrelative:petmonitoring.health.infrastructure\\persistence\\migrations\\20260215145052_mig_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7F40BBC-317A-EEAC-2092-72153EFC4FD1}|PetMonitoring.Health.Infrastructure\\PetMonitoring.Health.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.infrastructure\\persistence\\healthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,28 +98,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovementDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Infrastructure\\Persistence\\MovementDbContext.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Infrastructure\\Persistence\\MovementDbContext.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Infrastructure\\Persistence\\MovementDbContext.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Infrastructure\\Persistence\\MovementDbContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T15:00:01.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMovementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Interfaces\\IMovementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:50.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetMovementValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementValidator.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Queries\\GetMovementValidator.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementValidator.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Queries\\GetMovementValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:39.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetMovementQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementQuery.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Queries\\GetMovementQuery.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementQuery.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Queries\\GetMovementQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:26.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetMovementHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementHandler.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Queries\\GetMovementHandler.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Queries\\GetMovementHandler.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Queries\\GetMovementHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:23.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddMovementCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandValidator.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandValidator.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandValidator.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:14.679Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "AddMovementCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandHandler.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandHandler.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:59:06.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddMovementCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommand.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommand.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommand.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Application\\Commands\\AddMovement\\AddMovementCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:58:59.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovementRecord.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\Entities\\MovementRecord.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Domain\\Entities\\MovementRecord.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\Entities\\MovementRecord.cs",
+              "RelativeToolTip": "PetMonitoring.Movement.Domain\\Entities\\MovementRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T14:58:46.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PetMonitoring.Movement.Domain",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj",
+              "RelativeDocumentMoniker": "PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj",
+              "RelativeToolTip": "PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-15T14:58:43.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "20260215145052_mig_2.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs",
               "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs",
               "RelativeToolTip": "PetMonitoring.Health.Infrastructure\\Persistence\\Migrations\\20260215145052_mig_2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T14:50:52.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "HealthDbContext.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Infrastructure\\Persistence\\HealthDbContext.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Infrastructure\\Persistence\\HealthDbContext.cs",
@@ -87,12 +257,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Infrastructure\\Persistence\\HealthDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwBYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:49:22.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:49:22.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "HeartRateController.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
@@ -100,12 +269,11 @@
               "RelativeToolTip": "PetMonitoring.Health.API\\Controllers\\HeartRateController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:49:11.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:49:11.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "GetHeartRateQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryValidator.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryValidator.cs",
@@ -113,12 +281,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:49:08.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:49:08.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "GetHeartRateQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryHandler.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryHandler.cs",
@@ -126,12 +293,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQueryHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:49:06.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:49:06.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "GetHeartRateQuery.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Queries\\GetHeartRateQuery.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQuery.cs",
@@ -139,12 +305,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Queries\\GetHeartRateQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:49:05.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:49:05.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "IHeartRateRepository.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Interfaces\\IHeartRateRepository.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Interfaces\\IHeartRateRepository.cs",
@@ -152,12 +317,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Interfaces\\IHeartRateRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:48:58.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:48:58.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "AddHeartRateCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandValidator.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandValidator.cs",
@@ -165,12 +329,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:48:47.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:48:47.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "AddHeartRateCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandHandler.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandHandler.cs",
@@ -178,12 +341,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:48:40.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:48:40.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "AddHeartRateCommand.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
@@ -191,12 +353,11 @@
               "RelativeToolTip": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:48:36.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:48:36.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "HeartRateRecord.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
@@ -204,13 +365,12 @@
               "RelativeToolTip": "PetMonitoring.Health.Domain\\Entities\\HeartRateRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T14:48:17.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T14:48:17.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PetMonitoring.Health.Domain",
+              "DocumentIndex": 21,
+              "Title": "PetMonitoring.Health.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj",
               "RelativeDocumentMoniker": "PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj",
               "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj",
