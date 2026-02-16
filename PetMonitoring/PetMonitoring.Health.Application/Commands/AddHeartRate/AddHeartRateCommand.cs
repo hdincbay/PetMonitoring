@@ -5,6 +5,6 @@ namespace PetMonitoring.Health.Application.Commands.AddHeartRate;
 
 public sealed record AddHeartRateCommand
 (
-    Guid DeviceId,
+    string DeviceSerialNumber,
     int Bpm
 ) : IRequest<Unit>;

@@ -18,7 +18,7 @@ namespace PetMonitoring.Health.Application.Queries
 
         public async Task<HeartRateRecord> Handle(GetHeartRateQuery request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
+            var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
             return record!;
         }
     }

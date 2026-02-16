@@ -20,7 +20,7 @@ public class HealthDbContext : DbContext
         {
             entity.HasKey(x => x.Id);
 
-            entity.Property(x => x.DeviceId)
+            entity.Property(x => x.DeviceSerialNumber)
                   .IsRequired();
 
             entity.Property(x => x.Bpm)

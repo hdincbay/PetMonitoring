@@ -8,7 +8,7 @@ public class AddHeartRateCommandValidator
     public AddHeartRateCommandValidator()
     {
 
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();
 
         RuleFor(x => x.Bpm)

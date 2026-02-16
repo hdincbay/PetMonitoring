@@ -7,15 +7,15 @@ namespace PetMonitoring.Health.Domain.Entities
     public class HeartRateRecord
     {
         public Guid Id { get; private set; }
-        public Guid DeviceId { get; private set; }
+        public string? DeviceSerialNumber { get; private set; }
         public int Bpm { get; private set; }
         public DateTime CreatedDate { get; set; }
         private HeartRateRecord(){}
-        public static HeartRateRecord Create(Guid deviceId, int bpm)
+        public static HeartRateRecord Create(string deviceSerialNumber, int bpm)
         {
             return new HeartRateRecord
             {
-                DeviceId = deviceId,
+                DeviceSerialNumber = deviceSerialNumber,
                 Bpm = bpm,
                 CreatedDate = DateTime.Now
             };

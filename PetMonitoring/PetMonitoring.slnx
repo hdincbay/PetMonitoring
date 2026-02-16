@@ -3,6 +3,12 @@
     <Project Path="PetMonitoring.ApiGateway/PetMonitoring.ApiGateway.csproj" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/Auth/">
+    <Project Path="PetMonitoring.Auth.API/PetMonitoring.Auth.API.csproj" Id="a4c26775-460c-412d-b451-b19e2e2a3e58" />
+    <Project Path="PetMonitoring.Auth.Application/PetMonitoring.Auth.Application.csproj" Id="3fd5c398-d4c9-4ad8-9d13-37910dd02ec0" />
+    <Project Path="PetMonitoring.Auth.Domain/PetMonitoring.Auth.Domain.csproj" Id="043be7fc-c356-455b-880c-871a9709026a" />
+    <Project Path="PetMonitoring.Auth.Infrastructure/PetMonitoring.Auth.Infrastructure.csproj" Id="dcc2f2f9-d6f6-47fa-a8fd-cf14ef9f82e8" />
+  </Folder>
   <Folder Name="/Services/DeviceManagement/">
     <Project Path="PetMonitoring.DeviceManagement.API/PetMonitoring.DeviceManagement.API.csproj" Id="6afecc14-3ff6-4571-bb29-848a4999377f" />
     <Project Path="PetMonitoring.DeviceManagement.Application/PetMonitoring.DeviceManagement.Application.csproj" Id="19165952-79a7-4c76-9ea1-8783f83f83cd" />
@@ -28,6 +34,6 @@
     <Project Path="PetMonitoring.Temperature.Infrastructure/PetMonitoring.Temperature.Infrastructure.csproj" Id="44be11d0-e415-49f5-aedf-e8e78b7539ee" />
   </Folder>
   <Folder Name="/Web/">
-    <Project Path="PetMonitoring.Web/PetMonitoring.Web.csproj" Id="e76f1337-6c70-42ac-bb58-5f6be5c41be8" />
+    <Project Path="PetMonitoring.WebUI/PetMonitoring.WebUI.csproj" Id="00110436-73c9-44d0-9742-48499fe4849f" />
   </Folder>
 </Solution>

@@ -18,7 +18,7 @@ namespace PetMonitoring.Health.Application.Commands.AddHeartRate
 
         public async Task<Unit> Handle(AddHeartRateCommand request, CancellationToken cancellationToken)
         {
-            var heartRateRecord = HeartRateRecord.Create(request.DeviceId, request.Bpm);
+            var heartRateRecord = HeartRateRecord.Create(request.DeviceSerialNumber, request.Bpm);
             await _repository.AddAsync(heartRateRecord, cancellationToken);
             return Unit.Value;
         }

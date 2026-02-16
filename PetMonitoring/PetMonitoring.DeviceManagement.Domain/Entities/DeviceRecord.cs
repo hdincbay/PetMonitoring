@@ -8,6 +8,7 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
     {
         public Guid Id { get; private set; }
         public string? Name { get; private set; }
+        public string? SerialNumber { get; private set; }
         public DateTime CreatedDate { get; private set; }
         public int BatteryPercentage { get; private set; }
         public DeviceRecord()

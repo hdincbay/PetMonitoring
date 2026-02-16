@@ -1,0 +1,6 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Infrastructure\obj\Release\net10.0\PetMonitoring.Temperature.Infrastructure.sourcelink.json

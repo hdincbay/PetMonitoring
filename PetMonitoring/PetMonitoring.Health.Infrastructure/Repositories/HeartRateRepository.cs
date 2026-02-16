@@ -23,11 +23,11 @@ public sealed class HeartRateRepository : IHeartRateRepository
             .FirstOrDefaultAsync(x => x.Id == id, ct);
     }
 
-    public async Task<HeartRateRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
+    public async Task<HeartRateRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
     {
         return await _context.HeartRateRecords
             .AsNoTracking()
-            .Where(x => x.DeviceId == deviceId)
+            .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);
     }

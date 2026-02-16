@@ -23,7 +23,11 @@
         "Action": "Start"
       },
       {
-        "Path": "PetMonitoring.Web\\PetMonitoring.Web.csproj",
+        "Path": "PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PetMonitoring.Auth.API\\PetMonitoring.Auth.API.csproj",
         "Action": "Start"
       }
     ]

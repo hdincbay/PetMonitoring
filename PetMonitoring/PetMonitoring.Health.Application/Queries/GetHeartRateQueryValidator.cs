@@ -8,7 +8,7 @@ public class GetHeartRateQueryValidator
 {
     public GetHeartRateQueryValidator()
     {
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();
     }
 }
