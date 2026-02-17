@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetMonitoring.Temperature.Application\PetMonitoring.Temperature.Application.csproj" />
-    <ProjectReference Include="..\PetMonitoring.Temperature.Domain\PetMonitoring.Temperature.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1256,9 +1256,6 @@
             "projectReferences": {
               "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj": {
                 "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj"
-              },
-              "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj": {
-                "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj"
               }
             }
           }

@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetMonitoring.Health.Application\PetMonitoring.Health.Application.csproj" />
-    <ProjectReference Include="..\PetMonitoring.Health.Domain\PetMonitoring.Health.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3774,8 +3774,7 @@
       "Microsoft.EntityFrameworkCore >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
-      "PetMonitoring.Temperature.Application >= 1.0.0",
-      "PetMonitoring.Temperature.Domain >= 1.0.0"
+      "PetMonitoring.Temperature.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3812,9 +3811,6 @@
           "projectReferences": {
             "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj": {
               "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Application\\PetMonitoring.Temperature.Application.csproj"
-            },
-            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj": {
-              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Temperature.Domain\\PetMonitoring.Temperature.Domain.csproj"
             }
           }
         }

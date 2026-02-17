@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PetMonitoring.Auth.Domain\PetMonitoring.Auth.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

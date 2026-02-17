@@ -730,9 +730,6 @@
             "projectReferences": {
               "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Application\\PetMonitoring.DeviceManagement.Application.csproj": {
                 "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Application\\PetMonitoring.DeviceManagement.Application.csproj"
-              },
-              "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Domain\\PetMonitoring.DeviceManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.DeviceManagement.Domain\\PetMonitoring.DeviceManagement.Domain.csproj"
               }
             }
           }

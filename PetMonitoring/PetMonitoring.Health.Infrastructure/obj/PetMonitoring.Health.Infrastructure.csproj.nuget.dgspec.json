@@ -730,9 +730,6 @@
             "projectReferences": {
               "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj": {
                 "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj"
-              },
-              "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj": {
-                "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Domain\\PetMonitoring.Health.Domain.csproj"
               }
             }
           }

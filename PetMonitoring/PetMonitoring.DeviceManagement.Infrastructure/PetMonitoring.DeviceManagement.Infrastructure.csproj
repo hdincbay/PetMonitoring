@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetMonitoring.DeviceManagement.Application\PetMonitoring.DeviceManagement.Application.csproj" />
-    <ProjectReference Include="..\PetMonitoring.DeviceManagement.Domain\PetMonitoring.DeviceManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>

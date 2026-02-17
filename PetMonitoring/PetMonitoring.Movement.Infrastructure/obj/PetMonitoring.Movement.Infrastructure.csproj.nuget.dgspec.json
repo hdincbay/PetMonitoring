@@ -730,9 +730,6 @@
             "projectReferences": {
               "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj": {
                 "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Application\\PetMonitoring.Movement.Application.csproj"
-              },
-              "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj": {
-                "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Movement.Domain\\PetMonitoring.Movement.Domain.csproj"
               }
             }
           }
