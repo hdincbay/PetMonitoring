@@ -52,11 +52,10 @@
         ],
         "parameters": [
           {
-            "name": "DeviceId",
+            "name": "DeviceSerialNumber",
             "in": "query",
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -72,14 +71,13 @@
     "schemas": {
       "AddHeartRateCommand": {
         "required": [
-          "deviceId",
+          "deviceSerialNumber",
           "bpm"
         ],
         "type": "object",
         "properties": {
-          "deviceId": {
-            "type": "string",
-            "format": "uuid"
+          "deviceSerialNumber": {
+            "type": "string"
           },
           "bpm": {
             "pattern": "^-?(?:0|[1-9]\\d*)$",
