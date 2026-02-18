@@ -17,12 +17,13 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
         {
 
         }
-        public static DeviceRecord Create(string name)
+        public static DeviceRecord Create(string name, string petName)
         {
             return new DeviceRecord
             {
                 CreatedDate = DateTime.Now,
-                Name = name
+                Name = name,
+                PetName = petName
             };
         }
         public void UpdateBatteryPercentage(int batteryPercentage)

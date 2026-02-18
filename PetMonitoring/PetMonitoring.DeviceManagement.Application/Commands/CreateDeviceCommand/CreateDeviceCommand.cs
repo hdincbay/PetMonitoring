@@ -4,5 +4,6 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceComman
 
 public sealed record CreateDeviceCommand
 (
-    string Name
+    string Name,
+    string PetName
 ) : IRequest<Unit>;

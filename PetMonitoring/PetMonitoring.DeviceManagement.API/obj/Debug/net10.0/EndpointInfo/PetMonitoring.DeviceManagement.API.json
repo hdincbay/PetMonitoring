@@ -104,11 +104,15 @@
     "schemas": {
       "CreateDeviceCommand": {
         "required": [
-          "name"
+          "name",
+          "petName"
         ],
         "type": "object",
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "petName": {
             "type": "string"
           }
         }

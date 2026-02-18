@@ -18,7 +18,7 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceComman
 
         public async Task<Unit> Handle(CreateDeviceCommand request, CancellationToken cancellationToken)
         {
-            var record = DeviceRecord.Create(request.Name);
+            var record = DeviceRecord.Create(request.Name, request.PetName);
             await _repository.AddAsync(record, cancellationToken);
             return Unit.Value;
         }
