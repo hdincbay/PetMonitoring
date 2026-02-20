@@ -25,8 +25,4 @@
     <ProjectReference Include="..\PetMonitoring.Auth.Infrastructure\PetMonitoring.Auth.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

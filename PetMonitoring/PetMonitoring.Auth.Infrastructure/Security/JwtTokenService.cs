@@ -2,8 +2,6 @@
 using Microsoft.IdentityModel.Tokens;
 using PetMonitoring.Auth.Application.Interfaces;
 using PetMonitoring.Auth.Domain.Entities;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -11,7 +9,7 @@ using System.Text;
 
 namespace PetMonitoring.Auth.Infrastructure.Security
 {
-    public class JwtTokenService : ITokenService
+    public sealed class JwtTokenService : ITokenService
     {
         private readonly JwtSettings _settings;
 
@@ -25,7 +23,7 @@ namespace PetMonitoring.Auth.Infrastructure.Security
             var claims = new[]
             {
             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email)
+            new Claim(JwtRegisteredClaimNames.Email, user.Email!)
         };
 
             var key = new SymmetricSecurityKey(
@@ -41,7 +39,16 @@ namespace PetMonitoring.Auth.Infrastructure.Security
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public string GenerateRefreshToken()
-            => Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
+        public RefreshToken GenerateRefreshToken(Guid userId)
+        {
+            return new RefreshToken
+            {
+                Id = Guid.NewGuid(),
+                Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
+                ExpiresAt = DateTime.UtcNow.AddDays(7),
+                UserId = userId,
+                IsRevoked = false
+            };
+        }
     }
 }

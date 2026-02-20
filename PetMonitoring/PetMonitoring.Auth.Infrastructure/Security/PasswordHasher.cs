@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PetMonitoring.Auth.Infrastructure.Security
 {
-    public class PasswordHasher : IPasswordHasher
+    public sealed class PasswordHasher : IPasswordHasher
     {
         public string Hash(string password)
             => BCrypt.Net.BCrypt.HashPassword(password);
