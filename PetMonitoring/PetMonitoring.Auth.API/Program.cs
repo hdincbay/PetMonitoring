@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.Auth.Application.Interfaces;
 using PetMonitoring.Auth.Domain;
 using PetMonitoring.Auth.Infrastructure.Persistence;
+using PetMonitoring.Auth.Infrastructure.Repositories;
+using PetMonitoring.Auth.Infrastructure.Security;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +31,9 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.Auth.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ITokenService, JwtTokenService>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
