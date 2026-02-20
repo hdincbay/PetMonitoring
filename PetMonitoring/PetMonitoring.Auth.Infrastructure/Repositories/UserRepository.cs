@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Auth.Application.Interfaces;
-using PetMonitoring.Auth.Domain;
+using PetMonitoring.Auth.Domain.Entities;
 using PetMonitoring.Auth.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;

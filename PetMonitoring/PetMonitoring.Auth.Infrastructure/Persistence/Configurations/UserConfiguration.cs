@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PetMonitoring.Auth.Domain;
+using PetMonitoring.Auth.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

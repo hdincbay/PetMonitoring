@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.Auth.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b8546711796c8ded794f5dda2679b46dcd8ef00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43aa927ebd46b71f09771efe3eb489ed0af42398")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.Auth.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.Auth.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

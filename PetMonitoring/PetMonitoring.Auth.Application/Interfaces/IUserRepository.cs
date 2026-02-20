@@ -1,4 +1,4 @@
-﻿using PetMonitoring.Auth.Domain;
+﻿using PetMonitoring.Auth.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

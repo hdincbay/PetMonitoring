@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Auth.Application.Interfaces;
-using PetMonitoring.Auth.Domain;
+using PetMonitoring.Auth.Domain.Entities;
 using PetMonitoring.Auth.Infrastructure.Persistence;
 using PetMonitoring.Auth.Infrastructure.Repositories;
 using PetMonitoring.Auth.Infrastructure.Security;

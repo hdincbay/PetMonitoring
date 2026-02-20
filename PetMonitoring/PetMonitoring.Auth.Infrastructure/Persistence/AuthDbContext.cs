@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using PetMonitoring.Auth.Domain;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Text;
+using PetMonitoring.Auth.Domain.Entities;
 
 namespace PetMonitoring.Auth.Infrastructure.Persistence
 {
@@ -15,6 +11,7 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence
             : base(options)
         {
         }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(typeof(AuthDbContext).Assembly);

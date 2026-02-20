@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using PetMonitoring.Auth.Application.Interfaces;
-using PetMonitoring.Auth.Domain;
+using PetMonitoring.Auth.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
