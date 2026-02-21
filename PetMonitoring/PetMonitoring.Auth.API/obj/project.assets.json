@@ -3740,6 +3740,7 @@
       "Microsoft.EntityFrameworkCore >= 10.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.3",
+      "PetMonitoring.Auth.Application >= 1.0.0",
       "PetMonitoring.Auth.Infrastructure >= 1.0.0",
       "Serilog >= 4.3.1",
       "Serilog.AspNetCore >= 10.0.0",
@@ -3780,6 +3781,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Auth.Application\\PetMonitoring.Auth.Application.csproj": {
+              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Auth.Application\\PetMonitoring.Auth.Application.csproj"
+            },
             "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Auth.Infrastructure\\PetMonitoring.Auth.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Auth.Infrastructure\\PetMonitoring.Auth.Infrastructure.csproj"
             }

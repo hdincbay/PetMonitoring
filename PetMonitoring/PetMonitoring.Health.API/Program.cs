@@ -1,12 +1,9 @@
 using FluentValidation;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Health.API.Middlewares;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
-using PetMonitoring.Health.Application.Interfaces;
-using PetMonitoring.Health.Infrastructure.Persistence;
 using Serilog;
-
+using PetMonitoring.Health.Infrastructure.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 Log.Logger = new LoggerConfiguration()
@@ -20,16 +17,7 @@ builder.Services.AddValidatorsFromAssembly(
 );
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IHeartRateRepository, HeartRateRepository>();
-builder.Services.AddDbContext<HealthDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("HealthDb"),
-        sql =>
-        {
-            sql.MigrationsAssembly("PetMonitoring.Health.Infrastructure");
-            sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
-        }));
-
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddMediatR(
     typeof(AddHeartRateCommandHandler).Assembly
 );

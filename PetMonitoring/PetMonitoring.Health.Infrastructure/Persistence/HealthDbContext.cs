@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 
 namespace PetMonitoring.Health.Infrastructure.Persistence;
-
 public class HealthDbContext : DbContext
 {
     public HealthDbContext(DbContextOptions<HealthDbContext> options)

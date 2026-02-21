@@ -34,6 +34,9 @@
     <Project Path="PetMonitoring.Temperature.Infrastructure/PetMonitoring.Temperature.Infrastructure.csproj" Id="44be11d0-e415-49f5-aedf-e8e78b7539ee" />
   </Folder>
   <Folder Name="/Web/">
+    <Project Path="PetMonitoring.Web.Application/PetMonitoring.Web.Application.csproj" Id="77ef08cd-8641-47a3-a265-b9c9894b99d1" />
+    <Project Path="PetMonitoring.Web.Domain/PetMonitoring.Web.Domain.csproj" Id="0122d252-8c42-4450-8a16-7ad6b51ba8b2" />
+    <Project Path="PetMonitoring.Web.Infrastructure/PetMonitoring.Web.Infrastructure.csproj" Id="cad15857-e732-4ba0-b2a7-fc364399a0e8" />
     <Project Path="PetMonitoring.WebUI/PetMonitoring.WebUI.csproj" Id="00110436-73c9-44d0-9742-48499fe4849f" />
   </Folder>
 </Solution>

@@ -2,6 +2,9 @@
 using PetMonitoring.Health.Application.Interfaces;
 using PetMonitoring.Health.Domain.Entities;
 using PetMonitoring.Health.Infrastructure.Persistence;
+
+namespace PetMonitoring.Health.Infrastructure.Repositories;
+
 public sealed class HeartRateRepository : IHeartRateRepository
 {
     private readonly HealthDbContext _context;

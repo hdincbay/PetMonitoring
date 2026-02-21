@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Temperature.Application.Interfaces;
 using PetMonitoring.Temperature.Domain.Entities;
+using PetMonitoring.Temperature.Infrastructure.Persistence;
 
-namespace PetMonitoring.Temperature.Infrastructure.Persistence.Repositories;
+namespace PetMonitoring.Temperature.Infrastructure.Repositories;
 
 public class TemperatureRepository : ITemperatureRepository
 {

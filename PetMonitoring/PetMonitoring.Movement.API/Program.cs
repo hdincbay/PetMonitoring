@@ -1,13 +1,10 @@
 using FluentValidation;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Movement.API.Middlewares;
 using PetMonitoring.Movement.Application.Commands.AddMovement;
-using PetMonitoring.Movement.Application.Interfaces;
 using PetMonitoring.Movement.Application.Validators;
-using PetMonitoring.Movement.Infrastructure.Persistence;
-using PetMonitoring.Movement.Infrastructure.Persistence.Repositories;
 using Serilog;
+using PetMonitoring.Movement.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,16 +20,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddValidatorsFromAssembly(
     typeof(AddMovementCommandValidator).Assembly
 );
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddScoped<IMovementRepository, MovementRepository>();
-builder.Services.AddDbContext<MovementDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("MovementDb"),
-        sql =>
-        {
-            sql.MigrationsAssembly("PetMonitoring.Movement.Infrastructure");
-            sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
-        }));
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddMediatR(
     typeof(AddMovementCommandHandler).Assembly
 );

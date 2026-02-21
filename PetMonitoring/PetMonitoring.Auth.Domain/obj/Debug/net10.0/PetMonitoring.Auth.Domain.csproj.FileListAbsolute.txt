@@ -1,0 +1,13 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\bin\Debug\net10.0\PetMonitoring.Auth.Domain.deps.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\bin\Debug\net10.0\PetMonitoring.Auth.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\bin\Debug\net10.0\PetMonitoring.Auth.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.csproj.AssemblyReference.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.sourcelink.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\refint\PetMonitoring.Auth.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\PetMonitoring.Auth.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Auth.Domain\obj\Debug\net10.0\ref\PetMonitoring.Auth.Domain.dll

@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
 using PetMonitoring.DeviceManagement.Domain.Entities;
+using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 
-namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Repositories;
+namespace PetMonitoring.DeviceManagement.Infrastructure.Repositories;
 
 public class DeviceRepository : IDeviceRepository
 {

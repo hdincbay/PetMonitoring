@@ -1,13 +1,7 @@
 using MediatR;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Auth.Application.Commands.Login;
-using PetMonitoring.Auth.Application.Interfaces;
-using PetMonitoring.Auth.Domain.Entities;
-using PetMonitoring.Auth.Infrastructure.Persistence;
-using PetMonitoring.Auth.Infrastructure.Repositories;
-using PetMonitoring.Auth.Infrastructure.Security;
 using Serilog;
+using PetMonitoring.Auth.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -16,33 +10,10 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
-builder.Services
-    .AddIdentity<User, IdentityRole<Guid>>(options =>
-    {
-        options.User.RequireUniqueEmail = true;
-        options.Password.RequiredLength = 6;
-        options.Password.RequireDigit = true;
-    })
-    .AddEntityFrameworkStores<AuthDbContext>()
-    .AddDefaultTokenProviders();
-builder.Services.AddDbContext<AuthDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("AuthDb"),
-        sql =>
-        {
-            sql.MigrationsAssembly("PetMonitoring.Auth.Infrastructure");
-            sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
-        }));
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddMediatR(
     typeof(LoginCommandHandler).Assembly
 );
-builder.Services.Configure<JwtSettings>(
-    builder.Configuration.GetSection("JwtSettings"));
-
-builder.Services.AddSingleton<ITokenService, JwtTokenService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

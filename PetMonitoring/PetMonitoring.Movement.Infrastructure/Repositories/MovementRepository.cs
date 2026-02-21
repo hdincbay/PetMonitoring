@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetMonitoring.Movement.Application.Interfaces;
 using PetMonitoring.Movement.Domain.Entities;
+using PetMonitoring.Movement.Infrastructure.Persistence;
 
-namespace PetMonitoring.Movement.Infrastructure.Persistence.Repositories;
+namespace PetMonitoring.Movement.Infrastructure.Repositories;
 
 public class MovementRepository : IMovementRepository
 {

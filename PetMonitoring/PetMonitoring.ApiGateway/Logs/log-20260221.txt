@@ -45,3 +45,16 @@
 2026-02-21 14:18:14.464 +03:00 [INF] Proxying to http://localhost:5062/api/auth/Login HTTP/2 RequestVersionOrLower 
 2026-02-21 14:18:16.897 +03:00 [INF] Received HTTP/1.1 response 200.
 2026-02-21 14:18:16.899 +03:00 [INF] Gateway Request Log {"Request":{"Method":"POST","Scheme":"https","Host":"127.0.0.1:7071","Path":"/Auth/Login","Query":"","Headers":{"Accept":"*/*","Connection":"keep-alive","Host":"127.0.0.1:7071","User-Agent":"PostmanRuntime/7.44.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"67","Postman-Token":"3715e1b4-6611-41fc-b415-0e4b0a700d6a"},"Body":"{\r\n    \"Email\": \"hdincbay@test.com\",\r\n    \"Password\": \"Test123.\"\r\n}"},"Routing":{"RouteId":"auth-route","ClusterId":"auth-cluster","DownstreamUrl":"http://localhost:5062/api/auth/Login"},"Response":{"StatusCode":200,"Body":"{\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTI1YTBhMy02NTU3LTRmOGMtMmEwZS0wOGRlNzEzNDQ3ZGIiLCJlbWFpbCI6ImhkaW5jYmF5QHRlc3QuY29tIiwianRpIjoiNGVkYTkwMjktNjJlNS00NGIxLTg0ZjktOWIzNWE2YTQzZThhIiwiZXhwIjoxNzcxNjc0NDk2fQ.tjGQ5aP16p3HK0c5HjB1pgIqrTo2DbUmu6bMCiqWVqM\",\"refreshToken\":\"NnrNkX8zx8l/pn4nkcshWdIjtTcxsrhdJsstmnABq0ZRlxE/Vl98TnQxs2Slag9AjuPdgBtj/IrBfKL/I6cPEQ==\"}"},"Performance":{"ElapsedMs":2440},"Error":null}
+2026-02-21 16:05:00.727 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:05:57.476 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:09:49.407 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:10:46.207 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:13:18.553 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:17:08.357 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:18:16.017 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:19:44.395 +03:00 [INF] Loading proxy data from config.
+2026-02-21 16:23:20.522 +03:00 [INF] Loading proxy data from config.
+2026-02-21 17:15:32.233 +03:00 [INF] Loading proxy data from config.
+2026-02-21 17:15:47.227 +03:00 [INF] Proxying to http://localhost:5062/api/auth/Register HTTP/2 RequestVersionOrLower 
+2026-02-21 17:15:49.677 +03:00 [INF] Received HTTP/1.1 response 200.
+2026-02-21 17:15:49.706 +03:00 [INF] Gateway Request Log {"Request":{"Method":"POST","Scheme":"https","Host":"127.0.0.1:7071","Path":"/Auth/Register","Query":"","Headers":{"Accept":"*/*","Connection":"keep-alive","Host":"127.0.0.1:7071","User-Agent":"PostmanRuntime/7.51.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"98","Postman-Token":"25d714a4-bed3-4e24-a942-566f8e6e87c3"},"Body":"{\r\n    \"UserName\": \"hdincbay2\",\r\n    \"Email\": \"hdincbay2@test.com\",\r\n    \"Password\": \"Test123.\"\r\n}"},"Routing":{"RouteId":"auth-route","ClusterId":"auth-cluster","DownstreamUrl":"http://localhost:5062/api/auth/Register"},"Response":{"StatusCode":200,"Body":"{\"userId\":\"e249fef3-0018-4ada-327a-08de7153b6b8\",\"userName\":\"hdincbay2\",\"email\":\"hdincbay2@test.com\",\"message\":\"Successfully registered.\"}"},"Performance":{"ElapsedMs":2606},"Error":null}
