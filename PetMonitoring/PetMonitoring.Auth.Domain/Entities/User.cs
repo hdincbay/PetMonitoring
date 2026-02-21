@@ -6,7 +6,12 @@ namespace PetMonitoring.Auth.Domain.Entities
 {
     public class User : IdentityUser<Guid>
     {
-        protected User() { }
+        public User() { }
+        public User(string userName, string email)
+        {
+            UserName = userName;
+            Email = email;
+        }
 
         private readonly List<RefreshToken> _refreshTokens = new();
         public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens.AsReadOnly();

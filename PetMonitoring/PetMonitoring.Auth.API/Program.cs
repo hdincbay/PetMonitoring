@@ -1,5 +1,7 @@
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PetMonitoring.Auth.Application.Commands.Login;
 using PetMonitoring.Auth.Application.Interfaces;
 using PetMonitoring.Auth.Domain.Entities;
 using PetMonitoring.Auth.Infrastructure.Persistence;
@@ -31,9 +33,14 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
             sql.MigrationsAssembly("PetMonitoring.Auth.Infrastructure");
             sql.MigrationsHistoryTable("__EFMigrationsHistory", "Persistence");
         }));
+builder.Services.AddMediatR(
+    typeof(LoginCommandHandler).Assembly
+);
+builder.Services.Configure<JwtSettings>(
+    builder.Configuration.GetSection("JwtSettings"));
+
+builder.Services.AddSingleton<ITokenService, JwtTokenService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<ITokenService, JwtTokenService>();
-builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddControllers();
@@ -48,7 +55,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
