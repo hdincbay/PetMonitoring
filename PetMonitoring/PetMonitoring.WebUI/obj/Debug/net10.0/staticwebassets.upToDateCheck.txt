@@ -484,6 +484,7 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwr
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\brands\deviantart.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\solid\user-graduate.svg
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\js\auth.js
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\brands\redhat.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\brands\opera.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\solid\ruler-combined.svg
@@ -1120,6 +1121,7 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwr
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\solid\text-width.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\jquery-easing\jquery.easing.min.js
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\brands\researchgate.svg
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\js\auth.min.js
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\solid\shopping-basket.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\solid\flask.svg
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\wwwroot\vendor\fontawesome-free\svgs\regular\hand-point-right.svg
@@ -1757,6 +1759,8 @@ wwwroot\img\undraw_profile_1.svg
 wwwroot\img\undraw_profile_2.svg
 wwwroot\img\undraw_profile_3.svg
 wwwroot\img\undraw_rocket.svg
+wwwroot\js\auth.js
+wwwroot\js\auth.min.js
 wwwroot\js\demo\chart-area-demo.js
 wwwroot\js\demo\chart-bar-demo.js
 wwwroot\js\demo\chart-pie-demo.js

@@ -1,0 +1,16 @@
+﻿@model LoginDTO
+@{
+    Layout = "_AuthLayout";
+}
+<form id="loginForm" asp-controller="Login" asp-action="ProcessLogin" method="post">
+    <h2>Giriş Yap</h2>
+    <input asp-for="Email" type="email" placeholder="E-posta" required>
+    <input asp-for="Password" type="password" placeholder="Şifre" required>
+    <button class="btn">Giriş Yap</button>
+    <div class="switch" onclick="showRegister()">Hesap oluştur</div>
+</form>
+<div class="success" id="successBox">
+    <div class="check">✓</div>
+    <h2>Başarılı!</h2>
+    <p>Demo giriş tamamlandı.</p>
+</div>

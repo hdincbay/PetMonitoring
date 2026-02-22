@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7182618ff6eb3f78c04fc6b6520247f8f7856657")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c6fa4dab59af0b0d2c0e2480425abe1217018e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

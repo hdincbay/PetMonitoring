@@ -22,7 +22,6 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\scopedcss\Views\Shared\_LoginLayout.cshtml.rz.scp.css
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\scopedcss\bundle\PetMonitoring.WebUI.styles.css
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\scopedcss\projectbundle\PetMonitoring.WebUI.bundle.scp.css
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\43188b2fee-{0}-r3unjvhb45-r3unjvhb45.gz
@@ -1775,8 +1774,6 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\7kbdyjhll7-{0}-33z6q9z31h-33z6q9z31h.gz
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\u378kf4ksx-{0}-rszun4iext-rszun4iext.gz
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\vnkgfl857s-{0}-l5o0ocrnlv-l5o0ocrnlv.gz
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\hkay08tt9l-{0}-lhnmxp7am8-lhnmxp7am8.gz
-C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\na22sejoiu-{0}-lhnmxp7am8-lhnmxp7am8.gz
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\staticwebassets.development.json
@@ -1795,3 +1792,8 @@ C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\bin\
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\bin\Debug\net10.0\PetMonitoring.Web.Application.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\bin\Debug\net10.0\PetMonitoring.Web.Infrastructure.pdb
 C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\bin\Debug\net10.0\PetMonitoring.Web.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\scopedcss\Views\Shared\_AuthLayout.cshtml.rz.scp.css
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\na2rox9ro3-{0}-3wkk0jr7h6-3wkk0jr7h6.gz
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\hkay08tt9l-{0}-qpap5jzgzj-qpap5jzgzj.gz
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\na22sejoiu-{0}-qpap5jzgzj-qpap5jzgzj.gz
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.WebUI\obj\Debug\net10.0\compressed\a4754hlvw8-{0}-8rogxyzm1b-8rogxyzm1b.gz

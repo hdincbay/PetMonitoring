@@ -1,0 +1,24 @@
+﻿@model LoginDTO
+@{
+    Layout = "_AuthLayout";
+}
+<form id="registerForm" asp-controller="Login" asp-action="ProcessLogin" method="post">
+    <h2>Hesap Oluştur</h2>
+
+    <div class="grid">
+        <input placeholder="İsim" required>
+        <input placeholder="Soyisim" required>
+        <input type="number" placeholder="Yaş" required>
+        <input placeholder="Kullanıcı Adı" required>
+        <input type="email" placeholder="E-posta" required>
+        <input type="password" id="password" placeholder="Şifre" required>
+        <input placeholder="Evcil Dostunuzun Cinsi">
+        <input placeholder="Evcil Dostunuzun İsmi">
+        <input type="number" placeholder="Evcil Dostunuzun Yaşı">
+    </div>
+
+    <div class="strength"><div class="bar"></div></div>
+
+    <button class="btn">Hesap Oluştur</button>
+    <div class="switch" onclick="showLogin()">Giriş yap</div>
+</form>
