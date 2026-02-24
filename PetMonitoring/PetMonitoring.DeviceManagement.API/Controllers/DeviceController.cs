@@ -24,7 +24,7 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
             await _mediator.Send(record);
             return Ok();
         }
-        [HttpPut("Update")]
+        [HttpPatch("Update")]
         public async Task<IActionResult> Update([FromBody] UpdateDeviceCommand record)
         {
             await _mediator.Send(record);
