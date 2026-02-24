@@ -45,7 +45,7 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DeviceRecords");
+                    b.ToTable("DeviceRecords", (string)null);
                 });
 #pragma warning restore 612, 618
         }

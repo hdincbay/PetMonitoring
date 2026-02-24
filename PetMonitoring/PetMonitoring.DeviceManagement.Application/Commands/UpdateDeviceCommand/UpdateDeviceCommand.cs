@@ -5,5 +5,6 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceComman
 public sealed record UpdateDeviceCommand
 (
     Guid DeviceId,
-    int BatteryPercentage
+    string Name,
+    string PetName
 ) : IRequest<Unit>;

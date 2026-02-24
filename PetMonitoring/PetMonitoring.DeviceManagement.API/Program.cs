@@ -1,9 +1,9 @@
 using FluentValidation;
 using MediatR;
 using PetMonitoring.DeviceManagement.API.Middlewares;
-using PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand;
 using Serilog;
 using PetMonitoring.DeviceManagement.Infrastructure.DependencyInjection;
+using PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -20,7 +20,7 @@ builder.Services.AddValidatorsFromAssembly(
 builder.Services.AddOpenApi();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddMediatR(
-    typeof(CreateDeviceCommandHandler).Assembly
+    typeof(UpdateDeviceCommandHandler).Assembly
 );
 var app = builder.Build();
 // Configure the HTTP request pipeline.

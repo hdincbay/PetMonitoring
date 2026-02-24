@@ -26,6 +26,14 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
                 PetName = petName
             };
         }
+        public void Update(string? name, string? petName)
+        {
+            if (!string.IsNullOrWhiteSpace(name))
+                Name = name;
+
+            if (!string.IsNullOrWhiteSpace(petName))
+                PetName = petName;
+        }
         public void UpdateBatteryPercentage(int batteryPercentage)
         {
             if (batteryPercentage < 0 || batteryPercentage > 100)

@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PetMonitoring.DeviceManagement.Application.Commands.CreateDeviceCommand;
 
-public class UpdateDeviceCommandValidator
+public class CreateDeviceCommandValidator
     : AbstractValidator<CreateDeviceCommand>
 {
-    public UpdateDeviceCommandValidator()
+    public CreateDeviceCommandValidator()
     {
         RuleFor(x => x.Name)
             .NotEmpty();

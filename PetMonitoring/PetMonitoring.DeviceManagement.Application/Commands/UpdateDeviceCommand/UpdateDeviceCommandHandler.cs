@@ -23,7 +23,7 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceComman
             {
                 throw new KeyNotFoundException("Record Number " + request.DeviceId + " Not Found");
             }
-            record.UpdateBatteryPercentage(request.BatteryPercentage);
+            record.Update(request.Name, request.PetName);
             await _repository.UpdateAsync(record, cancellationToken);
             return Unit.Value;
         }

@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "record",
-        "Type": "PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand.UpdateDeviceCommand",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.BatteryUpdateCommand.BatteryUpdateCommand",
         "IsRequired": true
       }
     ],
@@ -43,6 +43,22 @@
         "Name": "DeviceId",
         "Type": "System.Guid",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
+    "Method": "Update",
+    "RelativePath": "api/Device/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand.UpdateDeviceCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -8,9 +8,7 @@ public class UpdateDeviceCommandValidator
 {
     public UpdateDeviceCommandValidator()
     {
-        RuleFor(x => x.DeviceId)
-            .NotEmpty();
-        RuleFor(x => x.BatteryPercentage)
+        RuleFor(x => x.Name)
             .NotEmpty();
     }
 }
