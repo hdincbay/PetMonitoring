@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     const toggle = document.getElementById("themeToggle");
     const icon = document.getElementById("themeIcon");
 
@@ -14,26 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const registerForm = document.getElementById("registerForm");
     const successBox = document.getElementById("successBox");
 
-    function showRegister() {
-        if (loginForm) loginForm.style.display = "none";
-        if (registerForm) registerForm.style.display = "block";
-    }
 
-    function showLogin() {
-        if (registerForm) registerForm.style.display = "none";
-        if (loginForm) loginForm.style.display = "block";
-    }
 
-    if (loginForm && registerForm && successBox) {
+    if (successBox) {
         const submitHandler = (e) => {
             e.preventDefault();
-            loginForm.style.display = "none";
-            registerForm.style.display = "none";
+            if (loginForm) {
+                loginForm.style.display = "none";
+                loginForm.addEventListener("submit", submitHandler);
+            }
+            if (registerForm) {
+                registerForm.style.display = "none";
+                registerForm.addEventListener("submit", submitHandler);
+            }
             successBox.style.display = "block";
         };
-
-        loginForm.addEventListener("submit", submitHandler);
-        registerForm.addEventListener("submit", submitHandler);
     }
 
     const password = document.getElementById("password");

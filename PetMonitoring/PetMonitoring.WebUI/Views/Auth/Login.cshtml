@@ -2,12 +2,12 @@
 @{
     Layout = "_AuthLayout";
 }
-<form id="loginForm" asp-controller="Login" asp-action="ProcessLogin" method="post">
+<form id="loginForm" asp-controller="Login" asp-action="Login" method="post">
     <h2>Giriş Yap</h2>
     <input asp-for="Email" type="email" placeholder="E-posta" required>
     <input asp-for="Password" type="password" placeholder="Şifre" required>
     <button class="btn">Giriş Yap</button>
-    <div class="switch" onclick="showRegister()">Hesap oluştur</div>
+    <a class="switch" asp-controller="Auth" asp-action="Register" method="get">Hesap oluştur</a>
 </form>
 <div class="success" id="successBox">
     <div class="check">✓</div>

@@ -10,17 +10,24 @@ namespace PetMonitoring.WebUI.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> ProcessLogin([FromForm] LoginDTO model)
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromForm] LoginDTO model)
         {
             var modelSrl = Newtonsoft.Json.JsonConvert.SerializeObject(model);
 
             return RedirectToAction("Index", "Home");
         }
-        [HttpGet]
+        [HttpGet("Register")]
         public IActionResult Register()
         {
             return View();
+        }
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register([FromForm] RegisterDTO model)
+        {
+            var modelSrl = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

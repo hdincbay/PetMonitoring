@@ -51,7 +51,7 @@
     "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
     "Method": "Update",
     "RelativePath": "api/Device/Update",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [

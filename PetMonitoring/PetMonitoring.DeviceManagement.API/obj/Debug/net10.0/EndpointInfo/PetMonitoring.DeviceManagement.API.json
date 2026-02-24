@@ -46,7 +46,7 @@
       }
     },
     "/api/Device/Update": {
-      "put": {
+      "patch": {
         "tags": [
           "Device"
         ],

@@ -2,6 +2,7 @@
 
 namespace PetMonitoring.WebUI.Controllers
 {
+    [Route("[controller]")]
     public class DeviceController : Controller
     {
         public IActionResult Index()
