@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.Web.Domain.DTOs;
+using PetMonitoring.Web.Application.DTOs;
 
 namespace PetMonitoring.WebUI.Controllers
 {

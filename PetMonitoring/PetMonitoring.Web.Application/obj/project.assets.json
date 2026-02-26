@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {
-      "PetMonitoring.Web.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/PetMonitoring.Web.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PetMonitoring.Web.Domain.dll": {}
-        }
-      }
-    }
+    "net10.0": {}
   },
-  "libraries": {
-    "PetMonitoring.Web.Domain/1.0.0": {
-      "type": "project",
-      "path": "../PetMonitoring.Web.Domain/PetMonitoring.Web.Domain.csproj",
-      "msbuildProject": "../PetMonitoring.Web.Domain/PetMonitoring.Web.Domain.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net10.0": [
-      "PetMonitoring.Web.Domain >= 1.0.0"
-    ]
+    "net10.0": []
   },
   "packageFolders": {
     "C:\\Users\\hdinc\\.nuget\\packages\\": {},
@@ -57,11 +38,7 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Domain\\PetMonitoring.Web.Domain.csproj": {
-              "projectPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Domain\\PetMonitoring.Web.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

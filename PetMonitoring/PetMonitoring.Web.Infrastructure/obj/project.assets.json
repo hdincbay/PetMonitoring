@@ -5,24 +5,11 @@
       "PetMonitoring.Web.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "PetMonitoring.Web.Domain": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/PetMonitoring.Web.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/PetMonitoring.Web.Application.dll": {}
-        }
-      },
-      "PetMonitoring.Web.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/PetMonitoring.Web.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PetMonitoring.Web.Domain.dll": {}
         }
       }
     }
@@ -32,11 +19,6 @@
       "type": "project",
       "path": "../PetMonitoring.Web.Application/PetMonitoring.Web.Application.csproj",
       "msbuildProject": "../PetMonitoring.Web.Application/PetMonitoring.Web.Application.csproj"
-    },
-    "PetMonitoring.Web.Domain/1.0.0": {
-      "type": "project",
-      "path": "../PetMonitoring.Web.Domain/PetMonitoring.Web.Domain.csproj",
-      "msbuildProject": "../PetMonitoring.Web.Domain/PetMonitoring.Web.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

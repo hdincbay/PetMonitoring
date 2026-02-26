@@ -109,20 +109,32 @@
         }
       }
     },
-    "/api/Device/GetByDevice": {
+    "/api/Device/GetByDeviceId": {
       "get": {
         "tags": [
           "Device"
         ],
         "parameters": [
           {
-            "name": "DeviceId",
+            "name": "deviceId",
             "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Device/GetAllDevices": {
+      "get": {
+        "tags": [
+          "Device"
         ],
         "responses": {
           "200": {

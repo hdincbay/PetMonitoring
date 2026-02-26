@@ -33,14 +33,24 @@
   },
   {
     "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
-    "Method": "GetByDevice",
-    "RelativePath": "api/Device/GetByDevice",
+    "Method": "GetAllDevices",
+    "RelativePath": "api/Device/GetAllDevices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetMonitoring.DeviceManagement.API.Controllers.DeviceController",
+    "Method": "GetByDeviceId",
+    "RelativePath": "api/Device/GetByDeviceId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "DeviceId",
+        "Name": "deviceId",
         "Type": "System.Guid",
         "IsRequired": false
       }

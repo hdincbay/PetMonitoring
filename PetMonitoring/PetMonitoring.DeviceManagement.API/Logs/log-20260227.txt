@@ -1,0 +1,5 @@
+2026-02-27 00:33:08.523 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-840e447664ebd46fbf77df77ca5ffbac-f3c908033b4b3276-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-02-27 00:33:09.053 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-02-27 00:33:11.194 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 2680 ms {"Body":"[]"}

@@ -1,0 +1,9 @@
+2026-02-27 00:17:45.222 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:18:36.447 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:19:42.070 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:21:54.088 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:22:58.174 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:32:50.265 +03:00 [INF] Loading proxy data from config.
+2026-02-27 00:33:08.302 +03:00 [INF] Proxying to https://127.0.0.1:7225/api/device/GetAllDevices HTTP/2 RequestVersionOrLower 
+2026-02-27 00:33:11.224 +03:00 [INF] Received HTTP/2.0 response 200.
+2026-02-27 00:33:11.279 +03:00 [INF] Gateway Request Log {"Request":{"Method":"GET","Scheme":"https","Host":"127.0.0.1:7071","Path":"/Devicemanagement/GetAllDevices","Query":"","Headers":{"Host":"127.0.0.1:7071","traceparent":"00-840e447664ebd46fbf77df77ca5ffbac-1d0757c15bedf743-00"},"Body":""},"Routing":{"RouteId":"devicemanagement-route","ClusterId":"devicemanagement-cluster","DownstreamUrl":"https://127.0.0.1:7225/api/device/GetAllDevices"},"Response":{"StatusCode":200,"Body":"[]"},"Performance":{"ElapsedMs":3150},"Error":null}
