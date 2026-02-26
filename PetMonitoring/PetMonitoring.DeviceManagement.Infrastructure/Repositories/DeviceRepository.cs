@@ -31,4 +31,9 @@ public class DeviceRepository : IDeviceRepository
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);
     }
+
+    public async Task<IEnumerable<DeviceRecord>?> GetAllAsync(CancellationToken ct)
+    {
+        return await _context.DeviceRecords.ToListAsync(ct);
+    }
 }

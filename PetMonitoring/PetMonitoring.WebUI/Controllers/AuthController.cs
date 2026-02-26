@@ -17,7 +17,7 @@ namespace PetMonitoring.WebUI.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-        [HttpGet("Register")]
+        [HttpGet]
         public IActionResult Register()
         {
             return View();

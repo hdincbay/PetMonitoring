@@ -36,10 +36,16 @@ namespace PetMonitoring.DeviceManagement.API.Controllers
             await _mediator.Send(record);
             return Ok();
         }
-        [HttpGet("GetByDevice")]
-        public async Task<IActionResult> GetByDevice([FromQuery] GetDeviceQuery record)
+        [HttpGet("GetByDeviceId")]
+        public async Task<IActionResult> GetByDeviceId([FromQuery] Guid deviceId)
         {
-            var data = await _mediator.Send(record);
+            var data = await _mediator.Send(new GetDeviceQuery() { DeviceId = deviceId });
+            return Ok(data);
+        }
+        [HttpGet("GetAllDevices")]
+        public async Task<IActionResult> GetAllDevices()
+        {
+            var data = await _mediator.Send(new GetDevicesQuery());
             return Ok(data);
         }
     }

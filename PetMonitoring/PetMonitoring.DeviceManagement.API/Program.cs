@@ -4,6 +4,7 @@ using PetMonitoring.DeviceManagement.API.Middlewares;
 using Serilog;
 using PetMonitoring.DeviceManagement.Infrastructure.DependencyInjection;
 using PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceCommand;
+using PetMonitoring.DeviceManagement.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -12,6 +13,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
+builder.Services.AddAutoMapper(typeof(DeviceMappingProfile).Assembly);
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(
     typeof(UpdateDeviceCommandValidator).Assembly
