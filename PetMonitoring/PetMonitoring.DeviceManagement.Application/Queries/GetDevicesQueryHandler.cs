@@ -9,7 +9,7 @@ using System.Text;
 
 namespace PetMonitoring.DeviceManagement.Application.Queries
 {
-    public class GetDevicesQueryHandler : IRequestHandler<GetDevicesQuery, IEnumerable<DeviceDTO>>
+    public class GetDevicesQueryHandler : IRequestHandler<GetDevicesQuery, IEnumerable<DeviceRecordDTO>>
     {
         private readonly IDeviceRepository _deviceRepository;
         private readonly IMapper _mapper;
@@ -20,10 +20,10 @@ namespace PetMonitoring.DeviceManagement.Application.Queries
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<DeviceDTO>> Handle(GetDevicesQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<DeviceRecordDTO>> Handle(GetDevicesQuery request, CancellationToken cancellationToken)
         {
             var recordList = await _deviceRepository.GetAllAsync(cancellationToken);
-            return _mapper.Map<IEnumerable<DeviceDTO>>(recordList);
+            return _mapper.Map<IEnumerable<DeviceRecordDTO>>(recordList);
 
         }
     }

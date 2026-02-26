@@ -13,7 +13,10 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
-builder.Services.AddAutoMapper(typeof(DeviceMappingProfile).Assembly);
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(typeof(DeviceMappingProfile).Assembly);
+});
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(
     typeof(UpdateDeviceCommandValidator).Assembly

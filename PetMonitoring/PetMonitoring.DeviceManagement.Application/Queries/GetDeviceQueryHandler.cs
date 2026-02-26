@@ -6,7 +6,7 @@ using PetMonitoring.DeviceManagement.Domain.Entities;
 
 namespace PetMonitoring.DeviceManagement.Application.Queries
 {
-    public class GetDeviceQueryHandler : IRequestHandler<GetDeviceQuery, DeviceDTO>
+    public class GetDeviceQueryHandler : IRequestHandler<GetDeviceQuery, DeviceRecordDTO>
     {
         private readonly IDeviceRepository _repository;
         private readonly IMapper _mapper;
@@ -17,10 +17,10 @@ namespace PetMonitoring.DeviceManagement.Application.Queries
             _mapper = mapper;
         }
 
-        public async Task<DeviceDTO> Handle(GetDeviceQuery request, CancellationToken cancellationToken)
+        public async Task<DeviceRecordDTO> Handle(GetDeviceQuery request, CancellationToken cancellationToken)
         {
             var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
-            return _mapper.Map<DeviceDTO>(record);
+            return _mapper.Map<DeviceRecordDTO>(record);
         }
     }
 }
