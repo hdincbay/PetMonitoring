@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PetMonitoring.DeviceManagement.Application.DTOs
 {
-    public class DeviceRecordDTO
+    public record DeviceRecordDTO
     {
         public Guid Id { get; set; }
         public string? Name { get; set; }

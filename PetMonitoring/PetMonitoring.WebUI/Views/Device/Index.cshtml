@@ -1,5 +1,26 @@
-﻿@{
+﻿@model IEnumerable<DeviceDTO>
+@{
     ViewData["Title"] = "Device List Page";
 }
-<h1 class="h3 mb-4 text-gray-800">Device List Page</h1>
+<table id="example" class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Serial No</th>
+            <th>Name</th>
+            <th>Pet Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.PetName</td>
+                <td>@item.SerialNo</td>
+            </tr>
+        }
+    </tbody>
+</table>
 

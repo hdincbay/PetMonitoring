@@ -3,60 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\device\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\device\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\device\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\device\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\device\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\device\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|solutionrelative:petmonitoring.web.application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.application\\dtos\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|solutionrelative:petmonitoring.web.application\\dtos\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|solutionrelative:petmonitoring.web.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.infrastructure\\appclients\\deviceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|solutionrelative:petmonitoring.web.infrastructure\\appclients\\deviceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,154 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Device\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Privacy.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Device\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:56:08.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Index.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Device\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Index.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Device\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:56:07.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Create.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Device\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Device\\Create.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Device\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:56:06.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:56:04.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:55:57.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Program.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Program.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Program.cs",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:55:38.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:55:23.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:55:21.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-26T21:55:18.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwA0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:55:00.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Web.Application\\DTOs\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\RegisterDTO.cs",
-              "RelativeToolTip": "PetMonitoring.Web.Application\\DTOs\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:54:55.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "DeviceDTO.cs",
               "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
               "RelativeDocumentMoniker": "PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
@@ -221,33 +26,7 @@
               "RelativeToolTip": "PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:54:53.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Web.Application\\DTOs\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\LoginDTO.cs",
-              "RelativeToolTip": "PetMonitoring.Web.Application\\DTOs\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:54:51.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DeviceApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
-              "RelativeToolTip": "PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T21:54:24.551Z",
+              "WhenOpened": "2026-02-27T16:40:13.106Z",
               "EditorCaption": ""
             }
           ]

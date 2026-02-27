@@ -4,9 +4,9 @@ using System.Diagnostics;
 
 namespace PetMonitoring.WebUI.Controllers
 {
-    [Route("[controller]")]
     public class HomeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
