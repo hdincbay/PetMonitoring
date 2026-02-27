@@ -1,0 +1,12 @@
+2026-02-28 00:28:39.717 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-f75d248710cceeac8d9d44e29d4f37c4-967ed8d0e2abb4d8-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-02-28 00:28:40.882 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1174 ms {"Body":"[]"}
+2026-02-28 00:28:47.423 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-0e97a944521bdc31617081ddbb8497b6-9195742a99610e3b-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-02-28 00:28:47.434 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 10 ms {"Body":""}
+2026-02-28 00:28:47.457 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-0e97a944521bdc31617081ddbb8497b6-fb6553881a087bce-00"},"Body":""}
+2026-02-28 00:28:47.510 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 53 ms {"Body":"[]"}

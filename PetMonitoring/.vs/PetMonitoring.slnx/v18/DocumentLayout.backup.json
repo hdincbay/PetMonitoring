@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.application\\dtos\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77EF08CD-8641-47A3-A265-B9C9894B99D1}|PetMonitoring.Web.Application\\PetMonitoring.Web.Application.csproj|solutionrelative:petmonitoring.web.application\\dtos\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeviceDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
-              "RelativeToolTip": "PetMonitoring.Web.Application\\DTOs\\DeviceDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T16:40:13.106Z",
+              "WhenOpened": "2026-02-27T21:33:32.117Z",
               "EditorCaption": ""
             }
           ]

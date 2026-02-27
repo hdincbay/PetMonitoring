@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using PetMonitoring.Auth.Domain.Entities;
 using PetMonitoring.Auth.Application.Interfaces;
+using PetMonitoring.Auth.Application.Enums;
 
 namespace PetMonitoring.Auth.Application.Commands.Login
 {
@@ -22,12 +23,12 @@ namespace PetMonitoring.Auth.Application.Commands.Login
         }
         public async Task<LoginResult> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-            var user = await _unitOfWork.Users.GetByEmailAsync(request.Email);
+            var user = await _unitOfWork.Users.GetByUserNameAsync(request.UserName!);
             if (user == null)
-                throw new UnauthorizedAccessException("Invalid credentials");
+                return new LoginResult(message: "User not found!", status: RequestStatus.Failed);
             var signInResult = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (!signInResult.Succeeded)
-                throw new UnauthorizedAccessException("Invalid credentials");
+                return new LoginResult(message: "Invalid credentials", status: RequestStatus.ValidationError);
             var accessToken = _tokenService.GenerateAccessToken(user);
             var refreshToken = _tokenService.GenerateRefreshToken(user.Id);
             user.AddRefreshToken(refreshToken);
@@ -36,11 +37,12 @@ namespace PetMonitoring.Auth.Application.Commands.Login
 
             await _unitOfWork.SaveChangesAsync();
 
-            return new LoginResult
-            {
-                AccessToken = accessToken,
-                RefreshToken = refreshToken.Token
-            };
+            return new LoginResult(
+                accessToken: accessToken, 
+                refreshToken: refreshToken.Token,
+                message: "Login successful",
+                status: RequestStatus.Success
+            );
         }
     }
 }

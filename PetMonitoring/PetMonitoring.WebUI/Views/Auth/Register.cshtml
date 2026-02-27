@@ -1,20 +1,20 @@
-﻿@model LoginDTO
+﻿@model RegisterDTO
 @{
     Layout = "_AuthLayout";
 }
-<form id="registerForm" asp-controller="Login" asp-action="ProcessLogin" method="post">
+@if (ViewBag.ErrorMessage != null)
+{
+    <div style="text-align: center" role="alert">
+        <span style="color: red">@ViewBag.ErrorMessage</span>
+    </div>
+}
+<form id="registerForm" asp-controller="Auth" asp-action="Register" method="post">
     <h2>Hesap Oluştur</h2>
 
     <div class="grid">
-        <input placeholder="İsim" required>
-        <input placeholder="Soyisim" required>
-        <input type="number" placeholder="Yaş" required>
-        <input placeholder="Kullanıcı Adı" required>
-        <input type="email" placeholder="E-posta" required>
-        <input type="password" id="password" placeholder="Şifre" required>
-        <input placeholder="Evcil Dostunuzun Cinsi">
-        <input placeholder="Evcil Dostunuzun İsmi">
-        <input type="number" placeholder="Evcil Dostunuzun Yaşı">
+        <input asp-for="UserName" placeholder="User Name" required>
+        <input asp-for="Email" type="email" placeholder="E-mail Address" required>
+        <input asp-for="Password" type="password" id="password" placeholder="Password" required>
     </div>
 
     <div class="strength"><div class="bar"></div></div>

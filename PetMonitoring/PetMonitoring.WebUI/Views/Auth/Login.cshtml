@@ -2,10 +2,16 @@
 @{
     Layout = "_AuthLayout";
 }
-<form id="loginForm" asp-controller="Login" asp-action="Login" method="post">
+@if (ViewBag.ErrorMessage != null)
+{
+    <div style="text-align: center" role="alert">
+        <span style="color: red">@ViewBag.ErrorMessage</span>
+    </div>
+}
+<form id="loginForm" asp-controller="Auth" asp-action="Login" method="post">
     <h2>Giriş Yap</h2>
-    <input asp-for="Email" type="email" placeholder="E-posta" required>
-    <input asp-for="Password" type="password" placeholder="Şifre" required>
+    <input asp-for="UserName" type="text" placeholder="User Name" required>
+    <input asp-for="Password" type="password" placeholder="Password" required>
     <button class="btn">Giriş Yap</button>
     <a class="switch" asp-controller="Auth" asp-action="Register" method="get">Hesap oluştur</a>
 </form>

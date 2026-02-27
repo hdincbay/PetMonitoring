@@ -82,13 +82,16 @@
     "schemas": {
       "LoginCommand": {
         "required": [
-          "email",
+          "userName",
           "password"
         ],
         "type": "object",
         "properties": {
-          "email": {
-            "type": "string"
+          "userName": {
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "password": {
             "type": "string"

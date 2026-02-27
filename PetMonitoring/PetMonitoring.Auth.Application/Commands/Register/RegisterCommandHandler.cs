@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using PetMonitoring.Auth.Application.Commands.Login;
+using PetMonitoring.Auth.Application.Enums;
 using PetMonitoring.Auth.Domain.Entities;
 
 namespace PetMonitoring.Auth.Application.Commands.Register
@@ -21,15 +22,16 @@ namespace PetMonitoring.Auth.Application.Commands.Register
 
             if (!result.Succeeded)
             {
-                var message = string.Join(", ", result.Errors.Select(e => e.Description));
-                throw new Exception(message);
+                var message = string.Join(Environment.NewLine, result.Errors.Select(e => e.Description));
+                return new RegisterResult(message: message, status: RequestStatus.Failed);
             }
 
             return new RegisterResult(
                 userId: user.Id.ToString(),
                 userName: user.UserName!,
                 email: user.Email!,
-                message: "Successfully registered."
+                message: "Successfully registered.",
+                status: RequestStatus.Success
             );
         }
     }

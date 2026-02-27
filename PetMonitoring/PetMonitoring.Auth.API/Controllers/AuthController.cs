@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Auth.API.Mappers;
 using PetMonitoring.Auth.Application.Commands.Login;
 using PetMonitoring.Auth.Application.Commands.Register;
 
@@ -20,13 +21,14 @@ namespace PetMonitoring.Auth.API.Controllers
         public async Task<IActionResult> Login([FromBody] LoginCommand record)
         {
             var result = await _mediator.Send(record);
-            return Ok(result);
+            return result.LoginResult(this);
+
         }
         [HttpPost("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterCommand record)
         {
             var result = await _mediator.Send(record);
-            return Ok(result);
+            return result.RegisterResult(this);
         }
     }
 }
