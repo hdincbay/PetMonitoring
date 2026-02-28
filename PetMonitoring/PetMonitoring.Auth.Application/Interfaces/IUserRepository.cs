@@ -9,6 +9,7 @@ namespace PetMonitoring.Auth.Application.Interfaces
     {
         Task<User?> GetByUserNameAsync(string userName);
         Task<User?> GetByIdAsync(Guid id);
+        public Task<IList<string>> GetUserRolesAsync(User user);
         Task AddAsync(User user);
         void Update(User user);
     }

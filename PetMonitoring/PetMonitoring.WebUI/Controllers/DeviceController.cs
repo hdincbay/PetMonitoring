@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Web.Infrastructure.AppClients;
 using PetMonitoring.Web.Application.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PetMonitoring.WebUI.Controllers
 {
@@ -12,7 +13,7 @@ namespace PetMonitoring.WebUI.Controllers
         {
             _deviceApiClient = deviceApiClient;
         }
-        [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var devices = await _deviceApiClient.GetAllAsync();

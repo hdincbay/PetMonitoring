@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Web.Application.DTOs;
 using PetMonitoring.Web.Infrastructure.AppClients;
+using System.Security.Claims;
 
 namespace PetMonitoring.WebUI.Controllers
 {
@@ -19,15 +22,35 @@ namespace PetMonitoring.WebUI.Controllers
         public async Task<IActionResult> Login([FromForm] LoginDTO model)
         {
             var result = await _client.LoginAsync(model);
-            if (result.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            else
+            if (!result.IsSuccessStatusCode)
             {
                 ViewBag.ErrorMessage = await result.Content.ReadAsStringAsync();
                 return View(model);
             }
+            var response = await result.Content.ReadFromJsonAsync<LoginResponseDTO>();
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, response!.UserId.ToString()),
+                new Claim(ClaimTypes.Name, response.UserName!)
+            };
+
+            foreach (var role in response.Roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role!));
+            }
+
+            var identity = new ClaimsIdentity(
+                claims,
+                CookieAuthenticationDefaults.AuthenticationScheme
+            );
+
+            var principal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                principal
+            );
+            return RedirectToAction("Index", "Home");
         }
         [HttpGet]
         public IActionResult Register()

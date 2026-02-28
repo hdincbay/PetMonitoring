@@ -29,6 +29,7 @@ namespace PetMonitoring.Auth.Application.Commands.Login
             var signInResult = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (!signInResult.Succeeded)
                 return new LoginResult(message: "Invalid credentials", status: RequestStatus.ValidationError);
+            var roles = await _unitOfWork.Users.GetUserRolesAsync(user);
             var accessToken = _tokenService.GenerateAccessToken(user);
             var refreshToken = _tokenService.GenerateRefreshToken(user.Id);
             user.AddRefreshToken(refreshToken);
@@ -41,7 +42,10 @@ namespace PetMonitoring.Auth.Application.Commands.Login
                 accessToken: accessToken, 
                 refreshToken: refreshToken.Token,
                 message: "Login successful",
-                status: RequestStatus.Success
+                status: RequestStatus.Success,
+                userId: user.Id,
+                userName: user.UserName,
+                roles: roles
             );
         }
     }

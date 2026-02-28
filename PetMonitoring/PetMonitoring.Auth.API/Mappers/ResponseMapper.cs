@@ -15,7 +15,7 @@ namespace PetMonitoring.Auth.API.Mappers
 
             return result.Status switch
             {
-                RequestStatus.Success => controller.Ok(new { result.AccessToken, result.RefreshToken, result.Message, result.Status }),
+                RequestStatus.Success => controller.Ok(new { result.AccessToken, result.RefreshToken, result.Message, result.Status, result.UserId, result.UserName, result.Roles }),
                 RequestStatus.AlreadyExists => controller.Conflict(result.Message),
                 RequestStatus.ValidationError => controller.BadRequest(result.Message),
                 _ => controller.StatusCode(500, result.Message)

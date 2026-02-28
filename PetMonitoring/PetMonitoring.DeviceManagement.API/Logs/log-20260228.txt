@@ -10,3 +10,15 @@
  {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-0e97a944521bdc31617081ddbb8497b6-fb6553881a087bce-00"},"Body":""}
 2026-02-28 00:28:47.510 +03:00 [INF] Request finished 
  GET /api/device/GetAllDevices - 200 in 53 ms {"Body":"[]"}
+2026-02-28 14:51:59.009 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-09fd0f5d30916776348a63c3267ae622-6a5f721b879205c1-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-02-28 14:51:59.059 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 61 ms {"Body":""}
+2026-02-28 14:51:59.155 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-09fd0f5d30916776348a63c3267ae622-8dbaa97d80f705c7-00"},"Body":""}
+2026-02-28 14:52:00.567 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1411 ms {"Body":"[]"}
+2026-02-28 15:28:31.964 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-9861a1bfd49b0d9bbc5f2dae8003be8a-6dd59ee4e436517a-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-02-28 15:28:32.864 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 908 ms {"Body":"[]"}

@@ -27,5 +27,6 @@ namespace PetMonitoring.Auth.Infrastructure.Repositories
         public async Task<User?> GetByIdAsync(Guid id) => await _context.Users.FindAsync(id);
 
         public void Update(User user) => _context.Users.Update(user);
+        public async Task<IList<string>> GetUserRolesAsync(User user) => await _userManager.GetRolesAsync(user);
     }
 }
