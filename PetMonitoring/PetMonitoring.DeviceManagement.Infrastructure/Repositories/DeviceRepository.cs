@@ -14,15 +14,18 @@ public class DeviceRepository : IDeviceRepository
         _context = context;
     }
 
-    public async Task AddAsync(DeviceRecord record, CancellationToken ct)
+    public async Task<string?> CreateAsync(DeviceRecord record, CancellationToken ct)
     {
-        await _context.DeviceRecords.AddAsync(record);
-        await _context.SaveChangesAsync(ct);
+        var entry = await _context.DeviceRecords.AddAsync(record, ct);
+        var affectedRows = await _context.SaveChangesAsync(ct);
+
+        return affectedRows > 0 ? entry.Entity.SerialNumber : string.Empty;
     }
-    public async Task UpdateAsync(DeviceRecord record, CancellationToken ct)
+    public async Task<bool> UpdateAsync(DeviceRecord record, CancellationToken ct)
     {
         _context.DeviceRecords.Update(record);
-        await _context.SaveChangesAsync(ct);
+        var affectedRows = await _context.SaveChangesAsync(ct);
+        return affectedRows > 0;
     }
     public async Task<DeviceRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
@@ -35,5 +38,13 @@ public class DeviceRepository : IDeviceRepository
     public async Task<IEnumerable<DeviceRecord>?> GetAllAsync(CancellationToken ct)
     {
         return await _context.DeviceRecords.ToListAsync(ct);
+    }
+
+    public async Task<DeviceRecord?> GetBySerialNumberAsync(string serialNumber, CancellationToken ct)
+    {
+        return await _context.DeviceRecords
+            .Where(x => x.SerialNumber == serialNumber)
+            .OrderByDescending(x => x.CreatedDate)
+            .FirstOrDefaultAsync(ct);  
     }
 }

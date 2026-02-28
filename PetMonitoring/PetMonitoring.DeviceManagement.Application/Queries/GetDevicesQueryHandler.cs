@@ -1,15 +1,18 @@
 ﻿using AutoMapper;
 using MediatR;
 using PetMonitoring.DeviceManagement.Application.DTOs;
+using PetMonitoring.DeviceManagement.Application.Enums;
 using PetMonitoring.DeviceManagement.Application.Interfaces;
+using PetMonitoring.DeviceManagement.Application.Results;
 using PetMonitoring.DeviceManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace PetMonitoring.DeviceManagement.Application.Queries
 {
-    public class GetDevicesQueryHandler : IRequestHandler<GetDevicesQuery, IEnumerable<DeviceRecordDTO>>
+    public class GetDevicesQueryHandler : IRequestHandler<GetDevicesQuery, DeviceOperationResult>
     {
         private readonly IDeviceRepository _deviceRepository;
         private readonly IMapper _mapper;
@@ -20,11 +23,25 @@ namespace PetMonitoring.DeviceManagement.Application.Queries
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<DeviceRecordDTO>> Handle(GetDevicesQuery request, CancellationToken cancellationToken)
+        public async Task<DeviceOperationResult> Handle(GetDevicesQuery request, CancellationToken cancellationToken)
         {
             var recordList = await _deviceRepository.GetAllAsync(cancellationToken);
-            return _mapper.Map<IEnumerable<DeviceRecordDTO>>(recordList);
 
+            if (recordList == null)
+            {
+                return new DeviceOperationResult(
+                    "No devices found",
+                    RequestStatus.NotFound
+                );
+            }
+
+            var dtoList = _mapper.Map<IEnumerable<DeviceRecordDTO>>(recordList);
+
+            return new DeviceOperationResult(
+                "Devices retrieved successfully",
+                RequestStatus.Success,
+                dtoList
+            );
         }
     }
 }

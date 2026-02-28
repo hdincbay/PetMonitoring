@@ -20,10 +20,6 @@ namespace PetMonitoring.Auth.Infrastructure.Security
             if (string.IsNullOrWhiteSpace(_settings.Secret))
                 throw new ArgumentNullException(nameof(_settings.Secret), "JWT secret key is missing in configuration!");
         }
-
-        /// <summary>
-        /// Kullanıcı için Access Token oluşturur
-        /// </summary>
         public string GenerateAccessToken(User user)
         {
             if (user == null) throw new ArgumentNullException(nameof(user));

@@ -24,6 +24,8 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.PasswordHash)
                    .IsRequired();
+            builder.Property(x => x.IsActive)
+                      .IsRequired();
         }
     }
 }

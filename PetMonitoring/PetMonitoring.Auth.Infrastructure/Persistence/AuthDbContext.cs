@@ -16,11 +16,6 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence
         {
             builder.ApplyConfigurationsFromAssembly(typeof(AuthDbContext).Assembly);
             base.OnModelCreating(builder);
-            builder.Entity<User>(entity =>
-            {
-                entity.Property(x => x.IsActive)
-                      .IsRequired();
-            });
         }
     }
 }

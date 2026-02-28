@@ -148,11 +148,15 @@
     "schemas": {
       "BatteryUpdateCommand": {
         "required": [
+          "serialNumber",
           "deviceId",
           "batteryPercentage"
         ],
         "type": "object",
         "properties": {
+          "serialNumber": {
+            "type": "string"
+          },
           "deviceId": {
             "type": "string",
             "format": "uuid"
@@ -188,12 +192,19 @@
       },
       "UpdateDeviceCommand": {
         "required": [
+          "serialNumber",
           "deviceId",
           "name",
           "petName"
         ],
         "type": "object",
         "properties": {
+          "serialNumber": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
           "deviceId": {
             "type": "string",
             "format": "uuid"

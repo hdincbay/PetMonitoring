@@ -16,8 +16,8 @@ namespace PetMonitoring.WebUI.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-            var devices = await _client.GetAllAsync();
-            return View(devices);
+            var result = await _client.GetAllAsync();
+            return View(result.DeviceList);
         }
         [HttpGet]
         public IActionResult Create()
@@ -28,8 +28,8 @@ namespace PetMonitoring.WebUI.Controllers
         public async Task<IActionResult> Create([FromForm] DeviceDTO model)
         {
             var result = await _client.CreateAsync(model);
-            var responseContent = await result.Content.ReadAsStringAsync();
-            if (result.IsSuccessStatusCode)
+            var responseContent = result?.Message;
+            if (result?.Status == 0)
             {
                 ViewBag.SuccessMessage = responseContent;
                 return View();

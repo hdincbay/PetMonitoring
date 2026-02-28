@@ -1,8 +1,5 @@
 ﻿using PetMonitoring.Web.Application.DTOs;
-using System;
-using System.Collections.Generic;
 using System.Net.Http.Json;
-using System.Text;
 
 namespace PetMonitoring.Web.Infrastructure.AppClients
 {
@@ -15,15 +12,16 @@ namespace PetMonitoring.Web.Infrastructure.AppClients
             _httpClient = httpClient;
         }
 
-        public async Task<List<DeviceDTO>> GetAllAsync()
+        public async Task<DeviceResponseDTO> GetAllAsync()
         {
-            var result = await _httpClient.GetFromJsonAsync<List<DeviceDTO>>("Devicemanagement/GetAllDevices");
+            var result = await _httpClient.GetFromJsonAsync<DeviceResponseDTO>("Devicemanagement/GetAllDevices");
             return result!;
         }
-        public async Task<HttpResponseMessage> CreateAsync(DeviceDTO model)
+        public async Task<DeviceResponseDTO> CreateAsync(DeviceDTO model)
         {
             var result = await _httpClient.PostAsJsonAsync("Devicemanagement/Create", model);
-            return result!;
+            var responseDto = Newtonsoft.Json.JsonConvert.DeserializeObject<DeviceResponseDTO>(await result.Content.ReadAsStringAsync());
+            return responseDto!;
         }
     }
 }

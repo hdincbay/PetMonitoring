@@ -29,6 +29,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.4",
           "PetMonitoring.Web.Application": "1.0.0"
         },
         "compile": {
@@ -84,7 +85,6 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Newtonsoft.Json >= 13.0.4",
       "PetMonitoring.Web.Application >= 1.0.0",
       "PetMonitoring.Web.Infrastructure >= 1.0.0"
     ]
@@ -145,12 +145,6 @@
     "frameworks": {
       "net10.0": {
         "targetAlias": "net10.0",
-        "dependencies": {
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.4, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

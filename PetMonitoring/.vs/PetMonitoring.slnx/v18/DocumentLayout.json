@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.webui\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00110436-73C9-44D0-9742-48499FE4849F}|PetMonitoring.WebUI\\PetMonitoring.WebUI.csproj|solutionrelative:petmonitoring.webui\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.infrastructure\\appclients\\deviceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|solutionrelative:petmonitoring.web.infrastructure\\appclients\\deviceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwA8AAAAJAAAAAAAAAA==",
+              "Title": "DeviceApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
+              "RelativeToolTip": "PetMonitoring.Web.Infrastructure\\AppClients\\DeviceApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T16:11:23.499Z",
+              "WhenOpened": "2026-02-28T23:03:50.764Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\DeviceController.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.WebUI\\Controllers\\DeviceController.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.WebUI\\Controllers\\DeviceController.cs",
-              "RelativeToolTip": "PetMonitoring.WebUI\\Controllers\\DeviceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T16:10:46.52Z"
             }
           ]
         }

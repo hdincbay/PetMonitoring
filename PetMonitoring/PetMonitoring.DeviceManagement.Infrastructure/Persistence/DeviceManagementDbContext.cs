@@ -11,17 +11,11 @@ public class DeviceManagementDbContext : DbContext
         : base(options)
     {
     }
-
     public DbSet<DeviceRecord> DeviceRecords => Set<DeviceRecord>();
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        modelBuilder.Entity<DeviceRecord>(entity =>
-        {
-            entity.HasKey(x => x.Id);
-
-            entity.Property(x => x.CreatedDate)
-                  .IsRequired();
-        });
+        builder.ApplyConfigurationsFromAssembly(typeof(DeviceManagementDbContext).Assembly);
+        base.OnModelCreating(builder);
     }
 }
