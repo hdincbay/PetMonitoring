@@ -7,16 +7,16 @@ namespace PetMonitoring.WebUI.Controllers
 {
     public class DeviceController : Controller
     {
-        private readonly DeviceApiClient _deviceApiClient;
+        private readonly DeviceApiClient _client;
 
-        public DeviceController(DeviceApiClient deviceApiClient)
+        public DeviceController(DeviceApiClient client)
         {
-            _deviceApiClient = deviceApiClient;
+            _client = client;
         }
         [Authorize]
         public async Task<IActionResult> Index()
         {
-            var devices = await _deviceApiClient.GetAllAsync();
+            var devices = await _client.GetAllAsync();
             return View(devices);
         }
         [HttpGet]
@@ -25,9 +25,20 @@ namespace PetMonitoring.WebUI.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create([FromForm] DeviceDTO model)
+        public async Task<IActionResult> Create([FromForm] DeviceDTO model)
         {
-            return View();
+            var result = await _client.CreateAsync(model);
+            var responseContent = await result.Content.ReadAsStringAsync();
+            if (result.IsSuccessStatusCode)
+            {
+                ViewBag.SuccessMessage = responseContent;
+                return View();
+            }
+            else
+            {
+                ViewBag.ErrorMessage = responseContent;
+                return View(model);
+            }
         }
     }
 }

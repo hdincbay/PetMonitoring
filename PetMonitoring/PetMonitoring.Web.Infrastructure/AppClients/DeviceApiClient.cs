@@ -20,5 +20,10 @@ namespace PetMonitoring.Web.Infrastructure.AppClients
             var result = await _httpClient.GetFromJsonAsync<List<DeviceDTO>>("Devicemanagement/GetAllDevices");
             return result!;
         }
+        public async Task<HttpResponseMessage> CreateAsync(DeviceDTO model)
+        {
+            var result = await _httpClient.PostAsJsonAsync("Devicemanagement/Create", model);
+            return result!;
+        }
     }
 }

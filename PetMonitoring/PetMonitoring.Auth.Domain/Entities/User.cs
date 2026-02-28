@@ -7,8 +7,10 @@ namespace PetMonitoring.Auth.Domain.Entities
     public class User : IdentityUser<Guid>
     {
         public User() { }
-        public User(string userName, string email)
+        public User(string name, string surName, string userName, string email)
         {
+            Name = name;
+            Surname = surName;
             UserName = userName;
             Email = email;
         }
@@ -17,6 +19,8 @@ namespace PetMonitoring.Auth.Domain.Entities
         public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens.AsReadOnly();
 
         public bool IsActive { get; private set; } = true;
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
 
         public void AddRefreshToken(RefreshToken refreshToken)
         {
@@ -25,7 +29,6 @@ namespace PetMonitoring.Auth.Domain.Entities
 
             _refreshTokens.Add(refreshToken);
         }
-
         public void Deactivate()
         {
             IsActive = false;

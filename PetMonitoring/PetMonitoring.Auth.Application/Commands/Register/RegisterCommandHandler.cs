@@ -17,7 +17,7 @@ namespace PetMonitoring.Auth.Application.Commands.Register
 
         public async Task<RegisterResult> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
-            var user = new User(request.UserName, request.Email);
+            var user = new User(request.Name, request.Surname, request.UserName, request.Email);
             var result = await _userManager.CreateAsync(user, request.Password);
 
             if (!result.Succeeded)
@@ -27,6 +27,8 @@ namespace PetMonitoring.Auth.Application.Commands.Register
             }
 
             return new RegisterResult(
+                name: user.Name!,
+                surName: user.Surname!,
                 userId: user.Id.ToString(),
                 userName: user.UserName!,
                 email: user.Email!,

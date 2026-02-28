@@ -8,6 +8,8 @@ public class CreateDeviceCommandValidator
 {
     public CreateDeviceCommandValidator()
     {
+        RuleFor(x => x.SerialNumber)
+            .NotEmpty();
         RuleFor(x => x.Name)
             .NotEmpty();
     }

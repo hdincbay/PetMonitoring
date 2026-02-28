@@ -5,6 +5,8 @@ namespace PetMonitoring.Auth.Application.Commands.Register
 {
     public record RegisterResult
     {
+        public string? Name { get; init; }
+        public string? Surname { get; init; }
         public string? UserId { get; init; }
         public string? UserName { get; init; }
         public string? Email { get; init; }
@@ -16,8 +18,10 @@ namespace PetMonitoring.Auth.Application.Commands.Register
             Message = message;
             Status = status;
         }
-        public RegisterResult(string userId, string userName, string email, string? message, RequestStatus status)
+        public RegisterResult(string name, string surName, string userId, string userName, string email, string? message, RequestStatus status)
         {
+            Name = name;
+            Surname = surName;
             UserId = userId;
             UserName = userName;
             Email = email;

@@ -100,12 +100,20 @@
       },
       "RegisterCommand": {
         "required": [
+          "name",
+          "surname",
           "userName",
           "email",
           "password"
         ],
         "type": "object",
         "properties": {
+          "name": {
+            "type": "string"
+          },
+          "surname": {
+            "type": "string"
+          },
           "userName": {
             "type": "string"
           },

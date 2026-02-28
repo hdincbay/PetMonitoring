@@ -169,11 +169,15 @@
       },
       "CreateDeviceCommand": {
         "required": [
+          "serialNumber",
           "name",
           "petName"
         ],
         "type": "object",
         "properties": {
+          "serialNumber": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },

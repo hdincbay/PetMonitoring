@@ -29,7 +29,7 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Configurations
                    .IsRequired();
 
             builder.HasOne(x => x.User)
-                   .WithMany()
+                   .WithMany(y => y.RefreshTokens)
                    .HasForeignKey(x => x.UserId)
                    .OnDelete(DeleteBehavior.Cascade);
 

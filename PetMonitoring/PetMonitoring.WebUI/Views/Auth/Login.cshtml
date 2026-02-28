@@ -10,8 +10,8 @@
 }
 <form id="loginForm" asp-controller="Auth" asp-action="Login" method="post">
     <h2>Giriş Yap</h2>
-    <input asp-for="UserName" type="text" placeholder="User Name" required>
-    <input asp-for="Password" type="password" placeholder="Password" required>
+    <input asp-for="UserName" type="text" placeholder="Kullanıcı Adı" required>
+    <input asp-for="Password" type="password" placeholder="Parola" required>
     <button class="btn">Giriş Yap</button>
     <a class="switch" asp-controller="Auth" asp-action="Register" method="get">Hesap oluştur</a>
 </form>

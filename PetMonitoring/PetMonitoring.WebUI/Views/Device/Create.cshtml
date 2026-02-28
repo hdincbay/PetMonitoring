@@ -1,5 +1,32 @@
-﻿@{
+﻿@model DeviceDTO
+@{
     ViewData["Title"] = "Device Create Page";
 }
-<h1 class="h3 mb-4 text-gray-800">Device Create Page</h1>
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.SuccessMessage
+    </div>
+}
+@if(ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.ErrorMessage
+    </div>
+}
+<form id="loginForm" asp-controller="Device" asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="SerialNumber">Seri No</label>
+        <input class="form-control" asp-for="SerialNumber">
+    </div>
+    <div class="form-group">
+        <label asp-for="Name">Cihaz İsmi</label>
+        <input class="form-control" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="PetName">Evcil Dost İsmi</label>
+        <input class="form-control" asp-for="PetName">
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
 

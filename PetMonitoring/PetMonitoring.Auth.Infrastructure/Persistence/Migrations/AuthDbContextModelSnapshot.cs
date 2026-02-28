@@ -173,17 +173,12 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("UserId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("Token")
                         .IsUnique();
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserId1");
 
                     b.ToTable("RefreshTokens", (string)null);
                 });
@@ -218,6 +213,9 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -237,6 +235,9 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
@@ -316,14 +317,10 @@ namespace PetMonitoring.Auth.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("PetMonitoring.Auth.Domain.Entities.RefreshToken", b =>
                 {
                     b.HasOne("PetMonitoring.Auth.Domain.Entities.User", "User")
-                        .WithMany()
+                        .WithMany("RefreshTokens")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("PetMonitoring.Auth.Domain.Entities.User", null)
-                        .WithMany("RefreshTokens")
-                        .HasForeignKey("UserId1");
 
                     b.Navigation("User");
                 });
