@@ -61,15 +61,12 @@ namespace PetMonitoring.WebUI.Controllers
         public async Task<IActionResult> Register([FromForm] RegisterDTO model)
         {
             var result = await _client.RegisterAsync(model);
-            if (result.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Login");
-            }
-            else
+            if (result.IsSuccessStatusCode!)
             {
                 ViewBag.ErrorMessage = await result.Content.ReadAsStringAsync();
                 return View(model);
             }
+            return RedirectToAction("Login");
         }
     }
 }

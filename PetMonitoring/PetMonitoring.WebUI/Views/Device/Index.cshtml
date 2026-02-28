@@ -2,6 +2,12 @@
 @{
     ViewData["Title"] = "Device List Page";
 }
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.ErrorMessage
+    </div>
+}
 <table id="example" class="table table-striped">
     <thead>
         <tr>
@@ -14,9 +20,9 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>@item.SerialNumber</td>
                 <td>@item.Name</td>
                 <td>@item.PetName</td>
-                <td>@item.SerialNumber</td>
             </tr>
         }
     </tbody>

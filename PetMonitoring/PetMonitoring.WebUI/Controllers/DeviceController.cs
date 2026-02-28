@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.Web.Infrastructure.AppClients;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Web.Application.DTOs;
-using Microsoft.AspNetCore.Authorization;
+using PetMonitoring.Web.Infrastructure.AppClients;
+using System.Reflection;
 
 namespace PetMonitoring.WebUI.Controllers
 {
@@ -17,7 +18,12 @@ namespace PetMonitoring.WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var result = await _client.GetAllAsync();
-            return View(result.DeviceList);
+            if (result?.Status != 0)
+            {
+                ViewBag.ErrorMessage = result?.Message;
+                return View();
+            }
+            return View(result?.DeviceList);
         }
         [HttpGet]
         public IActionResult Create()
@@ -29,16 +35,13 @@ namespace PetMonitoring.WebUI.Controllers
         {
             var result = await _client.CreateAsync(model);
             var responseContent = result?.Message;
-            if (result?.Status == 0)
-            {
-                ViewBag.SuccessMessage = responseContent;
-                return View();
-            }
-            else
+            if (result?.Status != 0)
             {
                 ViewBag.ErrorMessage = responseContent;
-                return View(model);
+                return View(model);    
             }
+            ViewBag.SuccessMessage = responseContent;
+            return View();
         }
     }
 }
