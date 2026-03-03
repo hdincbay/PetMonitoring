@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.Movement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+187c10fb0b4655a24226ec2497a138c989c20f06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579bf81f730f8fac7308d331df82833dd809affe")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.Movement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.Movement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

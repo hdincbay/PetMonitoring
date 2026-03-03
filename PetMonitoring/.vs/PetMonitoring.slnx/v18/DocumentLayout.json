@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.health.application\\commands\\addheartrate\\addheartratecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{271DB2C1-C049-43E7-87CC-E0731E0427CD}|PetMonitoring.Health.Application\\PetMonitoring.Health.Application.csproj|solutionrelative:petmonitoring.health.application\\commands\\addheartrate\\addheartratecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|c:\\users\\hdinc\\source\\repos\\petmonitoring\\petmonitoring\\petmonitoring.web.infrastructure\\appclients\\baseapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD15857-E732-4BA0-B2A7-FC364399A0E8}|PetMonitoring.Web.Infrastructure\\PetMonitoring.Web.Infrastructure.csproj|solutionrelative:petmonitoring.web.infrastructure\\appclients\\baseapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddHeartRateCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
-              "RelativeDocumentMoniker": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
-              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
-              "RelativeToolTip": "PetMonitoring.Health.Application\\Commands\\AddHeartRate\\AddHeartRateCommand.cs",
+              "Title": "BaseApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\BaseApiClient.cs",
+              "RelativeDocumentMoniker": "PetMonitoring.Web.Infrastructure\\AppClients\\BaseApiClient.cs",
+              "ToolTip": "C:\\Users\\hdinc\\source\\repos\\PetMonitoring\\PetMonitoring\\PetMonitoring.Web.Infrastructure\\AppClients\\BaseApiClient.cs",
+              "RelativeToolTip": "PetMonitoring.Web.Infrastructure\\AppClients\\BaseApiClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T23:20:23.957Z",
+              "WhenOpened": "2026-03-03T16:53:18.342Z",
               "EditorCaption": ""
             }
           ]
