@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetMonitoring.Temperature.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579bf81f730f8fac7308d331df82833dd809affe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f100ab88d60c6a94f535907b7bee84d47b997577")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetMonitoring.Temperature.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetMonitoring.Temperature.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,6 +6,7 @@ using System.Reflection;
 
 namespace PetMonitoring.WebUI.Controllers
 {
+    [Route("[controller]")]
     public class DeviceController : Controller
     {
         private readonly DeviceApiClient _client;
@@ -15,6 +16,7 @@ namespace PetMonitoring.WebUI.Controllers
             _client = client;
         }
         [Authorize]
+        [HttpGet("Index")]
         public async Task<IActionResult> Index()
         {
             var result = await _client.GetAllAsync();
@@ -25,6 +27,19 @@ namespace PetMonitoring.WebUI.Controllers
             }
             return View(result?.DeviceList);
         }
+        [Authorize]
+        [HttpGet("Get/{id}")]
+        public async Task<IActionResult> Get([FromRoute] Guid id)
+        {
+            var result = await _client.GetByDeviceIdAsync(id);
+            if (result?.Status != 0)
+            {
+                ViewBag.ErrorMessage = result?.Message;
+                return RedirectToAction("Index");
+            }
+            return View(result?.Device);
+        }
+        [Authorize]
         [HttpGet]
         public IActionResult Create()
         {
@@ -42,6 +57,19 @@ namespace PetMonitoring.WebUI.Controllers
             }
             ViewBag.SuccessMessage = responseContent;
             return View();
+        }
+        [Authorize]
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update([FromForm] DeviceDTO model)
+        {
+            var result = await _client.UpdateAsync(model);
+            var responseContent = result?.Message;
+            if (result?.Status != 0)
+            {
+                TempData["ErrorMessage"] = responseContent;   
+            }
+            TempData["SuccessMessage"] = responseContent;
+            return RedirectToAction("Get", new { id = model.ID });
         }
     }
 }

@@ -8,6 +8,8 @@ public class UpdateDeviceCommandValidator
 {
     public UpdateDeviceCommandValidator()
     {
+        RuleFor(x => x.ID)
+            .NotEmpty();
         RuleFor(x => x.Name)
             .NotEmpty();
     }

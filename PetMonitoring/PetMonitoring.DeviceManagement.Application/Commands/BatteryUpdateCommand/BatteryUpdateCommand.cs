@@ -6,6 +6,6 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.BatteryUpdateComma
 public sealed record BatteryUpdateCommand
 (
     string SerialNumber,
-    Guid DeviceId,
+    Guid ID,
     int BatteryPercentage
 ) : IRequest<DeviceOperationResult>;

@@ -20,7 +20,7 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.BatteryUpdateComma
 
         public async Task<DeviceOperationResult> Handle(BatteryUpdateCommand request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
+            var record = await _repository.GetByDeviceIdAsync(request.ID, cancellationToken);
 
             if (record is null)
             {

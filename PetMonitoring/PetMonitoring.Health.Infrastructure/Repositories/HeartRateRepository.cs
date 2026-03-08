@@ -14,10 +14,11 @@ public sealed class HeartRateRepository : IHeartRateRepository
         _context = context;
     }
 
-    public async Task AddAsync(HeartRateRecord record, CancellationToken ct)
+    public async Task<string> AddAsync(HeartRateRecord record, CancellationToken ct)
     {
-        await _context.HeartRateRecords.AddAsync(record, ct);
-        await _context.SaveChangesAsync();
+        var entry = await _context.HeartRateRecords.AddAsync(record, ct);
+        var affectedRows = await _context.SaveChangesAsync();
+        return affectedRows > 0 ? entry.Entity.Id.ToString() : string.Empty;
     }
 
     public async Task<HeartRateRecord?> GetByIdAsync(Guid id, CancellationToken ct)

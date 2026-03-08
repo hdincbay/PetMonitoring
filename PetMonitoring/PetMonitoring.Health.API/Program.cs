@@ -4,12 +4,15 @@ using PetMonitoring.Health.API.Middlewares;
 using PetMonitoring.Health.Application.Commands.AddHeartRate;
 using Serilog;
 using PetMonitoring.Health.Infrastructure.DependencyInjection;
+using PetMonitoring.Health.Application.Mappings;
 var builder = WebApplication.CreateBuilder(args);
-// Add services to the container.
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .CreateLogger();
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(typeof(HealthMappingProfile).Assembly);
+});
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(

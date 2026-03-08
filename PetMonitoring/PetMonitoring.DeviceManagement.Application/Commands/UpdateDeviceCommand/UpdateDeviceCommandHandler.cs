@@ -17,11 +17,11 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceComman
 
         public async Task<DeviceOperationResult> Handle(UpdateDeviceCommand request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
+            var record = await _repository.GetByDeviceIdAsync(request.ID, cancellationToken);
             if (record is null)
             {
                 return new DeviceOperationResult(
-                    $"Device with ID {request.DeviceId} not found",
+                    $"Device with ID {request.ID} not found",
                     RequestStatus.Failed
                 );
             }

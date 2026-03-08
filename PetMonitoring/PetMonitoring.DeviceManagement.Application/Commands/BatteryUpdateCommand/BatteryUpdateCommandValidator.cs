@@ -8,7 +8,7 @@ public class BatteryUpdateCommandValidator
 {
     public BatteryUpdateCommandValidator()
     {
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.ID)
             .NotEmpty();
         RuleFor(x => x.BatteryPercentage)
             .NotEmpty();

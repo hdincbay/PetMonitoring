@@ -6,7 +6,7 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceComman
 public sealed record UpdateDeviceCommand
 (
     string? SerialNumber,
-    Guid DeviceId,
+    Guid ID,
     string Name,
     string PetName
 ) : IRequest<DeviceOperationResult>;

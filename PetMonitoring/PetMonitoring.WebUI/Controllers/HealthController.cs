@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.Web.Infrastructure.AppClients;
 
 namespace PetMonitoring.WebUI.Controllers
 {
+    [Route("[controller]")]
     public class HealthController : Controller
     {
         private readonly HealthApiClient _client;
@@ -11,6 +13,8 @@ namespace PetMonitoring.WebUI.Controllers
         {
             _client = client;
         }
+        [Authorize]
+        [HttpGet("Index")]
         public async Task<IActionResult> Index([FromQuery] string deviceSerialNumber)
         {
             var result = await _client.GetAllAsync(deviceSerialNumber);

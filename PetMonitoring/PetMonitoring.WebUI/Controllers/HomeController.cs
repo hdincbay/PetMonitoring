@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PetMonitoring.WebUI.Models;
 using System.Diagnostics;
@@ -6,17 +7,18 @@ namespace PetMonitoring.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        [Authorize]
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
         }
-
+        [Authorize]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

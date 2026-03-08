@@ -14,6 +14,7 @@
             <th>Seri No</th>
             <th>Cihaz İsmi</th>
             <th>Evcil Dost İsmi</th>
+            <th>#</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,16 @@
                 <td>@item.SerialNumber</td>
                 <td>@item.Name</td>
                 <td>@item.PetName</td>
+                <td>
+                    <div class="btn group">
+                        <a class="btn btn-success" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
+                            <i class="fa fa-chart-area"></i> Grafikler
+                        </a>
+                        <a class="btn btn-primary" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
+                            <i class="fa fa-edit"></i> Detay
+                        </a>
+                    </div>
+                </td>
             </tr>
         }
     </tbody>
