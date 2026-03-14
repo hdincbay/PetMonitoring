@@ -3,12 +3,12 @@ using PetMonitoring.Temperature.Application.Queries;
 
 namespace PetMonitoring.Temperature.Application.Commands.AddHeartRate;
 
-public class GetTemperatureQueryValidator
-    : AbstractValidator<GetTemperatureQuery>
+public class GetTemperaturesQueryValidator
+    : AbstractValidator<GetTemperaturesQuery>
 {
-    public GetTemperatureQueryValidator()
+    public GetTemperaturesQueryValidator()
     {
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();
     }
 }

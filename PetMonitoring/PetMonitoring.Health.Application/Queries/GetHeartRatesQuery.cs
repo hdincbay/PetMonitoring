@@ -7,7 +7,7 @@ using System.Text;
 
 namespace PetMonitoring.Health.Application.Queries
 {
-    public sealed record GetHeartRateQuery(string DeviceSerialNumber) : IRequest<HealthOperationResult>
+    public sealed record GetHeartRatesQuery(string DeviceSerialNumber) : IRequest<HealthOperationResult>
     {
 
     }

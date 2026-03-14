@@ -4,6 +4,7 @@ using PetMonitoring.Temperature.API.Middlewares;
 using PetMonitoring.Temperature.Application.Commands.AddTemperature;
 using Serilog;
 using PetMonitoring.Movement.Infrastructure.DependencyInjection;
+using PetMonitoring.Temperature.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .CreateLogger();
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(typeof(TemperatureMappingProfile).Assembly);
+});
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssembly(

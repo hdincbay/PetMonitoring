@@ -15,7 +15,6 @@ public class DeviceManagementDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.ApplyConfigurationsFromAssembly(typeof(DeviceManagementDbContext).Assembly);
         base.OnModelCreating(builder);
     }
 }

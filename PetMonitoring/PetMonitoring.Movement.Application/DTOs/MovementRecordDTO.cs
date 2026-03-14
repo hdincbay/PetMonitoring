@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PetMonitoring.Movement.Application.DTOs
 {
-    public class MovementRecordDTO
+    public record MovementRecordDTO
     {
         public Guid Id { get; private set; }
         public string? DeviceSerialNumber { get; private set; }

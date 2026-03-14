@@ -8,18 +8,18 @@ using PetMonitoring.Movement.Domain.Entities;
 
 namespace PetMonitoring.Movement.Application.Queries
 {
-    public class GetMovementHandler : IRequestHandler<GetMovementQuery, MovementOperationResult>
+    public class GetMovementsHandler : IRequestHandler<GetMovementsQuery, MovementOperationResult>
     {
         private readonly IMovementRepository _repository;
         private readonly IMapper _mapper;
 
-        public GetMovementHandler(IMovementRepository repository, IMapper mapper)
+        public GetMovementsHandler(IMovementRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
         }
 
-        public async Task<MovementOperationResult> Handle(GetMovementQuery request, CancellationToken cancellationToken)
+        public async Task<MovementOperationResult> Handle(GetMovementsQuery request, CancellationToken cancellationToken)
         {
             var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
             if (record is null)
@@ -33,7 +33,7 @@ namespace PetMonitoring.Movement.Application.Queries
             var dto = _mapper.Map<MovementRecordDTO>(record);
             return new MovementOperationResult
             (
-                "Movement rate record retrieved successfully.",
+                "Movement record retrieved successfully.",
                 RequestStatus.Success,
                 dto
             );

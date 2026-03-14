@@ -4,6 +4,6 @@ namespace PetMonitoring.Temperature.Application.Interfaces;
 
 public interface ITemperatureRepository
 {
-    Task AddAsync(TemperatureRecord record, CancellationToken ct);
-    Task<TemperatureRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct);
+    Task<string> AddAsync(TemperatureRecord record, CancellationToken ct);
+    Task<TemperatureRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct);
 }

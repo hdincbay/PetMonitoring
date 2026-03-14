@@ -7,7 +7,7 @@ public class AddTemperatureCommandValidator
 {
     public AddTemperatureCommandValidator()
     {
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();
 
         RuleFor(x => x.CelsiusValue)

@@ -3,10 +3,10 @@ using PetMonitoring.Movement.Application.Queries;
 
 namespace PetMonitoring.Movement.Application.Commands.AddHeartRate;
 
-public class GetMovementValidator
-    : AbstractValidator<GetMovementQuery>
+public class GetMovementsValidator
+    : AbstractValidator<GetMovementsQuery>
 {
-    public GetMovementValidator()
+    public GetMovementsValidator()
     {
         RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();

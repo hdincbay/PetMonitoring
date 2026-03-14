@@ -1,9 +1,10 @@
 ﻿using MediatR;
+using PetMonitoring.Temperature.Application.Results;
 
 namespace PetMonitoring.Temperature.Application.Commands.AddTemperature;
 
 public sealed record AddTemperatureCommand
 (
-    Guid DeviceId,
+    string DeviceSerialNumber,
     decimal CelsiusValue
-) : IRequest<Unit>;
+) : IRequest<TemperatureOperationResult>;

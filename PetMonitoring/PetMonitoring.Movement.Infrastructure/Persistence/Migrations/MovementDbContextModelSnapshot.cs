@@ -37,8 +37,8 @@ namespace PetMonitoring.Movement.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("DeviceId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("DeviceSerialNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("DistanceInMeters")
                         .HasColumnType("float");

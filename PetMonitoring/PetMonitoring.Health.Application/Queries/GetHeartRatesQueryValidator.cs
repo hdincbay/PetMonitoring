@@ -3,10 +3,10 @@ using PetMonitoring.Health.Application.Queries;
 
 namespace PetMonitoring.Health.Application.Commands.AddHeartRate;
 
-public class GetHeartRateQueryValidator
-    : AbstractValidator<GetHeartRateQuery>
+public class GetHeartRatesQueryValidator
+    : AbstractValidator<GetHeartRatesQuery>
 {
-    public GetHeartRateQueryValidator()
+    public GetHeartRatesQueryValidator()
     {
         RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();

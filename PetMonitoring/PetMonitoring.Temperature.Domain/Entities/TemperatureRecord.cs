@@ -7,19 +7,19 @@ namespace PetMonitoring.Temperature.Domain.Entities
     public class TemperatureRecord
     {
         public Guid Id { get; private set; }
-        public Guid DeviceId { get; private set; }
+        public string? DeviceSerialNumber { get; private set; }
         public DateTime CreatedDate { get; set; }
         public decimal CelsiusValue { get; private set; }
         public TemperatureRecord()
         {
             
         }
-        public static TemperatureRecord Create(Guid deviceId, decimal celsiusValue)
+        public static TemperatureRecord Create(string deviceSerialNumber, decimal celsiusValue)
         {
             return new TemperatureRecord
             {
                 CelsiusValue = celsiusValue,
-                DeviceId = deviceId,
+                DeviceSerialNumber = deviceSerialNumber,
                 CreatedDate = DateTime.Now
             };
         }

@@ -14,20 +14,8 @@ public class TemperatureDbContext : DbContext
 
     public DbSet<TemperatureRecord> TemperatureRecords => Set<TemperatureRecord>();
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        modelBuilder.Entity<TemperatureRecord>(entity =>
-        {
-            entity.HasKey(x => x.Id);
-
-            entity.Property(x => x.DeviceId)
-                  .IsRequired();
-
-            entity.Property(x => x.CelsiusValue)
-                  .IsRequired();
-
-            entity.Property(x => x.CreatedDate)
-                  .IsRequired();
-        });
+        base.OnModelCreating(builder);
     }
 }

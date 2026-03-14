@@ -7,7 +7,7 @@ using System.Text;
 
 namespace PetMonitoring.Movement.Application.Queries
 {
-    public sealed record GetMovementQuery(string DeviceSerialNumber) : IRequest<MovementOperationResult>
+    public sealed record GetMovementsQuery(string DeviceSerialNumber) : IRequest<MovementOperationResult>
     {
 
     }

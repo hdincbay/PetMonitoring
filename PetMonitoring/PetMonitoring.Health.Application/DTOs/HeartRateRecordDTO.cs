@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PetMonitoring.Health.Application.DTOs
 {
-    public class HeartRateRecordDTO
+    public record HeartRateRecordDTO
     {
         public Guid Id { get; private set; }
         public string? DeviceSerialNumber { get; private set; }

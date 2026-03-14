@@ -12,18 +12,18 @@ using System.Text;
 
 namespace PetMonitoring.Health.Application.Queries
 {
-    public class GetHeartRateQueryHandler : IRequestHandler<GetHeartRateQuery, HealthOperationResult>
+    public class GetHeartRatesQueryHandler : IRequestHandler<GetHeartRatesQuery, HealthOperationResult>
     {
         private readonly IHeartRateRepository _repository;
         private readonly IMapper _mapper;
 
-        public GetHeartRateQueryHandler(IHeartRateRepository repository, IMapper mapper)
+        public GetHeartRatesQueryHandler(IHeartRateRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
         }
 
-        public async Task<HealthOperationResult> Handle(GetHeartRateQuery request, CancellationToken cancellationToken)
+        public async Task<HealthOperationResult> Handle(GetHeartRatesQuery request, CancellationToken cancellationToken)
         {
             var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
             if(record is null)

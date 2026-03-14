@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Temperature.API.Mappers;
 using PetMonitoring.Temperature.Application.Commands.AddTemperature;
 using PetMonitoring.Temperature.Application.Interfaces;
 using PetMonitoring.Temperature.Application.Queries;
@@ -21,15 +22,15 @@ namespace PetMonitoring.Temperature.API.Controllers
         [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] AddTemperatureCommand record)
         {
-            await _mediator.Send(record);
-            return Ok();
+            var result = await _mediator.Send(record);
+            return result.ToActionResult(this);
         }
 
         [HttpGet("GetByDevice")]
-        public async Task<IActionResult> GetByDevice([FromQuery] GetTemperatureQuery record)
+        public async Task<IActionResult> GetByDevice([FromQuery] GetTemperaturesQuery record)
         {
-            var recordList = await _mediator.Send(record);
-            return Ok(recordList);
+            var result = await _mediator.Send(record);
+            return result.ToTemperatureListResult(this);
         }
     }
 }

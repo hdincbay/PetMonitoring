@@ -22,7 +22,7 @@ namespace PetMonitoring.Health.API.Controllers
             return result.ToActionResult(this);
         }
         [HttpGet("GetByDevice")]
-        public async Task<IActionResult> GetByDevice([FromQuery] GetHeartRateQuery record)
+        public async Task<IActionResult> GetByDevice([FromQuery] GetHeartRatesQuery record)
         {
             var result = await _mediator.Send(record);
             return result.ToHealthListResult(this);
