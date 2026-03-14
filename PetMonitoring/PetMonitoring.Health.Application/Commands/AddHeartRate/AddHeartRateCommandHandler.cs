@@ -26,7 +26,7 @@ namespace PetMonitoring.Health.Application.Commands.AddHeartRate
             if (createResult == string.Empty)
             {
                 return new HealthOperationResult(
-                    "Device creation failed",
+                    "HartRateRecord creation failed",
                     RequestStatus.Failed
                 );
             }

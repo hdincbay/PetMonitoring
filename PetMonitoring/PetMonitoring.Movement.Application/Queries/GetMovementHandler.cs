@@ -1,22 +1,42 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
+using PetMonitoring.Movement.Application.DTOs;
+using PetMonitoring.Movement.Application.Enums;
 using PetMonitoring.Movement.Application.Interfaces;
+using PetMonitoring.Movement.Application.Results;
 using PetMonitoring.Movement.Domain.Entities;
 
 namespace PetMonitoring.Movement.Application.Queries
 {
-    public class GetMovementHandler : IRequestHandler<GetMovementQuery, MovementRecord>
+    public class GetMovementHandler : IRequestHandler<GetMovementQuery, MovementOperationResult>
     {
         private readonly IMovementRepository _repository;
+        private readonly IMapper _mapper;
 
-        public GetMovementHandler(IMovementRepository repository)
+        public GetMovementHandler(IMovementRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
-        public async Task<MovementRecord> Handle(GetMovementQuery request, CancellationToken cancellationToken)
+        public async Task<MovementOperationResult> Handle(GetMovementQuery request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceIdAsync(request.DeviceId, cancellationToken);
-            return record!;
+            var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            if (record is null)
+            {
+                return new MovementOperationResult
+                (
+                    $"No movement record found for device with serial number {request.DeviceSerialNumber}.",
+                    RequestStatus.NotFound
+                );
+            }
+            var dto = _mapper.Map<MovementRecordDTO>(record);
+            return new MovementOperationResult
+            (
+                "Movement rate record retrieved successfully.",
+                RequestStatus.Success,
+                dto
+            );
         }
     }
 }

@@ -8,7 +8,7 @@ public class GetMovementValidator
 {
     public GetMovementValidator()
     {
-        RuleFor(x => x.DeviceId)
+        RuleFor(x => x.DeviceSerialNumber)
             .NotEmpty();
     }
 }

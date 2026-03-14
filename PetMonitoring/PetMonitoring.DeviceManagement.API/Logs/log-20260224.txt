@@ -1,8 +1,0 @@
-2026-02-24 22:30:25.594 +03:00 [ERR] Failed executing DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-CREATE TABLE [DeviceRecords] (
-    [Id] uniqueidentifier NOT NULL,
-    [Name] nvarchar(max) NULL,
-    [CreatedDate] datetime2 NOT NULL,
-    [BatteryPercentage] int NOT NULL,
-    CONSTRAINT [PK_DeviceRecords] PRIMARY KEY ([Id])
-);

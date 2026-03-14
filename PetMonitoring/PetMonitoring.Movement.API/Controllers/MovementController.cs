@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
+using PetMonitoring.Movement.API.Mappers;
 using PetMonitoring.Movement.Application.Commands;
 using PetMonitoring.Movement.Application.Commands.AddMovement;
 using PetMonitoring.Movement.Application.Interfaces;
@@ -21,14 +22,14 @@ namespace PetMonitoring.Movement.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] AddMovementCommand record)
         {
-            await _mediator.Send(record);
-            return Ok();
+            var result = await _mediator.Send(record);
+            return result.ToActionResult(this);
         }
         [HttpGet("GetByDevice")]
         public async Task<IActionResult> GetByDevice([FromQuery] GetMovementQuery record)
         {
-            var recordList = await _mediator.Send(record);
-            return Ok(recordList);
+            var result = await _mediator.Send(record);
+            return result.ToMovementListResult(this);
         }
     }
 }

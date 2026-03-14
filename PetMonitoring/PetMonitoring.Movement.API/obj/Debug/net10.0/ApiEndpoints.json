@@ -24,8 +24,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "DeviceId",
-        "Type": "System.Guid",
+        "Name": "DeviceSerialNumber",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

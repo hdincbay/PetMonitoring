@@ -5,6 +5,7 @@ using PetMonitoring.Movement.Application.Commands.AddMovement;
 using PetMonitoring.Movement.Application.Validators;
 using Serilog;
 using PetMonitoring.Movement.Infrastructure.DependencyInjection;
+using PetMonitoring.Movement.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .CreateLogger();
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(typeof(MovementMappingProfile).Assembly);
+});
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

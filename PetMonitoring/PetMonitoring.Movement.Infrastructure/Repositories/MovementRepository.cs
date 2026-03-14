@@ -14,17 +14,18 @@ public class MovementRepository : IMovementRepository
         _context = context;
     }
 
-    public async Task AddAsync(MovementRecord record, CancellationToken ct)
+    public async Task<string> AddAsync(MovementRecord record, CancellationToken ct)
     {
-        await _context.MovementRecords.AddAsync(record);
-        await _context.SaveChangesAsync(ct);
+        var entry = await _context.MovementRecords.AddAsync(record);
+        var affectedRows = await _context.SaveChangesAsync();
+        return affectedRows > 0 ? entry.Entity.Id.ToString() : string.Empty;
     }
 
-    public async Task<MovementRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
+    public async Task<MovementRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
     {
         return await _context.MovementRecords
             .AsNoTracking()
-            .Where(x => x.DeviceId == deviceId)
+            .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);
     }
