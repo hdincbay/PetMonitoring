@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.Web.Application.DTOs;
+using PetMonitoring.Web.Application.DTOs.Auth;
 using PetMonitoring.Web.Infrastructure.AppClients;
 using System.Security.Claims;
 

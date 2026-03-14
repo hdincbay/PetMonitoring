@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PetMonitoring.Web.Application.DTOs
+namespace PetMonitoring.Web.Application.DTOs.Health
 {
     public record HealthDTO
     {

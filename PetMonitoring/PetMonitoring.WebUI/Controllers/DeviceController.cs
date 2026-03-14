@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PetMonitoring.Web.Application.DTOs;
+using PetMonitoring.Web.Application.DTOs.Device;
 using PetMonitoring.Web.Infrastructure.AppClients;
 using System.Reflection;
 

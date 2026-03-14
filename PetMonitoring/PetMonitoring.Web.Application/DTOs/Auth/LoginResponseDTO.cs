@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PetMonitoring.Web.Application.DTOs
+namespace PetMonitoring.Web.Application.DTOs.Auth
 {
     public record LoginResponseDTO
     {

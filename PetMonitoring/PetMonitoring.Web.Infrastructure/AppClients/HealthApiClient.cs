@@ -1,4 +1,4 @@
-﻿using PetMonitoring.Web.Application.DTOs;
+﻿using PetMonitoring.Web.Application.DTOs.Health;
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;

@@ -1,4 +1,4 @@
-﻿namespace PetMonitoring.Web.Application.DTOs
+﻿namespace PetMonitoring.Web.Application.DTOs.Auth
 {
     public record LoginDTO
     {

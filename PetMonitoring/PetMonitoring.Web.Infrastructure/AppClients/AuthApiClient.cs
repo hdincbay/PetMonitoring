@@ -1,4 +1,4 @@
-﻿using PetMonitoring.Web.Application.DTOs;
+﻿using PetMonitoring.Web.Application.DTOs.Auth;
 using System.Net.Http.Json;
 
 namespace PetMonitoring.Web.Infrastructure.AppClients
