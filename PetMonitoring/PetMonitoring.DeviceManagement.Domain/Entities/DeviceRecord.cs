@@ -13,6 +13,8 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
         public string? SerialNumber { get; private set; }
         public DateTime CreatedDate { get; private set; }
         public int BatteryPercentage { get; private set; }
+        public bool IsDeleted { get; set; } = false;
+        public DateTime? DeletedDate { get; set; }
         public DeviceRecord()
         {
 
@@ -27,13 +29,13 @@ namespace PetMonitoring.DeviceManagement.Domain.Entities
                 SerialNumber = serialNumber
             };
         }
-        public void Update(string? name, string? petName)
+        public void Update(string? serialNumber, string? name, string? petName, bool isDeleted, DateTime? deletedDate)
         {
-            if (!string.IsNullOrWhiteSpace(name))
-                Name = name;
-
-            if (!string.IsNullOrWhiteSpace(petName))
-                PetName = petName;
+            SerialNumber = serialNumber;
+            Name = name;
+            PetName = petName;
+            IsDeleted = isDeleted;
+            DeletedDate = deletedDate;
         }
         public void UpdateBatteryPercentage(int batteryPercentage)
         {

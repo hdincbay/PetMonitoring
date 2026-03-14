@@ -195,7 +195,9 @@
           "serialNumber",
           "id",
           "name",
-          "petName"
+          "petName",
+          "isDeleted",
+          "deletedDate"
         ],
         "type": "object",
         "properties": {
@@ -214,6 +216,13 @@
           },
           "petName": {
             "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "deletedDate": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       }

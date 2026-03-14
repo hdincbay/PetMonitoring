@@ -34,5 +34,13 @@ namespace PetMonitoring.Web.Infrastructure.AppClients
             var responseDto = Newtonsoft.Json.JsonConvert.DeserializeObject<DeviceResponseDTO>(await result.Content.ReadAsStringAsync());
             return responseDto!;
         }
+        public async Task<DeviceResponseDTO> DeleteAsync(DeviceDTO model)
+        {
+            model.IsDeleted = true;
+            model.DeletedDate = DateTime.Now;
+            var result = await _httpClient.PatchAsJsonAsync("Devicemanagement/Update", model);
+            var responseDto = Newtonsoft.Json.JsonConvert.DeserializeObject<DeviceResponseDTO>(await result.Content.ReadAsStringAsync());
+            return responseDto!;
+        }
     }
 }

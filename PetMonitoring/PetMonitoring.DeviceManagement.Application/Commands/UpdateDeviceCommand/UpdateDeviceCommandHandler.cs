@@ -25,7 +25,7 @@ namespace PetMonitoring.DeviceManagement.Application.Commands.UpdateDeviceComman
                     RequestStatus.Failed
                 );
             }
-            record.Update(request.Name, request.PetName);
+            record.Update(request.SerialNumber, request.Name, request.PetName, request.IsDeleted, request.DeletedDate);
             var success = await _repository.UpdateAsync(record, cancellationToken);
 
             if (!success)

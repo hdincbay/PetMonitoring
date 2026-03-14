@@ -34,6 +34,12 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -45,7 +51,7 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DeviceRecords", (string)null);
+                    b.ToTable("DeviceRecords");
                 });
 #pragma warning restore 612, 618
         }

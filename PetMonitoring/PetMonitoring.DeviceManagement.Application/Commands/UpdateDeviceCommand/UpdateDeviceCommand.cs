@@ -8,5 +8,7 @@ public sealed record UpdateDeviceCommand
     string? SerialNumber,
     Guid ID,
     string Name,
-    string PetName
+    string PetName,
+    bool IsDeleted,
+    DateTime DeletedDate
 ) : IRequest<DeviceOperationResult>;

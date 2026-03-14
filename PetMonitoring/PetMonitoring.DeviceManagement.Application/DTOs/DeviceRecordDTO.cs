@@ -12,5 +12,7 @@ namespace PetMonitoring.DeviceManagement.Application.DTOs
         public string? SerialNumber { get; set; }
         public int BatteryPercentage { get; set; }
         public DateTime CreatedDate { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletedDate { get; set; }
     }
 }

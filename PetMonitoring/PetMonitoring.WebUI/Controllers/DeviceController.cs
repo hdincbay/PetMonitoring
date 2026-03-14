@@ -71,5 +71,12 @@ namespace PetMonitoring.WebUI.Controllers
             TempData["SuccessMessage"] = responseContent;
             return RedirectToAction("Get", new { id = model.ID });
         }
+        [Authorize]
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete([FromForm] DeviceDTO model)
+        {
+            var result = await _client.DeleteAsync(model);
+            return RedirectToAction("Index");
+        }
     }
 }

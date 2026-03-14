@@ -12,8 +12,8 @@ using PetMonitoring.DeviceManagement.Infrastructure.Persistence;
 namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(DeviceManagementDbContext))]
-    [Migration("20260217204235_mig_3")]
-    partial class mig_3
+    [Migration("20260314230006_mig_1")]
+    partial class mig_1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,12 @@ namespace PetMonitoring.DeviceManagement.Infrastructure.Persistence.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

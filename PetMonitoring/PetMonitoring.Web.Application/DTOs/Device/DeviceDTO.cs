@@ -10,5 +10,7 @@ namespace PetMonitoring.Web.Application.DTOs.Device
         public string? SerialNumber { get; set; }
         public string? Name { get; set; }
         public string? PetName { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletedDate { get; set; }
     }
 }

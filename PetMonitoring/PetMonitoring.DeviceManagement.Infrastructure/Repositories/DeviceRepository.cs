@@ -30,14 +30,14 @@ public class DeviceRepository : IDeviceRepository
     public async Task<DeviceRecord?> GetByDeviceIdAsync(Guid deviceId, CancellationToken ct)
     {
         return await _context.DeviceRecords
-            .Where(x => x.Id == deviceId)
+            .Where(x => x.Id == deviceId && x.IsDeleted == false)
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);
     }
 
     public async Task<IEnumerable<DeviceRecord>?> GetAllAsync(CancellationToken ct)
     {
-        return await _context.DeviceRecords.ToListAsync(ct);
+        return await _context.DeviceRecords.Where(x => x.IsDeleted == false).ToListAsync(ct);
     }
 
     public async Task<DeviceRecord?> GetBySerialNumberAsync(string serialNumber, CancellationToken ct)

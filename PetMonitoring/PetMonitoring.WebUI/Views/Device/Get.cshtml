@@ -16,6 +16,8 @@
 }
 <form id="loginForm" asp-controller="Device" asp-action="Update" method="post">
     <input type="hidden" asp-for="ID"/>
+    <input type="hidden" asp-for="IsDeleted"/>
+    <input type="hidden" asp-for="DeletedDate"/>
     <div class="form-group">
         <label asp-for="SerialNumber">Seri No</label>
         <input class="form-control" asp-for="SerialNumber">

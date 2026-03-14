@@ -32,6 +32,15 @@
                         <a class="btn btn-primary" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
                             <i class="fa fa-edit"></i> Detay
                         </a>
+                        <form asp-controller="Device" asp-action="Delete" method="post" style="display:inline;">
+                            <input type="hidden" name="ID" value="@item.ID" />
+                            <input type="hidden" name="Name" value="@item.Name" />
+                            <input type="hidden" name="PetName" value="@item.PetName" />
+                            <input type="hidden" name="SerialNumber" value="@item.SerialNumber" />
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fa fa-trash"></i> Sil
+                            </button>
+                        </form>
                     </div>
                 </td>
             </tr>
