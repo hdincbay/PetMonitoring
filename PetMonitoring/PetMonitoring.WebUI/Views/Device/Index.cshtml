@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Device List Page";
 }
+
 @if (ViewBag.ErrorMessage != null)
 {
     <div class="alert alert-danger" role="alert">
@@ -25,26 +26,50 @@
                 <td>@item.Name</td>
                 <td>@item.PetName</td>
                 <td>
-                    <div class="btn group">
+                    <div class="btn-group">
                         <a class="btn btn-success" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
                             <i class="fa fa-chart-area"></i> Grafikler
                         </a>
                         <a class="btn btn-primary" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
                             <i class="fa fa-edit"></i> Detay
                         </a>
-                        <form asp-controller="Device" asp-action="Delete" method="post" style="display:inline;">
-                            <input type="hidden" name="ID" value="@item.ID" />
-                            <input type="hidden" name="Name" value="@item.Name" />
-                            <input type="hidden" name="PetName" value="@item.PetName" />
-                            <input type="hidden" name="SerialNumber" value="@item.SerialNumber" />
-                            <button type="submit" class="btn btn-danger">
-                                <i class="fa fa-trash"></i> Sil
-                            </button>
-                        </form>
+                        <button type="button" class="btn btn-danger delete-button"
+                                data-id="@item.ID"
+                                data-name="@item.Name"
+                                data-petname="@item.PetName"
+                                data-serial="@item.SerialNumber"
+                                data-isdeleted="@item.IsDeleted"
+                                data-deleteddate="@item.DeletedDate">
+                            <i class="fa fa-trash"></i> Sil
+                        </button>
                     </div>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="deleteModalLabel">Silme Onayı</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+            <div class="modal-body">
+                <p id="modalBodyText">Bu kaydı silmek istediğinize emin misiniz?</p>
+            </div>
+            <div class="modal-footer">
+                <form id="deleteForm" method="post" asp-controller="Device" asp-action="Delete">
+                    <input type="hidden" id="deleteIdInput" name="ID" value="" />
+                    <input type="hidden" id="deleteNameInput" name="Name" value="" />
+                    <input type="hidden" id="deletePetNameInput" name="PetName" value="" />
+                    <input type="hidden" id="deleteSerialInput" name="SerialNumber" value="" />
+                    <input type="hidden" id="deleteIsDeletedInput" name="IsDeleted" value="" />
+                    <input type="hidden" id="deleteDeletedDateInput" name="DeletedDate" value="" />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hayır</button>
+                    <button type="submit" class="btn btn-danger">Evet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

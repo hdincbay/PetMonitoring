@@ -244,3 +244,345 @@ CREATE TABLE [DeviceRecords] (
  {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-9428490530f16c68e79b244a3ef588b6-56df078f0fe5b59a-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
 2026-03-15 02:25:27.164 +03:00 [INF] Request finished 
  GET /api/device/GetAllDevices - 200 in 11 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:37:41.582 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-a492c05d7bf83660aa8b8f7b2af1c768-33a6a36bb1d471b6-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:37:42.843 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1271 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:37:45.488 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-9d3157073de950c7a6b73ebf25a2e21b-f100ef7e1a409a1f-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:37:45.497 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 9 ms {"Body":""}
+2026-03-15 02:37:45.523 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-9d3157073de950c7a6b73ebf25a2e21b-eb64484213773a64-00"},"Body":""}
+2026-03-15 02:37:45.588 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 64 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:37:51.103 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-b70734a2f16fdfafac19fa0b880e88d6-d7f9baa02b08b7ee-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:37:51.359 +03:00 [INF] Request finished 
+ POST /api/device/Create - 200 in 263 ms {"Body":"{\"serialNumber\":\"D9902\",\"message\":\"Device with Serial Number D9902 created successfully\",\"status\":0}"}
+2026-03-15 02:37:52.867 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-6f62323fd5468c345a46ae75c0136668-e296fb113e77d56f-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:37:52.874 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:37:52.889 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-6f62323fd5468c345a46ae75c0136668-8277f7b08bb65cf3-00"},"Body":""}
+2026-03-15 02:37:52.919 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 30 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"43d72fde-fa17-4707-c465-08de8222b51e\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:37:51.2133333\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:37:57.514 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-3362ad6c67c86149e51ac0e019457b21-bf859ad6a845baaa-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"43d72fde-fa17-4707-c465-08de8222b51e\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:37:57.5023213+03:00\"}"}
+2026-03-15 02:37:57.523 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 307 in 11 ms {"Body":""}
+2026-03-15 02:37:57.540 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-3362ad6c67c86149e51ac0e019457b21-445b25e68a4d43f5-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"43d72fde-fa17-4707-c465-08de8222b51e\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:37:57.5023213+03:00\"}"}
+2026-03-15 02:37:57.587 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 200 in 46 ms {"Body":"{\"serialNumber\":null,\"message\":\"Device with Serial Number D9902 updated successfully\",\"status\":0}"}
+2026-03-15 02:37:57.605 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-1b1ceaae7c7116e3efb1cf9c179caeb2-74c719ab959be2cf-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:37:57.614 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 8 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:38:57.091 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-a22de4ba351cb4cb099885ce7b89c15c-553416e5b7140ca9-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9903\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u01313\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:38:57.137 +03:00 [INF] Request finished 
+ POST /api/device/Create - 307 in 61 ms {"Body":""}
+2026-03-15 02:38:57.230 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-a22de4ba351cb4cb099885ce7b89c15c-4023e3f0fd9a3aca-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9903\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u01313\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:38:58.517 +03:00 [INF] Request finished 
+ POST /api/device/Create - 200 in 1288 ms {"Body":"{\"serialNumber\":\"D9903\",\"message\":\"Device with Serial Number D9903 created successfully\",\"status\":0}"}
+2026-03-15 02:38:59.626 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-7123cbdb9e6f335d9d5fdd61c9d93340-0dd074a2d5fe00bc-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:38:59.633 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:38:59.648 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-7123cbdb9e6f335d9d5fdd61c9d93340-5a68e88990196a27-00"},"Body":""}
+2026-03-15 02:38:59.812 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 164 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:39:55.584 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-a503220c9e5715ab29b18bc4d190e43f-a40cc2852aab7968-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:39:55.630 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 60 ms {"Body":""}
+2026-03-15 02:39:55.718 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-a503220c9e5715ab29b18bc4d190e43f-865084d0be921e4d-00"},"Body":""}
+2026-03-15 02:39:56.898 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1180 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:40:04.105 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-19cb2a7c48eed764f669e97f2518b434-005da5b9d03ea976-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:40:04.042673+03:00\"}"}
+2026-03-15 02:40:04.172 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 72 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-19cb2a7c48eed764f669e97f2518b434-4d1aba9de28e625b-00\"}"}
+2026-03-15 02:40:04.286 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-40f89a47a259b8851feab2f081bc63a3-783103bdf13ff7f9-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:40:04.347 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 61 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:40:06.764 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-cfd13b00528dba2bbb2cf1c2d2bbc317-05aeceba3ba49dfc-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:40:06.786 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 22 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:40:08.732 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-c591a1ebfe0c8cd0a705a04d7f7cb92e-464f7306c7cb4bee-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:40:08.739 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:40:08.752 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-c591a1ebfe0c8cd0a705a04d7f7cb92e-76269451742e4051-00"},"Body":""}
+2026-03-15 02:40:08.760 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 7 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:42:06.118 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-456f1d6d4ea56ae8b1951daf03bd9623-8498c6ffcff9ffee-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:42:07.264 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1157 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:42:20.738 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-49533964954fa9e90102bb37e56b9079-a9906c429ada00ad-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:42:20.7036761+03:00\"}"}
+2026-03-15 02:42:20.751 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 307 in 16 ms {"Body":""}
+2026-03-15 02:42:20.781 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-49533964954fa9e90102bb37e56b9079-08f10a39cd2355d1-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:42:20.7036761+03:00\"}"}
+2026-03-15 02:42:20.838 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 57 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-49533964954fa9e90102bb37e56b9079-423ca8f406aefc0b-00\"}"}
+2026-03-15 02:42:20.933 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-1cd243d917bdb619c753bed9804c6e99-42999baaaee4c1d6-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:42:20.997 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 63 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:42:32.111 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-f16843c54d758147e7a4f5ecf135ad40-d742e4c846a46f10-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:42:32.0943621+03:00\"}"}
+2026-03-15 02:42:32.119 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 16 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-f16843c54d758147e7a4f5ecf135ad40-67779c55379bd760-00\"}"}
+2026-03-15 02:42:32.151 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-51250fe824b7f5302362f67c99cfcff7-8e5921ec31d262ea-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:42:32.159 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 8 ms {"Body":""}
+2026-03-15 02:42:32.173 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-51250fe824b7f5302362f67c99cfcff7-2fa2a0184b52ccde-00"},"Body":""}
+2026-03-15 02:42:32.195 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 21 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:43:44.084 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-2b239ccf91dff29e9fb68e52ffa3c386-607f46529fca4d17-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:43:44.128 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 56 ms {"Body":""}
+2026-03-15 02:43:44.215 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-2b239ccf91dff29e9fb68e52ffa3c386-1553519a229f175b-00"},"Body":""}
+2026-03-15 02:43:45.389 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1174 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:45:25.136 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-06a015579c8900ccb5b3ce244a0b5842-30ea1bcb376d2563-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:45:26.298 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1173 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:45:30.222 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-a334b7e8bf96430a97498d63a1965d74-1725796258ee17b7-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:45:30.1914644+03:00\"}"}
+2026-03-15 02:45:30.288 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 72 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-a334b7e8bf96430a97498d63a1965d74-7dc05137a2863742-00\"}"}
+2026-03-15 02:45:30.404 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-dae1368e90a526b99b0c577f566a811d-f34d35f3da05ec6d-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:45:30.412 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 7 ms {"Body":""}
+2026-03-15 02:45:30.436 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-dae1368e90a526b99b0c577f566a811d-d662def5c7ffff1e-00"},"Body":""}
+2026-03-15 02:45:30.496 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 60 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:45:49.714 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-44bcd1150202ac1d900e3461a7c3ee1f-975c39e52e8900a3-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:45:49.7020584+03:00\"}"}
+2026-03-15 02:45:49.722 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 307 in 11 ms {"Body":""}
+2026-03-15 02:45:49.740 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-44bcd1150202ac1d900e3461a7c3ee1f-4c4b649224eb5136-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:45:49.7020584+03:00\"}"}
+2026-03-15 02:45:49.749 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 9 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-44bcd1150202ac1d900e3461a7c3ee1f-611f4b62cfff7e9d-00\"}"}
+2026-03-15 02:45:49.766 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-45e54a90a448728e1fb509304b51e5db-3f120bcdd545f767-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:45:49.788 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 22 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:46:20.307 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-022af0ae0c99c5654b895eaa3ff63a7c-36f4cf349e1c66cb-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:46:20.2678143+03:00\"}"}
+2026-03-15 02:46:20.318 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 12 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-022af0ae0c99c5654b895eaa3ff63a7c-4f9d1816c400afe8-00\"}"}
+2026-03-15 02:46:20.353 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-2803d3611f9b3296e480cf2b90a91cc7-5f1de0c97c622f5d-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:46:20.362 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 8 ms {"Body":""}
+2026-03-15 02:46:20.380 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-2803d3611f9b3296e480cf2b90a91cc7-eb66d5946d614244-00"},"Body":""}
+2026-03-15 02:46:20.391 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 11 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:46:21.613 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-7531923346b63b99276a808abb37fb98-36ba7fabf953da1f-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:46:21.632 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 20 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:46:27.345 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-90dc5100181601691fec1815fe3c9e78-3b72961954232564-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":null,\"name\":null,\"petName\":null,\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:46:27.3356785+03:00\"}"}
+2026-03-15 02:46:27.366 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 400 in 21 ms {"Body":"{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"errors\":{\"Name\":[\"The Name field is required.\"],\"PetName\":[\"The PetName field is required.\"]},\"traceId\":\"00-90dc5100181601691fec1815fe3c9e78-175c67733af5c79b-00\"}"}
+2026-03-15 02:46:27.395 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-90889cc638c76d8a8fce321a48959c4c-c06816f1b3828df3-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:46:27.408 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 12 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:48:34.691 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-6a086d0e3ebec459f9db2212b6537b16-d17753ad4d78d681-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:48:34.735 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 57 ms {"Body":""}
+2026-03-15 02:48:34.819 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-6a086d0e3ebec459f9db2212b6537b16-e70eb60df8900371-00"},"Body":""}
+2026-03-15 02:48:36.015 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1195 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:52:07.813 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-eb7255c6de0bb86a75b6b52b89504acd-989795b8346b6b44-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:52:07.853 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 52 ms {"Body":""}
+2026-03-15 02:52:07.943 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-eb7255c6de0bb86a75b6b52b89504acd-982aebb75adaddfd-00"},"Body":""}
+2026-03-15 02:52:09.085 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1142 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"name\":\"Çomarın cihazı3\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9903\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:38:58.3435387\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:52:21.324 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-a09468ddc792cd10d47bc9ce6880bf93-b6ffa40b508b3b47-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"3b701865-906f-41dc-3e9e-08de8222dd22\",\"serialNumber\":\"D9903\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u01313\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:52:21.2689703+03:00\"}"}
+2026-03-15 02:52:21.534 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 200 in 215 ms {"Body":"{\"serialNumber\":null,\"message\":\"Device with Serial Number D9903 updated successfully\",\"status\":0}"}
+2026-03-15 02:52:21.645 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-321eb8d4ddae2a769f8636ad0a19a5bc-9a30998267f16633-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:52:21.652 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 7 ms {"Body":""}
+2026-03-15 02:52:21.665 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-321eb8d4ddae2a769f8636ad0a19a5bc-b98ed03165854932-00"},"Body":""}
+2026-03-15 02:52:21.687 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 21 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:52:29.187 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-6fe46e28d7b7fe63eb48e712259b443a-2d5475d88567ba94-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:52:29.196 +03:00 [INF] Request finished 
+ POST /api/device/Create - 307 in 11 ms {"Body":""}
+2026-03-15 02:52:29.213 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-6fe46e28d7b7fe63eb48e712259b443a-b7f95603933c8406-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:52:29.245 +03:00 [INF] Request finished 
+ POST /api/device/Create - 400 in 31 ms {"Body":"{\"message\":\"A device with Serial Number D9902 already exists.\",\"status\":3}"}
+2026-03-15 02:53:26.134 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-148fdf33755abdad0e7b504405a00934-8db160fb4f8d639a-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:54:11.074 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-dbee6885fc508670427a07b57c9e719b-093da5b0e6b22bbf-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:54:12.219 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1155 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:54:31.785 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-b135565641fea199cd79deffe518013d-71046cc3d7b7aff5-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:54:31.797 +03:00 [INF] Request finished 
+ POST /api/device/Create - 307 in 15 ms {"Body":""}
+2026-03-15 02:54:31.826 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-b135565641fea199cd79deffe518013d-f72518a18fcb9840-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:54:34.956 +03:00 [INF] Request finished 
+ POST /api/device/Create - 200 in 3130 ms {"Body":"{\"serialNumber\":\"D9902\",\"message\":\"Device with Serial Number D9902 created successfully\",\"status\":0}"}
+2026-03-15 02:54:37.405 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-3395cce7e844b31f1db585c7ec8f779a-5d2707fee91032bd-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:54:37.411 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:54:37.426 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-3395cce7e844b31f1db585c7ec8f779a-47ee5b07e0df4f51-00"},"Body":""}
+2026-03-15 02:54:37.468 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 42 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"9805c450-e5de-4fee-23ec-08de82250b49\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:54:34.7610558\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:55:50.187 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-7286b197efcbba43871308ee14d19f61-7de6f93d320cbce4-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:55:50.237 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 61 ms {"Body":""}
+2026-03-15 02:55:50.321 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-7286b197efcbba43871308ee14d19f61-fafc5ef2cd232268-00"},"Body":""}
+2026-03-15 02:55:51.496 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1174 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"9805c450-e5de-4fee-23ec-08de82250b49\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:54:34.7610558\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:56:56.600 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-0a22d27488e34451cfc457dc3a5b5a27-231b809d7a7d2bcc-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 02:56:57.776 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1186 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"9805c450-e5de-4fee-23ec-08de82250b49\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar2\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:54:34.7610558\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 02:57:05.945 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-c2326ee8ad68d4cab6e7473bfa60fc90-70c850c292417e8c-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"9805c450-e5de-4fee-23ec-08de82250b49\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:57:05.9060052+03:00\"}"}
+2026-03-15 02:57:05.958 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 307 in 16 ms {"Body":""}
+2026-03-15 02:57:05.988 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-c2326ee8ad68d4cab6e7473bfa60fc90-c94d2b2856bbeee4-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"9805c450-e5de-4fee-23ec-08de82250b49\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar2\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T02:57:05.9060052+03:00\"}"}
+2026-03-15 02:57:06.222 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 200 in 234 ms {"Body":"{\"serialNumber\":null,\"message\":\"Device with Serial Number D9902 updated successfully\",\"status\":0}"}
+2026-03-15 02:57:06.319 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-337013e6b9674ddb25d76fec1d703be6-6abd861c6e9f92f2-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:57:06.326 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:57:06.339 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-337013e6b9674ddb25d76fec1d703be6-b5388ba1f673a335-00"},"Body":""}
+2026-03-15 02:57:06.365 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 26 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:58:01.252 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-3d4bdf9804d461a2a30404a611f04db3-a10f7d9aad405163-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:58:01.296 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 55 ms {"Body":""}
+2026-03-15 02:58:01.386 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-3d4bdf9804d461a2a30404a611f04db3-be8477135ac5b2ee-00"},"Body":""}
+2026-03-15 02:58:02.598 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1211 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 02:58:09.361 +03:00 [INF] Request started 
+ {"Method":"POST","Path":{"Value":"/api/device/Create","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-8713e6853b2a125b2a2b18b2fb7a2295-21760d6809667aef-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":"{\"id\":\"00000000-0000-0000-0000-000000000000\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":false,\"deletedDate\":null}"}
+2026-03-15 02:58:09.669 +03:00 [INF] Request finished 
+ POST /api/device/Create - 200 in 312 ms {"Body":"{\"serialNumber\":\"D9902\",\"message\":\"Device with Serial Number D9902 created successfully\",\"status\":0}"}
+2026-03-15 02:58:10.837 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-60e76f5dd839bc370ce96711d4ff2b93-d1bd9966b95b0c27-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 02:58:10.844 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 02:58:10.857 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-60e76f5dd839bc370ce96711d4ff2b93-ca8282bf7d247fe7-00"},"Body":""}
+2026-03-15 02:58:10.893 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 35 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 03:00:02.106 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-bd5f3e8957fd099f7661490180d1696a-05de71b8b716c2c8-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:00:03.318 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1220 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 03:00:12.997 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetByDeviceId","HasValue":true,"$type":"PathString"},"Query":"?deviceId=8bd31cdf-ad41-49e5-9bee-08de82258b48","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-af584cc9d7e8f35b6aa5f24f2423e6dc-92fa1b12fd140f31-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 03:00:13.006 +03:00 [INF] Request finished 
+ GET /api/device/GetByDeviceId - 307 in 8 ms {"Body":""}
+2026-03-15 03:00:13.032 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetByDeviceId","HasValue":true,"$type":"PathString"},"Query":"?deviceId=8bd31cdf-ad41-49e5-9bee-08de82258b48","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-af584cc9d7e8f35b6aa5f24f2423e6dc-8156dac72f591f4c-00"},"Body":""}
+2026-03-15 03:00:13.157 +03:00 [INF] Request finished 
+ GET /api/device/GetByDeviceId - 200 in 125 ms {"Body":"{\"message\":\"Device retrieved successfully\",\"status\":0,\"device\":{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}}"}
+2026-03-15 03:00:15.497 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-ceb7f9a0340e8d5be684840d94e5491f-7e5bb555e1fc7ca0-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:00:15.528 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 30 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 03:00:16.652 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetByDeviceId","HasValue":true,"$type":"PathString"},"Query":"?deviceId=8bd31cdf-ad41-49e5-9bee-08de82258b48","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-7bb26c346336cc13bc88f814eba9e44c-b87f0f61a6e0de15-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 03:00:16.659 +03:00 [INF] Request finished 
+ GET /api/device/GetByDeviceId - 307 in 7 ms {"Body":""}
+2026-03-15 03:00:16.674 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetByDeviceId","HasValue":true,"$type":"PathString"},"Query":"?deviceId=8bd31cdf-ad41-49e5-9bee-08de82258b48","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-7bb26c346336cc13bc88f814eba9e44c-30cbc8fdf63ea4bc-00"},"Body":""}
+2026-03-15 03:00:16.682 +03:00 [INF] Request finished 
+ GET /api/device/GetByDeviceId - 200 in 8 ms {"Body":"{\"message\":\"Device retrieved successfully\",\"status\":0,\"device\":{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}}"}
+2026-03-15 03:00:18.147 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-5d98da8f0345d0f44967943c802976a1-5c70cc6e7ef24df1-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 03:00:18.153 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 6 ms {"Body":""}
+2026-03-15 03:00:18.167 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-5d98da8f0345d0f44967943c802976a1-73bd1cc339812ec5-00"},"Body":""}
+2026-03-15 03:00:18.178 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 10 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"name\":\"Çomarın cihazı\",\"petName\":\"Çomar\",\"serialNumber\":\"D9902\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:58:09.5018587\",\"isDeleted\":false,\"deletedDate\":null}]}"}
+2026-03-15 03:00:47.014 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","Content-Type":"application/json; charset=utf-8","traceparent":"00-67d6729e4d75cb10f5eb1cf604812d24-1f195b29cf491429-00","Transfer-Encoding":"chunked","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":"{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T03:00:46.990826+03:00\"}"}
+2026-03-15 03:00:47.023 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 307 in 11 ms {"Body":""}
+2026-03-15 03:00:47.042 +03:00 [INF] Request started 
+ {"Method":"PATCH","Path":{"Value":"/api/device/Update","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","Content-Type":"application/json; charset=utf-8","traceparent":"00-67d6729e4d75cb10f5eb1cf604812d24-39bf1e229f57c54e-00","Transfer-Encoding":"chunked"},"Body":"{\"id\":\"8bd31cdf-ad41-49e5-9bee-08de82258b48\",\"serialNumber\":\"D9902\",\"name\":\"\\u00C7omar\\u0131n cihaz\\u0131\",\"petName\":\"\\u00C7omar\",\"isDeleted\":true,\"deletedDate\":\"2026-03-15T03:00:46.990826+03:00\"}"}
+2026-03-15 03:00:47.155 +03:00 [INF] Request finished 
+ PATCH /api/device/Update - 200 in 113 ms {"Body":"{\"serialNumber\":null,\"message\":\"Device with Serial Number D9902 updated successfully\",\"status\":0}"}
+2026-03-15 03:00:47.249 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-357d73d4784d0fc1e96d2b45c09632b5-556926514ee46367-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:00:47.259 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 9 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[]}"}
+2026-03-15 03:03:28.891 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-548fe4b130e7f446d213fd513ee596d5-a078c86ce3f13c61-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:03:30.068 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1186 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}
+2026-03-15 03:04:15.689 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-054e6195b87b1378333490e61958377f-31221f77c1fea56b-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:04:16.942 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 1262 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}
+2026-03-15 03:04:52.740 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:5220","traceparent":"00-804e5eaa8716558039c7d5a06871eca2-8c58faa67b2c4195-00","X-Forwarded-For":"127.0.0.1","X-Forwarded-Host":"127.0.0.1:7071","X-Forwarded-Proto":"https"},"Body":""}
+2026-03-15 03:04:52.751 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 307 in 10 ms {"Body":""}
+2026-03-15 03:04:52.782 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-804e5eaa8716558039c7d5a06871eca2-a35d28d86a6d9f59-00"},"Body":""}
+2026-03-15 03:04:52.848 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 66 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}
+2026-03-15 03:05:05.787 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-0235fde775ab5d17617751df4f813e92-b11e03e048449672-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:05:05.820 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 33 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}
+2026-03-15 03:05:11.231 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-649b750d67c773e4ab8d87aca0728847-21011d654146c9e4-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-15 03:05:11.243 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 12 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}

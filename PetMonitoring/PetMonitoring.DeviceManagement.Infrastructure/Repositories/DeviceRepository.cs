@@ -43,7 +43,7 @@ public class DeviceRepository : IDeviceRepository
     public async Task<DeviceRecord?> GetBySerialNumberAsync(string serialNumber, CancellationToken ct)
     {
         return await _context.DeviceRecords
-            .Where(x => x.SerialNumber == serialNumber)
+            .Where(x => x.SerialNumber == serialNumber && x.IsDeleted == false)
             .OrderByDescending(x => x.CreatedDate)
             .FirstOrDefaultAsync(ct);  
     }
