@@ -1,0 +1,4 @@
+2026-03-23 22:38:18.809 +03:00 [INF] Request started 
+ {"Method":"GET","Path":{"Value":"/api/device/GetAllDevices","HasValue":true,"$type":"PathString"},"Query":"","Headers":{"Host":"127.0.0.1:7225","traceparent":"00-74ea8bdd1e9a68b64bd545b5d29b9095-19e2b9104dec0ef3-00","x-forwarded-for":"127.0.0.1","x-forwarded-host":"127.0.0.1:7071","x-forwarded-proto":"https"},"Body":""}
+2026-03-23 22:38:21.543 +03:00 [INF] Request finished 
+ GET /api/device/GetAllDevices - 200 in 2754 ms {"Body":"{\"message\":\"Devices retrieved successfully\",\"status\":0,\"deviceList\":[{\"id\":\"a09348d9-5886-4e80-a1b9-08de821d9953\",\"name\":\"Test Cihaz\",\"petName\":\"Çomar\",\"serialNumber\":\"D99021321335\",\"batteryPercentage\":0,\"createdDate\":\"2026-03-15T02:01:17.0941819\",\"isDeleted\":false,\"deletedDate\":\"2026-03-15T02:23:39\"}]}"}

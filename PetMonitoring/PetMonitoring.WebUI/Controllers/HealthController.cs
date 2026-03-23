@@ -14,16 +14,21 @@ namespace PetMonitoring.WebUI.Controllers
             _client = client;
         }
         [Authorize]
-        [HttpGet("Index")]
-        public async Task<IActionResult> Index([FromQuery] string deviceSerialNumber)
+        [HttpGet("GetChartData")]
+        public async Task<IActionResult> GetChartData([FromQuery] string deviceSerialNumber)
         {
             var result = await _client.GetAllAsync(deviceSerialNumber);
+
             if (result?.Status != 0)
+                return Json(new List<object>());
+
+            var chartData = result.HealthList.Select(x => new
             {
-                ViewBag.ErrorMessage = result?.Message;
-                return View();
-            }
-            return View(result?.HealthList);
+                time = x.CreatedDate,
+                value = x.Bpm
+            });
+
+            return Json(chartData);
         }
     }
 }
