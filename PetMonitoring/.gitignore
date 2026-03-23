@@ -3,7 +3,7 @@
 *.suo
 *.userosscache
 *.sln.docstates
-
+log-*.*
 bin/
 obj/
 
