@@ -7,8 +7,8 @@ namespace PetMonitoring.Web.Application.DTOs.Movement
 {
     public record MovementResponseDTO
     {
-        public List<MovementDTO?> MovementList { get; } = new List<MovementDTO?>();
-        public string? Message { get; }
-        public int Status { get; }
+        public List<MovementDTO?> MovementList { get; set; } = new List<MovementDTO?>();
+        public string? Message { get; set; }
+        public int Status { get; set; }
     }
 }

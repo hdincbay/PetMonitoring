@@ -13,7 +13,7 @@
     }
   ],
   "paths": {
-    "/api/Movement": {
+    "/api/Movement/Add": {
       "post": {
         "tags": [
           "Movement"
@@ -75,51 +75,15 @@
       "AddMovementCommand": {
         "required": [
           "deviceSerialNumber",
-          "stepCount",
-          "distanceInMeters",
-          "activityLevel",
-          "activeMinutes",
-          "inactiveMinutes"
+          "activityLevel"
         ],
         "type": "object",
         "properties": {
           "deviceSerialNumber": {
             "type": "string"
           },
-          "stepCount": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "distanceInMeters": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
-            "format": "double"
-          },
           "activityLevel": {
             "$ref": "#/components/schemas/ActivityLevel"
-          },
-          "activeMinutes": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "inactiveMinutes": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
           }
         }
       }

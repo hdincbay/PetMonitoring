@@ -7,8 +7,8 @@ namespace PetMonitoring.Web.Application.DTOs.Temperature
 {
     public record TemperatureResponseDTO
     {
-        public List<TemperatureDTO?> TemperatureList { get; } = new List<TemperatureDTO?>();
-        public string? Message { get; }
-        public int Status { get; }
+        public List<TemperatureDTO?> TemperatureList { get; set; } = new List<TemperatureDTO?>();
+        public string? Message { get; set; }
+        public int Status { get; set; }
     }
 }

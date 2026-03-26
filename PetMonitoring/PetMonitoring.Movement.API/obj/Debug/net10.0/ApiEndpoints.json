@@ -2,7 +2,7 @@
   {
     "ContainingType": "PetMonitoring.Movement.API.Controllers.MovementController",
     "Method": "Add",
-    "RelativePath": "api/Movement",
+    "RelativePath": "api/Movement/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

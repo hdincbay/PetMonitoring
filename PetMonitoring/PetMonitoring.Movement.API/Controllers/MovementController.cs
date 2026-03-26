@@ -19,7 +19,7 @@ namespace PetMonitoring.Movement.API.Controllers
         {
             _mediator = mediator;
         }
-        [HttpPost]
+        [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] AddMovementCommand record)
         {
             var result = await _mediator.Send(record);

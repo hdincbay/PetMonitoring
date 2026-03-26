@@ -7,9 +7,5 @@ namespace PetMonitoring.Movement.Application.Commands.AddMovement;
 public sealed record AddMovementCommand
 (
     string DeviceSerialNumber,
-    int StepCount,
-    double DistanceInMeters,
-    ActivityLevel ActivityLevel,
-    int ActiveMinutes,
-    int InactiveMinutes
+    ActivityLevel ActivityLevel
 ) : IRequest<MovementOperationResult>;
