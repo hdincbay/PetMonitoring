@@ -6,7 +6,7 @@ namespace PetMonitoring.Web.Application.DTOs.Health
 {
     public record HealthDTO
     {
-        public int Bpm { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public int Bpm { get;}
+        public DateTime CreatedDate { get; }
     }
 }

@@ -6,11 +6,11 @@ namespace PetMonitoring.Web.Application.DTOs.Auth
 {
     public record LoginResponseDTO
     {
-        public Guid UserId { get; set; }
-        public string? UserName { get; set; }
+        public Guid UserId { get; }
+        public string? UserName { get; }
         public List<string?> Roles = new List<string?>();
-        public string? AccessToken { get; set; }
-        public string? RefreshToken { get; set; }
-        public string? Message { get; set; }
+        public string? AccessToken { get; }
+        public string? RefreshToken { get; }
+        public string? Message { get; }
     }
 }

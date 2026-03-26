@@ -28,9 +28,6 @@ namespace PetMonitoring.Movement.Infrastructure.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("ActiveMinutes")
-                        .HasColumnType("int");
-
                     b.Property<int>("ActivityLevel")
                         .HasColumnType("int");
 
@@ -39,12 +36,6 @@ namespace PetMonitoring.Movement.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("DeviceSerialNumber")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("DistanceInMeters")
-                        .HasColumnType("float");
-
-                    b.Property<int>("InactiveMinutes")
-                        .HasColumnType("int");
 
                     b.Property<int>("StepCount")
                         .HasColumnType("int");

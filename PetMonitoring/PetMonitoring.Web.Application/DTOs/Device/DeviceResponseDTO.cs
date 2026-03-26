@@ -6,9 +6,9 @@ namespace PetMonitoring.Web.Application.DTOs.Device
 {
     public record DeviceResponseDTO
     {
-        public DeviceDTO? Device { get; set; }
-        public List<DeviceDTO?> DeviceList { get; set; } = new List<DeviceDTO?>();
-        public string? Message { get; set; }
-        public int Status { get; set; }
+        public DeviceDTO? Device { get; }
+        public List<DeviceDTO?> DeviceList { get; } = new List<DeviceDTO?>();
+        public string? Message { get; }
+        public int Status { get; }
     }
 }
