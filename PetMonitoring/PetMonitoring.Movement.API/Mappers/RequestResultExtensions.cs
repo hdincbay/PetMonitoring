@@ -28,7 +28,7 @@ namespace PetMonitoring.Movement.API.Mappers
 
             return result.Status switch
             {
-                RequestStatus.Success => controller.Ok(new { result.Message, result.Status, result.Movement }),
+                RequestStatus.Success => controller.Ok(new { result.Message, result.Status, result.MovementList }),
                 RequestStatus.AlreadyExists => controller.Conflict(new { result.Message, result.Status }),
                 RequestStatus.ValidationError => controller.BadRequest(new { result.Message, result.Status }),
                 RequestStatus.NotFound => controller.BadRequest(new { result.Message, result.Status }),

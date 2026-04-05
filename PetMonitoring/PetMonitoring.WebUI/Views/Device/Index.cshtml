@@ -26,7 +26,7 @@
                 <td>@item.PetName</td>
                 <td>
                     <div class="btn group">
-                        <a class="btn btn-success" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">
+                        <a class="btn btn-success" asp-controller="Dashboard" asp-action="Index" asp-route-deviceSerialNumber="@item.SerialNumber">
                             <i class="fa fa-chart-area"></i> Grafikler
                         </a>
                         <a class="btn btn-primary" asp-controller="Device" asp-action="Get" asp-route-id="@item.ID">

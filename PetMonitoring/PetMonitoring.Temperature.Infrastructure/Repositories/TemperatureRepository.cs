@@ -21,17 +21,12 @@ public class TemperatureRepository : ITemperatureRepository
         return affectedRows > 0 ? entry.Entity.Id.ToString() : string.Empty;
     }
 
-    public async Task<TemperatureRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    public async Task<List<TemperatureRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
     {
         return await _context.TemperatureRecords
             .AsNoTracking()
             .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
-            .FirstOrDefaultAsync(ct);
-    }
-
-    public Task SaveAsync()
-    {
-        return _context.SaveChangesAsync();
+            .ToListAsync(ct);
     }
 }

@@ -24,8 +24,8 @@ namespace PetMonitoring.Temperature.Application.Queries
 
         public async Task<TemperatureOperationResult> Handle(GetTemperaturesQuery request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
-            if (record is null)
+            var recordList = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            if (recordList is null)
             {
                 return new TemperatureOperationResult
                 (
@@ -33,12 +33,12 @@ namespace PetMonitoring.Temperature.Application.Queries
                     RequestStatus.NotFound
                 );
             }
-            var dto = _mapper.Map<TemperatureRecordDTO>(record);
+            var dtoList = _mapper.Map<List<TemperatureRecordDTO>>(recordList);
             return new TemperatureOperationResult
             (
                 "Temperature record retrieved successfully.",
                 RequestStatus.Success,
-                dto
+                dtoList
             );
         }
     }

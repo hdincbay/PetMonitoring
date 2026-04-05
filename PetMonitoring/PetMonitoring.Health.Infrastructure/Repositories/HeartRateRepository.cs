@@ -20,19 +20,12 @@ public sealed class HeartRateRepository : IHeartRateRepository
         var affectedRows = await _context.SaveChangesAsync();
         return affectedRows > 0 ? entry.Entity.Id.ToString() : string.Empty;
     }
-
-    public async Task<HeartRateRecord?> GetByIdAsync(Guid id, CancellationToken ct)
-    {
-        return await _context.HeartRateRecords
-            .FirstOrDefaultAsync(x => x.Id == id, ct);
-    }
-
-    public async Task<HeartRateRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    public async Task<List<HeartRateRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
     {
         return await _context.HeartRateRecords
             .AsNoTracking()
             .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
-            .FirstOrDefaultAsync(ct);
+            .ToListAsync(ct);
     }
 }

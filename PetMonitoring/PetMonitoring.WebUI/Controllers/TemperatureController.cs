@@ -24,8 +24,8 @@ namespace PetMonitoring.WebUI.Controllers
 
             var chartData = result.TemperatureList.Select(x => new
             {
-                time = x.CreatedDate,
-                value = x.CelsiusValue
+                time = x?.CreatedDate,
+                value = x?.CelsiusValue
             });
 
             return Json(chartData);

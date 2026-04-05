@@ -21,12 +21,12 @@ public class MovementRepository : IMovementRepository
         return affectedRows > 0 ? entry.Entity.Id.ToString() : string.Empty;
     }
 
-    public async Task<MovementRecord?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    public async Task<List<MovementRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
     {
         return await _context.MovementRecords
             .AsNoTracking()
             .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
-            .FirstOrDefaultAsync(ct);
+            .ToListAsync(ct);
     }
 }

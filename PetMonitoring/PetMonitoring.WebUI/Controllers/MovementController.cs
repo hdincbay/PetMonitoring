@@ -24,8 +24,8 @@ namespace PetMonitoring.WebUI.Controllers
 
             var chartData = result.MovementList.Select(x => new
             {
-                time = x.CreatedDate,
-                value = x.ActivityLevel.ToString()
+                time = x?.CreatedDate,
+                value = x?.ActivityLevel.ToString()
             });
 
             return Json(chartData);

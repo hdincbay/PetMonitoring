@@ -25,8 +25,8 @@ namespace PetMonitoring.Health.Application.Queries
 
         public async Task<HealthOperationResult> Handle(GetHeartRatesQuery request, CancellationToken cancellationToken)
         {
-            var record = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
-            if(record is null)
+            var recordList = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            if(recordList is null)
             {
                 return new HealthOperationResult
                 (
@@ -34,12 +34,12 @@ namespace PetMonitoring.Health.Application.Queries
                     RequestStatus.NotFound
                 );
             }
-            var dto = _mapper.Map<HeartRateRecordDTO>(record);
+            var dtoList = _mapper.Map<List<HeartRateRecordDTO>>(recordList);
             return new HealthOperationResult
             (
                 "Heart rate record retrieved successfully.",
                 RequestStatus.Success,
-                dto
+                dtoList
             );
         }
     }

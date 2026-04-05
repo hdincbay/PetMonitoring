@@ -28,7 +28,7 @@ namespace PetMonitoring.Temperature.API.Mappers
 
             return result.Status switch
             {
-                RequestStatus.Success => controller.Ok(new { result.Message, result.Status, result.Temperature }),
+                RequestStatus.Success => controller.Ok(new { result.Message, result.Status, result.TemperatureList }),
                 RequestStatus.AlreadyExists => controller.Conflict(new { result.Message, result.Status }),
                 RequestStatus.ValidationError => controller.BadRequest(new { result.Message, result.Status }),
                 RequestStatus.NotFound => controller.BadRequest(new { result.Message, result.Status }),

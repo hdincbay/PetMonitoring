@@ -24,8 +24,8 @@ namespace PetMonitoring.WebUI.Controllers
 
             var chartData = result.HealthList.Select(x => new
             {
-                time = x.CreatedDate,
-                value = x.Bpm
+                time = x?.CreatedDate,
+                value = x?.Bpm
             });
 
             return Json(chartData);

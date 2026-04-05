@@ -19,6 +19,18 @@ namespace PetMonitoring.Web.Infrastructure.AppClients
             {
                 client.BaseAddress = new Uri(baseUrl);
             });
+            services.AddHttpClient<MovementApiClient>(client =>
+            {
+                client.BaseAddress = new Uri(baseUrl);
+            });
+            services.AddHttpClient<HealthApiClient>(client =>
+            {
+                client.BaseAddress = new Uri(baseUrl);
+            });
+            services.AddHttpClient<TemperatureApiClient>(client =>
+            {
+                client.BaseAddress = new Uri(baseUrl);
+            });
             return services;
         }
     }
