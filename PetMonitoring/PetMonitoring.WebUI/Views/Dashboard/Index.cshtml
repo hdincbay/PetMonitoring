@@ -1,0 +1,92 @@
+﻿@model DashboardVM
+@{
+    ViewData["Title"] = "Dashboard Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .chart-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Dashboard</h2>
+
+    <div class="chart-container">
+        <canvas id="movementChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="temperatureChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="healthChart"></canvas>
+    </div>
+
+    <script>
+        debugger;
+        const movements = @Html.Raw(JsonSerializer.Serialize(Model.Movements));
+        const temperatures = @Html.Raw(JsonSerializer.Serialize(Model.Temperatures));
+        const healths = @Html.Raw(JsonSerializer.Serialize(Model.Healths));
+        
+        const movementLabels = movements.map(x => new Date(x.date).toLocaleString());
+        const movementData = movements.map(x => x.value);
+
+        new Chart(document.getElementById('movementChart'), {
+        type: 'line',
+        data: {
+        labels: movementLabels,
+        datasets: [{
+        label: 'Movement',
+        data: movementData,
+        borderWidth: 2,
+        fill: false
+        }]
+        }
+        });
+        const tempLabels = temperatures.map(x => new Date(x.date).toLocaleString());
+        const tempData = temperatures.map(x => x.value);
+
+        new Chart(document.getElementById('temperatureChart'), {
+        type: 'line',
+        data: {
+        labels: tempLabels,
+        datasets: [{
+        label: 'Temperature',
+        data: tempData,
+        borderWidth: 2,
+        fill: false
+        }]
+        }
+        });
+        const healthLabels = healths.map(x => new Date(x.date).toLocaleString());
+        const healthData = healths.map(x => x.value);
+
+        new Chart(document.getElementById('healthChart'), {
+        type: 'bar',
+        data: {
+        labels: healthLabels,
+        datasets: [{
+        label: 'Health',
+        data: healthData,
+        borderWidth: 2
+        }]
+        }
+        });
+
+    </script>
+
+</body>
+</html>
+```
