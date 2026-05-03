@@ -21,7 +21,7 @@ namespace PetMonitoring.Movement.Application.Queries
 
         public async Task<MovementOperationResult> Handle(GetMovementsQuery request, CancellationToken cancellationToken)
         {
-            var recordList = await _repository.GetByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            var recordList = await _repository.GetLatestByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
             if (recordList is null)
             {
                 return new MovementOperationResult

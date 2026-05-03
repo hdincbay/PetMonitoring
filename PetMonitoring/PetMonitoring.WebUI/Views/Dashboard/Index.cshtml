@@ -11,67 +11,98 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
+        body {
+        font-family: Arial;
+        }
+
+        h2 {
+        text-align: center;
+        }
+
+        .chart-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        }
+
         .chart-container {
-        width: 100%;
-        max-width: 900px;
-        margin: 30px auto;
+        flex: 1 1 30%;
+        max-width: 600px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        canvas {
+        width: 100% !important;
+        height: 300px !important;
         }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align:center;">Dashboard</h2>
+    <h2>Dashboard</h2>
 
-    <div class="chart-container">
-        <canvas id="movementChart"></canvas>
-    </div>
+    <div class="chart-wrapper">
+        <div class="chart-container">
+            <canvas id="movementChart"></canvas>
+        </div>
 
-    <div class="chart-container">
-        <canvas id="temperatureChart"></canvas>
-    </div>
+        <div class="chart-container">
+            <canvas id="temperatureChart"></canvas>
+        </div>
 
-    <div class="chart-container">
-        <canvas id="healthChart"></canvas>
+        <div class="chart-container">
+            <canvas id="healthChart"></canvas>
+        </div>
     </div>
 
     <script>
-        debugger;
         const movements = @Html.Raw(JsonSerializer.Serialize(Model.Movements));
         const temperatures = @Html.Raw(JsonSerializer.Serialize(Model.Temperatures));
         const healths = @Html.Raw(JsonSerializer.Serialize(Model.Healths));
-        
-        const movementLabels = movements.map(x => new Date(x.date).toLocaleString());
-        const movementData = movements.map(x => x.value);
+
+        const movementLabels = movements.map(x => new Date(x.CreatedDate).toLocaleString());
+        const movementData = movements.map(x => x.ActivityLevel);
 
         new Chart(document.getElementById('movementChart'), {
-        type: 'line',
+        type: 'bar',
         data: {
         labels: movementLabels,
         datasets: [{
         label: 'Movement',
         data: movementData,
         borderWidth: 2,
-        fill: false
+        borderColor: 'red',
+        backgroundColor: 'rgba(255, 0, 0, 0.2)',
+        pointBackgroundColor: 'red'
         }]
         }
         });
-        const tempLabels = temperatures.map(x => new Date(x.date).toLocaleString());
-        const tempData = temperatures.map(x => x.value);
+
+        const tempLabels = temperatures.map(x => new Date(x.CreatedDate).toLocaleString());
+        const tempData = temperatures.map(x => x.CelsiusValue);
 
         new Chart(document.getElementById('temperatureChart'), {
-        type: 'line',
+        type: 'bar',
         data: {
         labels: tempLabels,
         datasets: [{
         label: 'Temperature',
         data: tempData,
         borderWidth: 2,
-        fill: false
+        borderColor: 'blue',
+        backgroundColor: 'rgba(0, 0, 255, 0.2)',
+        pointBackgroundColor: 'blue'
         }]
         }
         });
-        const healthLabels = healths.map(x => new Date(x.date).toLocaleString());
-        const healthData = healths.map(x => x.value);
+
+        const healthLabels = healths.map(x => new Date(x.CreatedDate).toLocaleString());
+        const healthData = healths.map(x => x.Bpm);
 
         new Chart(document.getElementById('healthChart'), {
         type: 'bar',
@@ -80,13 +111,13 @@
         datasets: [{
         label: 'Health',
         data: healthData,
-        borderWidth: 2
+        borderWidth: 2,
+        backgroundColor: 'green',
+        borderColor: 'darkgreen'
         }]
         }
         });
-
     </script>
 
 </body>
 </html>
-```

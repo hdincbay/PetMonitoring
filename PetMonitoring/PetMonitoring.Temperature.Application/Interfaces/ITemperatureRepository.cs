@@ -6,4 +6,5 @@ public interface ITemperatureRepository
 {
     Task<string> AddAsync(TemperatureRecord record, CancellationToken ct);
     Task<List<TemperatureRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct);
+    Task<List<TemperatureRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct);
 }

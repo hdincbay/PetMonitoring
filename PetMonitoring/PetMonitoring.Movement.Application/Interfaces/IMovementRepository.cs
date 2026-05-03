@@ -6,4 +6,5 @@ public interface IMovementRepository
 {
     Task<string> AddAsync(MovementRecord record, CancellationToken ct);
     Task<List<MovementRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken cancellationToken);
+    Task<List<MovementRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken cancellationToken);
 }

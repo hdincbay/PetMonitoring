@@ -28,4 +28,14 @@ public sealed class HeartRateRepository : IHeartRateRepository
             .OrderByDescending(x => x.CreatedDate)
             .ToListAsync(ct);
     }
+    public async Task<List<HeartRateRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    {
+        return await _context.HeartRateRecords
+            .AsNoTracking()
+            .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
+            .OrderByDescending(x => x.CreatedDate)
+            .Take(10)
+            .OrderBy(x => x.CreatedDate)
+            .ToListAsync(ct);
+    }
 }

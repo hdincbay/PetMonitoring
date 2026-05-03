@@ -29,4 +29,14 @@ public class MovementRepository : IMovementRepository
             .OrderByDescending(x => x.CreatedDate)
             .ToListAsync(ct);
     }
+    public async Task<List<MovementRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    {
+        return await _context.MovementRecords
+            .AsNoTracking()
+            .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
+            .OrderByDescending(x => x.CreatedDate)
+            .Take(10)
+            .OrderBy(x => x.CreatedDate)
+            .ToListAsync(ct);
+    }
 }

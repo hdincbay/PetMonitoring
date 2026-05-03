@@ -7,7 +7,7 @@ namespace PetMonitoring.Web.Application.DTOs.Movement
 {
     public record MovementDTO
     {
-        public ActivityLevel ActivityLevel { get; }
-        public DateTime CreatedDate { get; }
+        public ActivityLevel ActivityLevel { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }
