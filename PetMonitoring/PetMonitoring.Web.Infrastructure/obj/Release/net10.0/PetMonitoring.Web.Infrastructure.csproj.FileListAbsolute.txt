@@ -1,0 +1,16 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\bin\Release\net10.0\PetMonitoring.Web.Infrastructure.deps.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\bin\Release\net10.0\PetMonitoring.Web.Infrastructure.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\bin\Release\net10.0\PetMonitoring.Web.Infrastructure.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\bin\Release\net10.0\PetMonitoring.Web.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\bin\Release\net10.0\PetMonitoring.Web.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.sourcelink.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonit.19FC05CD.Up2Date
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\refint\PetMonitoring.Web.Infrastructure.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\PetMonitoring.Web.Infrastructure.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Web.Infrastructure\obj\Release\net10.0\ref\PetMonitoring.Web.Infrastructure.dll

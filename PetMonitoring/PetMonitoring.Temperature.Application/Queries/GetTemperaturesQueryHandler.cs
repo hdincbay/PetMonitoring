@@ -24,7 +24,7 @@ namespace PetMonitoring.Temperature.Application.Queries
 
         public async Task<TemperatureOperationResult> Handle(GetTemperaturesQuery request, CancellationToken cancellationToken)
         {
-            var recordList = await _repository.GetLatestByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            var recordList = await _repository.GetLatestByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken, request.Take);
             if (recordList is null)
             {
                 return new TemperatureOperationResult

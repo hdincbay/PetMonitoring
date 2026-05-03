@@ -29,13 +29,13 @@ public class TemperatureRepository : ITemperatureRepository
             .OrderByDescending(x => x.CreatedDate)
             .ToListAsync(ct);
     }
-    public async Task<List<TemperatureRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct)
+    public async Task<List<TemperatureRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken ct, int take)
     {
         return await _context.TemperatureRecords
             .AsNoTracking()
             .Where(x => x.DeviceSerialNumber == deviceSerialNumber)
             .OrderByDescending(x => x.CreatedDate)
-            .Take(10)
+            .Take(take)
             .OrderBy(x => x.CreatedDate)
             .ToListAsync(ct);
     }

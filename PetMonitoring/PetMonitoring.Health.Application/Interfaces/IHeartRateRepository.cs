@@ -6,5 +6,5 @@ public interface IHeartRateRepository
 {
     Task<string> AddAsync(HeartRateRecord record, CancellationToken cancellationToken);
     Task<List<HeartRateRecord>?> GetByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken cancellationToken);
-    Task<List<HeartRateRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken cancellationToken);
+    Task<List<HeartRateRecord>?> GetLatestByDeviceSerialNumberAsync(string deviceSerialNumber, CancellationToken cancellationToken, int take);
 }

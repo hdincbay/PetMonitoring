@@ -27,6 +27,11 @@
         "Name": "DeviceSerialNumber",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

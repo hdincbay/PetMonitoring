@@ -25,7 +25,7 @@ namespace PetMonitoring.Health.Application.Queries
 
         public async Task<HealthOperationResult> Handle(GetHeartRatesQuery request, CancellationToken cancellationToken)
         {
-            var recordList = await _repository.GetLatestByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken);
+            var recordList = await _repository.GetLatestByDeviceSerialNumberAsync(request.DeviceSerialNumber, cancellationToken, request.Take);
             if(recordList is null)
             {
                 return new HealthOperationResult

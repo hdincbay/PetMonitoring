@@ -1,0 +1,16 @@
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\bin\Release\net10.0\PetMonitoring.Temperature.Application.deps.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\bin\Release\net10.0\PetMonitoring.Temperature.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\bin\Release\net10.0\PetMonitoring.Temperature.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\bin\Release\net10.0\PetMonitoring.Temperature.Domain.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\bin\Release\net10.0\PetMonitoring.Temperature.Domain.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.csproj.AssemblyReference.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.AssemblyInfoInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.AssemblyInfo.cs
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.csproj.CoreCompileInputs.cache
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.sourcelink.json
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonit.9B3C93D3.Up2Date
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\refint\PetMonitoring.Temperature.Application.dll
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\PetMonitoring.Temperature.Application.pdb
+C:\Users\hdinc\source\repos\PetMonitoring\PetMonitoring\PetMonitoring.Temperature.Application\obj\Release\net10.0\ref\PetMonitoring.Temperature.Application.dll
